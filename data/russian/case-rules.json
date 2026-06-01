@@ -1,0 +1,87 @@
+{
+  "genitive": {
+    "questions": [
+      "кого?",
+      "чего?",
+      "откуда?",
+      "у кого?",
+      "сколько?"
+    ],
+    "uses": [
+      "negation нет",
+      "possession",
+      "quantity",
+      "origin",
+      "part/portion",
+      "dates"
+    ],
+    "prepositions": [
+      "из",
+      "с",
+      "для",
+      "после",
+      "от",
+      "до",
+      "без",
+      "у",
+      "кроме",
+      "вместо",
+      "около"
+    ]
+  },
+  "accusative": {
+    "questions": [
+      "кого?",
+      "что?",
+      "куда?"
+    ],
+    "uses": [
+      "direct object",
+      "direction",
+      "some time expressions"
+    ],
+    "rule": "animate nouns often follow genitive forms; inanimate often follow nominative forms"
+  },
+  "prepositional": {
+    "questions": [
+      "где?",
+      "о ком?",
+      "о чём?",
+      "на чём?"
+    ],
+    "uses": [
+      "location",
+      "topic",
+      "transport/instrument with на"
+    ],
+    "prepositions": [
+      "в",
+      "на",
+      "о",
+      "об"
+    ]
+  },
+  "dative": {
+    "questions": [
+      "кому?",
+      "чему?"
+    ],
+    "uses": [
+      "recipient",
+      "liking with нравиться",
+      "help/call/tell/show to someone"
+    ]
+  },
+  "instrumental": {
+    "questions": [
+      "кем?",
+      "чем?"
+    ],
+    "uses": [
+      "with/by",
+      "profession",
+      "activity with заниматься",
+      "transport with на"
+    ]
+  }
+}

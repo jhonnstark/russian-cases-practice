@@ -1,0 +1,20 @@
+{
+  "cases": {
+    "genitive": {
+      "pattern": "У меня нет {word}.",
+      "rule": "нет + genitive",
+      "examples": [
+        "У меня нет машины.",
+        "У меня нет времени."
+      ]
+    },
+    "accusative": {
+      "pattern": "Я вижу {word}.",
+      "rule": "вижу + accusative",
+      "examples": [
+        "Я вижу машину.",
+        "Я вижу книгу."
+      ]
+    }
+  }
+}

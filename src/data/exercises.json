@@ -1,0 +1,36 @@
+[
+  {
+    "id": "gen-001",
+    "case": "genitive",
+    "mode": "ending-choice",
+    "level": "A2",
+    "prompt": "У меня нет машин__.",
+    "nominative": "машина",
+    "options": ["а", "ы", "и", "у"],
+    "answer": "ы",
+    "fullAnswer": "У меня нет машины.",
+    "explanation": "Нет требует genitivo. Машина termina en -а, en genitivo cambia а → ы."
+  },
+  {
+    "id": "acc-001",
+    "case": "accusative",
+    "mode": "case-choice",
+    "level": "A2",
+    "prompt": "Я иду ___ работу.",
+    "options": ["на работу", "на работе", "с работы", "для работы"],
+    "answer": "на работу",
+    "explanation": "Куда? indica dirección, por eso usamos acusativo: на работу."
+  },
+  {
+    "id": "prep-001",
+    "case": "prepositional",
+    "mode": "ending-choice",
+    "level": "A2",
+    "prompt": "Я живу в Америк__.",
+    "nominative": "Америка",
+    "options": ["а", "е", "у", "ы"],
+    "answer": "е",
+    "fullAnswer": "Я живу в Америке.",
+    "explanation": "Где? indica ubicación. Америка termina en -а, en preposicional cambia а → е."
+  }
+]

@@ -1,0 +1,152 @@
+{
+  "aspect_pairs": [
+    {
+      "imperfective": "работать",
+      "perfective": "поработать"
+    },
+    {
+      "imperfective": "покупать",
+      "perfective": "купить"
+    },
+    {
+      "imperfective": "готовить",
+      "perfective": "приготовить"
+    },
+    {
+      "imperfective": "убирать",
+      "perfective": "убрать"
+    },
+    {
+      "imperfective": "делать",
+      "perfective": "сделать"
+    },
+    {
+      "imperfective": "читать",
+      "perfective": "прочитать"
+    },
+    {
+      "imperfective": "писать",
+      "perfective": "написать"
+    },
+    {
+      "imperfective": "учить",
+      "perfective": "выучить"
+    },
+    {
+      "imperfective": "смотреть",
+      "perfective": "посмотреть"
+    },
+    {
+      "imperfective": "получать",
+      "perfective": "получить"
+    },
+    {
+      "imperfective": "вставать",
+      "perfective": "встать"
+    },
+    {
+      "imperfective": "отвечать",
+      "perfective": "ответить"
+    },
+    {
+      "imperfective": "есть",
+      "perfective": "съесть"
+    },
+    {
+      "imperfective": "забывать",
+      "perfective": "забыть"
+    },
+    {
+      "imperfective": "показывать",
+      "perfective": "показать"
+    },
+    {
+      "imperfective": "открывать",
+      "perfective": "открыть"
+    },
+    {
+      "imperfective": "включать",
+      "perfective": "включить"
+    },
+    {
+      "imperfective": "начинать",
+      "perfective": "начать"
+    },
+    {
+      "imperfective": "звонить",
+      "perfective": "позвонить"
+    },
+    {
+      "imperfective": "думать",
+      "perfective": "подумать"
+    },
+    {
+      "imperfective": "принимать",
+      "perfective": "принять"
+    },
+    {
+      "imperfective": "приглашать",
+      "perfective": "пригласить"
+    },
+    {
+      "imperfective": "просыпаться",
+      "perfective": "проснуться"
+    },
+    {
+      "imperfective": "красить",
+      "perfective": "покрасить"
+    },
+    {
+      "imperfective": "ездить",
+      "perfective": "поехать"
+    },
+    {
+      "imperfective": "ходить",
+      "perfective": "пойти"
+    },
+    {
+      "imperfective": "рассказывать",
+      "perfective": "рассказать"
+    },
+    {
+      "imperfective": "узнавать",
+      "perfective": "узнать"
+    },
+    {
+      "imperfective": "спрашивать",
+      "perfective": "спросить"
+    },
+    {
+      "imperfective": "платить",
+      "perfective": "заплатить"
+    },
+    {
+      "imperfective": "заказывать",
+      "perfective": "заказать"
+    },
+    {
+      "imperfective": "говорить",
+      "perfective": "сказать"
+    },
+    {
+      "imperfective": "встречать",
+      "perfective": "встретить"
+    },
+    {
+      "imperfective": "тратить",
+      "perfective": "потратить"
+    },
+    {
+      "imperfective": "откладывать",
+      "perfective": "отложить"
+    },
+    {
+      "imperfective": "запоминать",
+      "perfective": "запомнить"
+    },
+    {
+      "imperfective": "уставать",
+      "perfective": "устать"
+    }
+  ]
+}

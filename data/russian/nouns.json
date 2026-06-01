@@ -1,0 +1,66 @@
+{
+  "nouns": [
+    {
+      "nominative": "машина",
+      "gender": "feminine",
+      "animate": false,
+      "level": "A2",
+      "meaning_es": "coche",
+      "forms": {
+        "genitive": "машины",
+        "accusative": "машину",
+        "prepositional": "машине",
+        "dative": "машине",
+        "instrumental": "машиной"
+      },
+      "tags": ["daily_life", "transport"]
+    },
+    {
+      "nominative": "Москва",
+      "gender": "feminine",
+      "animate": false,
+      "level": "A2",
+      "meaning_es": "Moscú",
+      "forms": {
+        "genitive": "Москвы",
+        "accusative": "Москву",
+        "prepositional": "Москве",
+        "dative": "Москве",
+        "instrumental": "Москвой"
+      },
+      "tags": ["places", "geography"]
+    }
+  ],
+  "movement": [
+    "идти",
+    "ехать",
+    "бежать",
+    "прийти",
+    "приехать",
+    "жить"
+  ],
+  "communication": [
+    "говорить",
+    "рассказывать",
+    "спрашивать",
+    "писать"
+  ],
+  "thinking": [
+    "думать",
+    "мечтать",
+    "помнить",
+    "знать",
+    "понимать"
+  ],
+  "activities": [
+    "читать",
+    "слушать",
+    "изучать",
+    "готовить",
+    "играть",
+    "покупать",
+    "любить",
+    "ждать",
+    "смотреть"
+  ]
+}

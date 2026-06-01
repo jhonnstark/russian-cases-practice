@@ -1,0 +1,9 @@
+{
+  "case": "genitive",
+  "pattern": "У меня нет {word}.",
+  "rule": "нет + genitive",
+  "examples": [
+    "У меня нет машины.",
+    "У меня нет времени."
+  ]
+}

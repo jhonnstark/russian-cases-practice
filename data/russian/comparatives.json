@@ -1,0 +1,104 @@
+{
+  "comparatives": [
+    {
+      "base": "хороший",
+      "comparative": "лучше"
+    },
+    {
+      "base": "плохой",
+      "comparative": "хуже"
+    },
+    {
+      "base": "частый",
+      "comparative": "чаще"
+    },
+    {
+      "base": "редкий",
+      "comparative": "реже"
+    },
+    {
+      "base": "большой",
+      "comparative": "больше"
+    },
+    {
+      "base": "маленький",
+      "comparative": "меньше"
+    },
+    {
+      "base": "высокий",
+      "comparative": "выше"
+    },
+    {
+      "base": "низкий",
+      "comparative": "ниже"
+    },
+    {
+      "base": "короткий",
+      "comparative": "короче"
+    },
+    {
+      "base": "широкий",
+      "comparative": "шире"
+    },
+    {
+      "base": "узкий",
+      "comparative": "уже"
+    },
+    {
+      "base": "дорогой",
+      "comparative": "дороже"
+    },
+    {
+      "base": "дешёвый",
+      "comparative": "дешевле"
+    },
+    {
+      "base": "жаркий",
+      "comparative": "жарче"
+    },
+    {
+      "base": "лёгкий",
+      "comparative": "легче"
+    },
+    {
+      "base": "чистый",
+      "comparative": "чище"
+    },
+    {
+      "base": "громкий",
+      "comparative": "громче"
+    },
+    {
+      "base": "тихий",
+      "comparative": "тише"
+    },
+    {
+      "base": "молодой",
+      "comparative": "моложе"
+    },
+    {
+      "base": "старый",
+      "comparative": "старше"
+    },
+    {
+      "base": "толстый",
+      "comparative": "толще"
+    },
+    {
+      "base": "тонкий",
+      "comparative": "тоньше"
+    },
+    {
+      "base": "рано",
+      "comparative": "раньше"
+    },
+    {
+      "base": "поздно",
+      "comparative": "позже"
+    },
+    {
+      "base": "простой",
+      "comparative": "проще"
+    }
+  ]
+}
