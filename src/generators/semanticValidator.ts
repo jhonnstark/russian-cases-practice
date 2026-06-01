@@ -96,8 +96,8 @@ export function learningScore(word: RussianWord, targetCase: Case): number {
  */
 export function isGoodForChoiceExercise(word: RussianWord, targetCase: Case): boolean {
   if (isFullyIndeclinable(word)) return false
-  if (isSameAsNominative(word, targetCase)) return false
-  return true
+  return !isSameAsNominative(word, targetCase);
+
 }
 
 /**

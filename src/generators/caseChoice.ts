@@ -6,6 +6,7 @@ import type { SemanticPattern } from './semanticValidator'
 const SEMANTIC_PATTERNS = semanticPatternsRaw as SemanticPattern[]
 
 // hint_es per pattern template
+// noinspection NonAsciiCharacters
 const HINT_ES: Record<string, string> = {
   'Это {noun}.':               'Esto es {meaning}.',
   'Вот {noun}.':               'Aquí está {meaning}.',
