@@ -1,47 +1,49 @@
 import type { RussianWord, Case, CaseChoiceExercise } from './types'
+import semanticPatternsRaw from '../../data/russian/semantic-patterns.json'
+import { pickWordForChoiceExercise, getCaseForm } from './semanticValidator'
+import type { SemanticPattern } from './semanticValidator'
 
-// Cada plantilla tiene un hueco {blank} que se rellena con la forma correcta.
-// Los distractores son formas del mismo sustantivo en otros casos.
-const CASE_TEMPLATES: Record<Case, { template: string; hint_es: string }[]> = {
-  genitive: [
-    { template: 'У меня нет {blank}.', hint_es: 'No tengo {meaning}.' },
-    { template: 'Это портрет {blank}.', hint_es: 'Es un retrato de {meaning}.' },
-    { template: 'Это подарок для {blank}.', hint_es: 'Es un regalo para {meaning}.' },
-    { template: 'Я иду из {blank}.', hint_es: 'Vengo de {meaning}.' },
-    { template: 'Кофе без {blank}.', hint_es: 'Café sin {meaning}.' },
-    { template: 'После {blank} я отдыхаю.', hint_es: 'Después de {meaning} descanso.' },
-    { template: 'Я живу около {blank}.', hint_es: 'Vivo cerca de {meaning}.' },
-  ],
-  accusative: [
-    { template: 'Я читаю {blank}.', hint_es: 'Leo {meaning}.' },
-    { template: 'Я люблю {blank}.', hint_es: 'Amo {meaning}.' },
-    { template: 'Я слушаю {blank}.', hint_es: 'Escucho {meaning}.' },
-    { template: 'Я вижу {blank}.', hint_es: 'Veo {meaning}.' },
-    { template: 'Я жду {blank}.', hint_es: 'Espero {meaning}.' },
-    { template: 'Я еду в {blank}.', hint_es: 'Viajo a {meaning}.' },
-  ],
-  prepositional: [
-    { template: 'Мы говорим о {blank}.', hint_es: 'Hablamos de {meaning}.' },
-    { template: 'Я думаю о {blank}.', hint_es: 'Pienso en {meaning}.' },
-    { template: 'Я живу в {blank}.', hint_es: 'Vivo en {meaning}.' },
-    { template: 'Я работаю в {blank}.', hint_es: 'Trabajo en {meaning}.' },
-    { template: 'Я учусь в {blank}.', hint_es: 'Estudio en {meaning}.' },
-    { template: 'Я играю на {blank}.', hint_es: 'Toco {meaning}.' },
-  ],
-  dative: [
-    { template: 'Я звоню {blank}.', hint_es: 'Llamo a {meaning}.' },
-    { template: 'Я пишу {blank}.', hint_es: 'Escribo a {meaning}.' },
-    { template: 'Я помогаю {blank}.', hint_es: 'Ayudo a {meaning}.' },
-    { template: 'Я дарю подарок {blank}.', hint_es: 'Le regalo algo a {meaning}.' },
-    { template: 'Мне нравится {blank}.', hint_es: 'Me gusta {meaning}.' },
-  ],
-  instrumental: [
-    { template: 'Я еду на {blank}.', hint_es: 'Voy en {meaning}.' },
-    { template: 'Я занимаюсь {blank}.', hint_es: 'Me dedico a {meaning}.' },
-    { template: 'Я восхищаюсь {blank}.', hint_es: 'Me maravillo con {meaning}.' },
-    { template: 'Я горжусь {blank}.', hint_es: 'Me enorgullezco de {meaning}.' },
-    { template: 'Я интересуюсь {blank}.', hint_es: 'Me interesa {meaning}.' },
-  ],
+const SEMANTIC_PATTERNS = semanticPatternsRaw as SemanticPattern[]
+
+// hint_es per pattern template
+const HINT_ES: Record<string, string> = {
+  'Это {noun}.':               'Esto es {meaning}.',
+  'Вот {noun}.':               'Aquí está {meaning}.',
+  '{noun} здесь.':             '{meaning} está aquí.',
+  '{noun} стоит дорого.':      '{meaning} cuesta caro.',
+  '{noun} очень красивый.':    '{meaning} es muy bonito.',
+  '{noun} работает здесь.':    '{meaning} trabaja aquí.',
+  'У меня нет {noun}.':        'No tengo {meaning}.',
+  'У нас нет {noun}.':         'No tenemos {meaning}.',
+  'Это портрет {noun}.':       'Es un retrato de {meaning}.',
+  'Это флаг {noun}.':          'Es la bandera de {meaning}.',
+  'Я из {noun}.':              'Soy de {meaning}.',
+  'Это подарок для {noun}.':   'Es un regalo para {meaning}.',
+  'Кофе без {noun}.':          'Café sin {meaning}.',
+  'После {noun} я отдыхаю.':  'Después de {meaning} descanso.',
+  'Я живу около {noun}.':      'Vivo cerca de {meaning}.',
+  'Я читаю {noun}.':           'Leo {meaning}.',
+  'Я люблю {noun}.':           'Amo {meaning}.',
+  'Я слушаю {noun}.':          'Escucho {meaning}.',
+  'Я вижу {noun}.':            'Veo {meaning}.',
+  'Я жду {noun}.':             'Espero {meaning}.',
+  'Я еду в {noun}.':           'Viajo a {meaning}.',
+  'Я иду в {noun}.':           'Voy a {meaning}.',
+  'Мы говорим о {noun}.':      'Hablamos de {meaning}.',
+  'Я думаю о {noun}.':         'Pienso en {meaning}.',
+  'Я живу в {noun}.':          'Vivo en {meaning}.',
+  'Я работаю в {noun}.':       'Trabajo en {meaning}.',
+  'Я учусь в {noun}.':         'Estudio en {meaning}.',
+  'Я играю на {noun}.':        'Toco {meaning}.',
+  'Я звоню {noun}.':           'Llamo a {meaning}.',
+  'Я пишу {noun}.':            'Escribo a {meaning}.',
+  'Я помогаю {noun}.':         'Ayudo a {meaning}.',
+  'Я дарю подарок {noun}.':    'Le regalo algo a {meaning}.',
+  'Я еду на {noun}.':          'Voy en {meaning}.',
+  'Я занимаюсь {noun}.':       'Me dedico a {meaning}.',
+  'Я восхищаюсь {noun}.':      'Me maravillo con {meaning}.',
+  'Я горжусь {noun}.':         'Me enorgullezco de {meaning}.',
+  'Я интересуюсь {noun}.':     'Me interesa {meaning}.',
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -52,40 +54,51 @@ function pick<T>(arr: T[]): T {
   return arr[Math.floor(Math.random() * arr.length)]
 }
 
+function pickPatternForCase(targetCase: Case): SemanticPattern {
+  const patterns = SEMANTIC_PATTERNS.filter(p => p.case === targetCase)
+  return pick(patterns)
+}
+
 /**
- * Genera un ejercicio de tipo Case Choice para una palabra y un caso dados.
- * El usuario elige la opción completa correcta (preposición + forma).
+ * Attempts to build a CaseChoiceExercise for the given case.
+ * Returns null if the word produces < 2 unique options (Rule 5).
  */
-export function generateCaseChoice(word: RussianWord, targetCase: Case): CaseChoiceExercise {
-  const correctForm = word.cases[targetCase]
-  const pattern = pick(CASE_TEMPLATES[targetCase])
+function tryGenerateCaseChoice(words: RussianWord[], targetCase: Case): CaseChoiceExercise | null {
+  const semanticPattern = pickPatternForCase(targetCase)
+  const word = pickWordForChoiceExercise(words, semanticPattern, targetCase)
 
-  const prompt = pattern.template.replace('{blank}', '___')
-  const hint_es = pattern.hint_es.replace('{meaning}', word.meaning_es)
+  const correctForm = getCaseForm(word, targetCase)
+  const prompt = semanticPattern.pattern.replace('{noun}', '___')
+  const hintTemplate = HINT_ES[semanticPattern.pattern] ?? 'Traduce: {meaning}.'
+  const hint_es = hintTemplate.replace('{meaning}', word.meaning_es)
 
-  // Construir la opción correcta
-  const correctOption = correctForm
-
-  // Construir 3 distractores con formas del mismo sustantivo en otros casos
-  const otherCases = (['genitive', 'accusative', 'prepositional', 'dative', 'instrumental'] as Case[])
+  // Build distractors from other case forms of the same word
+  const otherCases = (['nominative', 'genitive', 'accusative', 'prepositional', 'dative', 'instrumental'] as Case[])
     .filter(c => c !== targetCase)
-  const distractors = shuffle(otherCases)
-    .slice(0, 3)
-    .map(c => word.cases[c])
-    .filter(f => f !== correctOption) // evitar duplicados si dos casos coinciden
+  const rawDistractors = shuffle(otherCases)
+    .map(c => getCaseForm(word, c))
+    .filter(f => f !== correctForm)
 
-  // Si por irregularidades hay menos de 3 distractores únicos, rellenar con nominativo
-  while (distractors.length < 3) {
-    distractors.push(word.nominative)
+  // Deduplicate distractors (Rule 4 / Rule 5)
+  const uniqueDistractors = [...new Set(rawDistractors)].slice(0, 3)
+
+  // Pad with nominative only if it differs from correctForm
+  if (uniqueDistractors.length < 3 && word.nominative !== correctForm) {
+    uniqueDistractors.push(word.nominative)
   }
 
-  const options = shuffle([correctOption, ...distractors.slice(0, 3)])
+  const allOptions = [correctForm, ...uniqueDistractors.slice(0, 3)]
+  const uniqueOptions = [...new Set(allOptions)]
+
+  // Rule 5: discard if fewer than 2 distinct options
+  if (uniqueOptions.length < 2) return null
 
   return {
     type: 'case-choice',
     prompt,
-    options,
-    answer: correctOption,
+    nominative: word.nominative,
+    options: shuffle(allOptions.slice(0, 4)),
+    answer: correctForm,
     case: targetCase,
     level: word.level,
     hint_es,
@@ -93,21 +106,42 @@ export function generateCaseChoice(word: RussianWord, targetCase: Case): CaseCho
 }
 
 /**
- * Genera N ejercicios de Case Choice aleatoriamente desde un listado de palabras.
+ * Genera un ejercicio de tipo Case Choice, con hasta 5 reintentos si Rule 5 falla.
+ */
+export function generateCaseChoice(words: RussianWord[], targetCase: Case): CaseChoiceExercise {
+  for (let attempt = 0; attempt < 5; attempt++) {
+    const ex = tryGenerateCaseChoice(words, targetCase)
+    if (ex) return ex
+  }
+  // Last resort: force-generate ignoring quality (shouldn't happen with 109 words)
+  return tryGenerateCaseChoice(words, targetCase) ?? {
+    type: 'case-choice',
+    prompt: '___',
+    nominative: '—',
+    options: ['—'],
+    answer: '—',
+    case: targetCase,
+    level: 'A1',
+    hint_es: '',
+  }
+}
+
+/**
+ * Genera N ejercicios de Case Choice.
+ * Respects filterCase when provided (used when user selects a specific case).
  */
 export function generateCaseChoiceBatch(
   words: RussianWord[],
   count: number,
-  filterLevel?: RussianWord['level']
+  options?: { filterLevel?: RussianWord['level']; filterCase?: Case }
 ): CaseChoiceExercise[] {
-  const pool = filterLevel ? words.filter(w => w.level === filterLevel) : words
-  const cases: Case[] = ['genitive', 'accusative', 'prepositional', 'dative', 'instrumental']
+  const pool = options?.filterLevel ? words.filter(w => w.level === options.filterLevel) : words
+  const cases: Case[] = ['nominative', 'genitive', 'accusative', 'prepositional', 'dative', 'instrumental']
   const exercises: CaseChoiceExercise[] = []
 
   for (let i = 0; i < count; i++) {
-    const word = pick(pool)
-    const targetCase = pick(cases)
-    exercises.push(generateCaseChoice(word, targetCase))
+    const targetCase = options?.filterCase ?? pick(cases)
+    exercises.push(generateCaseChoice(pool, targetCase))
   }
 
   return exercises

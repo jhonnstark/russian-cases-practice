@@ -1,6 +1,6 @@
 // ─── Shared Types for Russian Cases Practice Generators ───────────────────────
 
-export type Case = 'genitive' | 'accusative' | 'prepositional' | 'dative' | 'instrumental'
+export type Case = 'nominative' | 'genitive' | 'accusative' | 'prepositional' | 'dative' | 'instrumental'
 export type Gender = 'masculine' | 'feminine' | 'neuter' | 'plural'
 export type Level = 'A1' | 'A2' | 'B1'
 
@@ -12,7 +12,8 @@ export interface RussianWord {
   meaning_es: string
   level: Level
   indeclinable?: boolean
-  cases: Record<Case, string>
+  pedagogicBonus?: number   // 1–5: extra appearance weight for high-value words (время, друг, etc.)
+  cases: Record<Exclude<Case, 'nominative'>, string>
   tags: string[]
 }
 
@@ -24,6 +25,7 @@ export interface RussianWord {
 export interface EndingChoiceExercise {
   type: 'ending-choice'
   prompt: string          // sentence with blank: "У меня нет машин__."
+  nominative: string      // base form shown above prompt: "машина"
   base: string            // stem shown to user: "машин"
   options: string[]       // 4 endings
   answer: string          // correct ending
@@ -38,6 +40,7 @@ export interface EndingChoiceExercise {
 export interface CaseChoiceExercise {
   type: 'case-choice'
   prompt: string          // sentence with blank
+  nominative: string      // base form for display
   options: string[]       // 4 full phrase options
   answer: string          // correct option
   case: Case
@@ -63,6 +66,7 @@ export interface TransformExercise {
  */
 export interface OrderBlocksExercise {
   type: 'order-blocks'
+  nominative: string      // base form for display
   blocks: string[]        // shuffled word blocks
   answer: string          // correct sentence
   case: Case

@@ -27,6 +27,12 @@
 
         <div v-for="({ exercise: ex, userAnswer }, i) in store.mistakes" :key="i" class="mistake-card">
 
+          <!-- Nominative header -->
+          <div v-if="getNominative(ex)" class="mistake-card__header">
+            <span class="mistake-card__nom-label">{{ t('results.nominative') }}</span>
+            <span class="mistake-card__nom-word">{{ getNominative(ex) }}</span>
+          </div>
+
           <!-- Prompt -->
           <div class="mistake-card__prompt">{{ getPrompt(ex) }}</div>
 
@@ -45,9 +51,6 @@
           <!-- Case + rule -->
           <div class="mistake-card__rule">
             <span class="mistake-card__case-tag">{{ t(`selector.cases.${getCase(ex)}`) }}</span>
-            <span class="mistake-card__nominative">
-              {{ getNominative(ex) }}
-            </span>
             <span class="mistake-card__rule-text">{{ getRule(getCase(ex)) }}</span>
           </div>
 
@@ -142,10 +145,10 @@ function getCase(ex: Exercise): Case {
 
 function getNominative(ex: Exercise): string {
   switch (ex.type) {
-    case 'ending-choice': return ex.base + '…'
-    case 'case-choice':   return ''
+    case 'ending-choice': return ex.nominative
+    case 'case-choice':   return ex.nominative
     case 'transform':     return ex.nominative
-    case 'order-blocks':  return ''
+    case 'order-blocks':  return ex.nominative
     case 'mini-story':    return ex.blanks.map(b => b.nominative).join(', ')
     default: return ''
   }
@@ -155,10 +158,10 @@ function getRule(cas: Case): string {
   const rules = caseRules as Record<string, { uses?: string[]; prepositions?: string[]; rule?: string }>
   const r = rules[cas]
   if (!r) return ''
-  const uses = r.uses?.slice(0, 2).join(', ') ?? ''
-  const preps = r.prepositions?.slice(0, 4).join(', ') ?? ''
-  const extra = r.rule ? ` · ${r.rule}` : ''
-  return [uses, preps ? `prep: ${preps}` : '', extra].filter(Boolean).join(' · ')
+  const uses = r.uses?.slice(0, 3).join(' · ') ?? ''
+  const preps = r.prepositions?.length ? r.prepositions.slice(0, 5).join(' ') : ''
+  const parts = [uses, preps ? `[${preps}]` : ''].filter(Boolean)
+  return parts.join('  ')
 }
 
 function playAgain() {
@@ -235,6 +238,29 @@ function playAgain() {
   gap: 0.75rem;
 }
 
+/* Nominative header */
+.mistake-card__header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #334155;
+}
+.mistake-card__nom-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  flex-shrink: 0;
+}
+.mistake-card__nom-word {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #93c5fd;
+  letter-spacing: 0.02em;
+}
+
 /* Prompt */
 .mistake-card__prompt {
   font-size: 1rem;
@@ -295,12 +321,6 @@ function playAgain() {
   padding: 0.2rem 0.6rem;
   border-radius: 20px;
   white-space: nowrap;
-}
-
-.mistake-card__nominative {
-  color: #93c5fd;
-  font-weight: 600;
-  font-size: 0.85rem;
 }
 
 .mistake-card__rule-text {

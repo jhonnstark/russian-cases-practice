@@ -1,8 +1,8 @@
 import { defineStore } from 'pinia'
-import type { Case, Exercise, RussianWord } from '../generators/types'
-import { generateEndingChoiceBatch } from '../generators/endingChoice'
-import { generateCaseChoiceBatch }   from '../generators/caseChoice'
-import { generateTransformBatch }    from '../generators/transform'
+import type { Case, Exercise, RussianWord } from '@/generators'
+import { generateEndingChoiceBatch } from '@/generators'
+import { generateCaseChoiceBatch }   from '@/generators'
+import { generateTransformBatch }    from '@/generators'
 import { generateOrderBlocksBatch }  from '../generators/orderBlocks'
 import { generateMiniStoryBatch }    from '../generators/miniStory'
 import dictionaryData from '@data/russian/russian_dictionary.json'
@@ -59,10 +59,10 @@ export const useGameStore = defineStore('game', {
 
       switch (this.selectedMode) {
         case 'ending-choice':
-          exercises = generateEndingChoiceBatch(WORDS, n)
+          exercises = generateEndingChoiceBatch(WORDS, n, { filterCase })
           break
         case 'case-choice':
-          exercises = generateCaseChoiceBatch(WORDS, n)
+          exercises = generateCaseChoiceBatch(WORDS, n, { filterCase })
           break
         case 'transform':
           exercises = generateTransformBatch(WORDS, n, { filterCase })

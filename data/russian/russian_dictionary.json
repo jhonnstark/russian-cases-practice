@@ -6,14 +6,8 @@
       "animate": true,
       "meaning_es": "estudiante (m)",
       "level": "A1",
-      "cases": {
-        "genitive": "студента",
-        "accusative": "студента",
-        "prepositional": "студенте",
-        "dative": "студенту",
-        "instrumental": "студентом"
-      },
-      "tags": ["people"]
+      "cases": { "genitive": "студента", "accusative": "студента", "prepositional": "студенте", "dative": "студенту", "instrumental": "студентом" },
+      "tags": ["person", "education"]
     },
     {
       "nominative": "студентка",
@@ -21,14 +15,8 @@
       "animate": true,
       "meaning_es": "estudiante (f)",
       "level": "A1",
-      "cases": {
-        "genitive": "студентки",
-        "accusative": "студентку",
-        "prepositional": "студентке",
-        "dative": "студентке",
-        "instrumental": "студенткой"
-      },
-      "tags": ["people"]
+      "cases": { "genitive": "студентки", "accusative": "студентку", "prepositional": "студентке", "dative": "студентке", "instrumental": "студенткой" },
+      "tags": ["person", "education"]
     },
     {
       "nominative": "врач",
@@ -36,14 +24,8 @@
       "animate": true,
       "meaning_es": "médico",
       "level": "A2",
-      "cases": {
-        "genitive": "врача",
-        "accusative": "врача",
-        "prepositional": "враче",
-        "dative": "врачу",
-        "instrumental": "врачом"
-      },
-      "tags": ["people"]
+      "cases": { "genitive": "врача", "accusative": "врача", "prepositional": "враче", "dative": "врачу", "instrumental": "врачом" },
+      "tags": ["person", "profession"]
     },
     {
       "nominative": "друг",
@@ -51,14 +33,9 @@
       "animate": true,
       "meaning_es": "amigo",
       "level": "A1",
-      "cases": {
-        "genitive": "друга",
-        "accusative": "друга",
-        "prepositional": "друге",
-        "dative": "другу",
-        "instrumental": "другом"
-      },
-      "tags": ["people"]
+      "pedagogicBonus": 4,
+      "cases": { "genitive": "друга", "accusative": "друга", "prepositional": "друге", "dative": "другу", "instrumental": "другом" },
+      "tags": ["person", "friend"]
     },
     {
       "nominative": "друзья",
@@ -66,14 +43,8 @@
       "animate": true,
       "meaning_es": "amigos",
       "level": "A2",
-      "cases": {
-        "genitive": "друзей",
-        "accusative": "друзей",
-        "prepositional": "друзьях",
-        "dative": "друзьям",
-        "instrumental": "друзьями"
-      },
-      "tags": ["people"]
+      "cases": { "genitive": "друзей", "accusative": "друзей", "prepositional": "друзьях", "dative": "друзьям", "instrumental": "друзьями" },
+      "tags": ["person", "friend"]
     },
     {
       "nominative": "брат",
@@ -81,14 +52,8 @@
       "animate": true,
       "meaning_es": "hermano",
       "level": "A1",
-      "cases": {
-        "genitive": "брата",
-        "accusative": "брата",
-        "prepositional": "брате",
-        "dative": "брату",
-        "instrumental": "братом"
-      },
-      "tags": ["people", "family"]
+      "cases": { "genitive": "брата", "accusative": "брата", "prepositional": "брате", "dative": "брату", "instrumental": "братом" },
+      "tags": ["person", "family"]
     },
     {
       "nominative": "сестра",
@@ -96,14 +61,26 @@
       "animate": true,
       "meaning_es": "hermana",
       "level": "A1",
-      "cases": {
-        "genitive": "сестры",
-        "accusative": "сестру",
-        "prepositional": "сестре",
-        "dative": "сестре",
-        "instrumental": "сестрой"
-      },
-      "tags": ["people", "family"]
+      "cases": { "genitive": "сестры", "accusative": "сестру", "prepositional": "сестре", "dative": "сестре", "instrumental": "сестрой" },
+      "tags": ["person", "family"]
+    },
+    {
+      "nominative": "мама",
+      "gender": "feminine",
+      "animate": true,
+      "meaning_es": "mamá",
+      "level": "A1",
+      "cases": { "genitive": "мамы", "accusative": "маму", "prepositional": "маме", "dative": "маме", "instrumental": "мамой" },
+      "tags": ["person", "family"]
+    },
+    {
+      "nominative": "папа",
+      "gender": "masculine",
+      "animate": true,
+      "meaning_es": "papá",
+      "level": "A1",
+      "cases": { "genitive": "папы", "accusative": "папу", "prepositional": "папе", "dative": "папе", "instrumental": "папой" },
+      "tags": ["person", "family"]
     },
     {
       "nominative": "учитель",
@@ -111,14 +88,8 @@
       "animate": true,
       "meaning_es": "profesor",
       "level": "A1",
-      "cases": {
-        "genitive": "учителя",
-        "accusative": "учителя",
-        "prepositional": "учителе",
-        "dative": "учителю",
-        "instrumental": "учителем"
-      },
-      "tags": ["people"]
+      "cases": { "genitive": "учителя", "accusative": "учителя", "prepositional": "учителе", "dative": "учителю", "instrumental": "учителем" },
+      "tags": ["person", "profession", "education"]
     },
     {
       "nominative": "преподаватель",
@@ -126,14 +97,8 @@
       "animate": true,
       "meaning_es": "docente",
       "level": "A2",
-      "cases": {
-        "genitive": "преподавателя",
-        "accusative": "преподавателя",
-        "prepositional": "преподавателе",
-        "dative": "преподавателю",
-        "instrumental": "преподавателем"
-      },
-      "tags": ["people"]
+      "cases": { "genitive": "преподавателя", "accusative": "преподавателя", "prepositional": "преподавателе", "dative": "преподавателю", "instrumental": "преподавателем" },
+      "tags": ["person", "profession", "education"]
     },
     {
       "nominative": "президент",
@@ -141,14 +106,8 @@
       "animate": true,
       "meaning_es": "presidente",
       "level": "A2",
-      "cases": {
-        "genitive": "президента",
-        "accusative": "президента",
-        "prepositional": "президенте",
-        "dative": "президенту",
-        "instrumental": "президентом"
-      },
-      "tags": ["people"]
+      "cases": { "genitive": "президента", "accusative": "президента", "prepositional": "президенте", "dative": "президенту", "instrumental": "президентом" },
+      "tags": ["person", "profession", "politics"]
     },
     {
       "nominative": "миллионер",
@@ -156,14 +115,8 @@
       "animate": true,
       "meaning_es": "millonario",
       "level": "A2",
-      "cases": {
-        "genitive": "миллионера",
-        "accusative": "миллионера",
-        "prepositional": "миллионере",
-        "dative": "миллионеру",
-        "instrumental": "миллионером"
-      },
-      "tags": ["people"]
+      "cases": { "genitive": "миллионера", "accusative": "миллионера", "prepositional": "миллионере", "dative": "миллионеру", "instrumental": "миллионером" },
+      "tags": ["person", "money"]
     },
     {
       "nominative": "ребёнок",
@@ -171,14 +124,9 @@
       "animate": true,
       "meaning_es": "niño",
       "level": "A2",
-      "cases": {
-        "genitive": "ребёнка",
-        "accusative": "ребёнка",
-        "prepositional": "ребёнке",
-        "dative": "ребёнку",
-        "instrumental": "ребёнком"
-      },
-      "tags": ["people", "family"]
+      "pedagogicBonus": 5,
+      "cases": { "genitive": "ребёнка", "accusative": "ребёнка", "prepositional": "ребёнке", "dative": "ребёнку", "instrumental": "ребёнком" },
+      "tags": ["person", "family"]
     },
     {
       "nominative": "дети",
@@ -186,14 +134,8 @@
       "animate": true,
       "meaning_es": "niños / hijos",
       "level": "A2",
-      "cases": {
-        "genitive": "детей",
-        "accusative": "детей",
-        "prepositional": "детях",
-        "dative": "детям",
-        "instrumental": "детьми"
-      },
-      "tags": ["people", "family"]
+      "cases": { "genitive": "детей", "accusative": "детей", "prepositional": "детях", "dative": "детям", "instrumental": "детьми" },
+      "tags": ["person", "family"]
     },
     {
       "nominative": "человек",
@@ -201,29 +143,9 @@
       "animate": true,
       "meaning_es": "persona",
       "level": "A1",
-      "cases": {
-        "genitive": "человека",
-        "accusative": "человека",
-        "prepositional": "человеке",
-        "dative": "человеку",
-        "instrumental": "человеком"
-      },
-      "tags": ["people"]
-    },
-    {
-      "nominative": "люди",
-      "gender": "plural",
-      "animate": true,
-      "meaning_es": "gente / personas",
-      "level": "A2",
-      "cases": {
-        "genitive": "людей",
-        "accusative": "людей",
-        "prepositional": "людях",
-        "dative": "людям",
-        "instrumental": "людьми"
-      },
-      "tags": ["people"]
+      "pedagogicBonus": 5,
+      "cases": { "genitive": "человека", "accusative": "человека", "prepositional": "человеке", "dative": "человеку", "instrumental": "человеком" },
+      "tags": ["person"]
     },
     {
       "nominative": "Саша",
@@ -231,14 +153,8 @@
       "animate": true,
       "meaning_es": "Sasha (nombre)",
       "level": "A1",
-      "cases": {
-        "genitive": "Саши",
-        "accusative": "Сашу",
-        "prepositional": "Саше",
-        "dative": "Саше",
-        "instrumental": "Сашей"
-      },
-      "tags": ["people", "names"]
+      "cases": { "genitive": "Саши", "accusative": "Сашу", "prepositional": "Саше", "dative": "Саше", "instrumental": "Сашей" },
+      "tags": ["person", "friend"]
     },
     {
       "nominative": "Ира",
@@ -246,14 +162,8 @@
       "animate": true,
       "meaning_es": "Ira (nombre)",
       "level": "A1",
-      "cases": {
-        "genitive": "Иры",
-        "accusative": "Иру",
-        "prepositional": "Ире",
-        "dative": "Ире",
-        "instrumental": "Ирой"
-      },
-      "tags": ["people", "names"]
+      "cases": { "genitive": "Иры", "accusative": "Иру", "prepositional": "Ире", "dative": "Ире", "instrumental": "Ирой" },
+      "tags": ["person", "friend"]
     },
     {
       "nominative": "Россия",
@@ -261,14 +171,8 @@
       "animate": false,
       "meaning_es": "Rusia",
       "level": "A1",
-      "cases": {
-        "genitive": "России",
-        "accusative": "Россию",
-        "prepositional": "России",
-        "dative": "России",
-        "instrumental": "Россией"
-      },
-      "tags": ["countries"]
+      "cases": { "genitive": "России", "accusative": "Россию", "prepositional": "России", "dative": "России", "instrumental": "Россией" },
+      "tags": ["country", "place", "destination", "travel"]
     },
     {
       "nominative": "Испания",
@@ -276,14 +180,8 @@
       "animate": false,
       "meaning_es": "España",
       "level": "A1",
-      "cases": {
-        "genitive": "Испании",
-        "accusative": "Испанию",
-        "prepositional": "Испании",
-        "dative": "Испании",
-        "instrumental": "Испанией"
-      },
-      "tags": ["countries"]
+      "cases": { "genitive": "Испании", "accusative": "Испанию", "prepositional": "Испании", "dative": "Испании", "instrumental": "Испанией" },
+      "tags": ["country", "place", "destination", "travel"]
     },
     {
       "nominative": "Америка",
@@ -291,14 +189,8 @@
       "animate": false,
       "meaning_es": "América / EEUU",
       "level": "A1",
-      "cases": {
-        "genitive": "Америки",
-        "accusative": "Америку",
-        "prepositional": "Америке",
-        "dative": "Америке",
-        "instrumental": "Америкой"
-      },
-      "tags": ["countries"]
+      "cases": { "genitive": "Америки", "accusative": "Америку", "prepositional": "Америке", "dative": "Америке", "instrumental": "Америкой" },
+      "tags": ["country", "place", "destination", "travel"]
     },
     {
       "nominative": "Беларусь",
@@ -306,14 +198,8 @@
       "animate": false,
       "meaning_es": "Bielorrusia",
       "level": "A2",
-      "cases": {
-        "genitive": "Беларуси",
-        "accusative": "Беларусь",
-        "prepositional": "Беларуси",
-        "dative": "Беларуси",
-        "instrumental": "Беларусью"
-      },
-      "tags": ["countries"]
+      "cases": { "genitive": "Беларуси", "accusative": "Беларусь", "prepositional": "Беларуси", "dative": "Беларуси", "instrumental": "Беларусью" },
+      "tags": ["country", "place", "destination", "travel"]
     },
     {
       "nominative": "Монако",
@@ -322,14 +208,8 @@
       "meaning_es": "Mónaco",
       "level": "A2",
       "indeclinable": true,
-      "cases": {
-        "genitive": "Монако",
-        "accusative": "Монако",
-        "prepositional": "Монако",
-        "dative": "Монако",
-        "instrumental": "Монако"
-      },
-      "tags": ["countries"]
+      "cases": { "genitive": "Монако", "accusative": "Монако", "prepositional": "Монако", "dative": "Монако", "instrumental": "Монако" },
+      "tags": ["country", "place", "destination", "travel"]
     },
     {
       "nominative": "Швейцария",
@@ -337,14 +217,8 @@
       "animate": false,
       "meaning_es": "Suiza",
       "level": "A2",
-      "cases": {
-        "genitive": "Швейцарии",
-        "accusative": "Швейцарию",
-        "prepositional": "Швейцарии",
-        "dative": "Швейцарии",
-        "instrumental": "Швейцарией"
-      },
-      "tags": ["countries"]
+      "cases": { "genitive": "Швейцарии", "accusative": "Швейцарию", "prepositional": "Швейцарии", "dative": "Швейцарии", "instrumental": "Швейцарией" },
+      "tags": ["country", "place", "destination", "travel"]
     },
     {
       "nominative": "Москва",
@@ -352,14 +226,8 @@
       "animate": false,
       "meaning_es": "Moscú",
       "level": "A1",
-      "cases": {
-        "genitive": "Москвы",
-        "accusative": "Москву",
-        "prepositional": "Москве",
-        "dative": "Москве",
-        "instrumental": "Москвой"
-      },
-      "tags": ["cities"]
+      "cases": { "genitive": "Москвы", "accusative": "Москву", "prepositional": "Москве", "dative": "Москве", "instrumental": "Москвой" },
+      "tags": ["city", "place", "destination", "travel"]
     },
     {
       "nominative": "Санкт-Петербург",
@@ -367,14 +235,8 @@
       "animate": false,
       "meaning_es": "San Petersburgo",
       "level": "A2",
-      "cases": {
-        "genitive": "Санкт-Петербурга",
-        "accusative": "Санкт-Петербург",
-        "prepositional": "Санкт-Петербурге",
-        "dative": "Санкт-Петербургу",
-        "instrumental": "Санкт-Петербургом"
-      },
-      "tags": ["cities"]
+      "cases": { "genitive": "Санкт-Петербурга", "accusative": "Санкт-Петербург", "prepositional": "Санкт-Петербурге", "dative": "Санкт-Петербургу", "instrumental": "Санкт-Петербургом" },
+      "tags": ["city", "place", "destination", "travel"]
     },
     {
       "nominative": "город",
@@ -382,14 +244,8 @@
       "animate": false,
       "meaning_es": "ciudad",
       "level": "A1",
-      "cases": {
-        "genitive": "города",
-        "accusative": "город",
-        "prepositional": "городе",
-        "dative": "городу",
-        "instrumental": "городом"
-      },
-      "tags": ["places"]
+      "cases": { "genitive": "города", "accusative": "город", "prepositional": "городе", "dative": "городу", "instrumental": "городом" },
+      "tags": ["place", "destination", "travel"]
     },
     {
       "nominative": "деревня",
@@ -397,14 +253,8 @@
       "animate": false,
       "meaning_es": "pueblo / aldea",
       "level": "A2",
-      "cases": {
-        "genitive": "деревни",
-        "accusative": "деревню",
-        "prepositional": "деревне",
-        "dative": "деревне",
-        "instrumental": "деревней"
-      },
-      "tags": ["places"]
+      "cases": { "genitive": "деревни", "accusative": "деревню", "prepositional": "деревне", "dative": "деревне", "instrumental": "деревней" },
+      "tags": ["place", "destination", "travel", "nature"]
     },
     {
       "nominative": "театр",
@@ -412,14 +262,8 @@
       "animate": false,
       "meaning_es": "teatro",
       "level": "A2",
-      "cases": {
-        "genitive": "театра",
-        "accusative": "театр",
-        "prepositional": "театре",
-        "dative": "театру",
-        "instrumental": "театром"
-      },
-      "tags": ["places", "culture"]
+      "cases": { "genitive": "театра", "accusative": "театр", "prepositional": "театре", "dative": "театру", "instrumental": "театром" },
+      "tags": ["place", "destination", "culture", "building"]
     },
     {
       "nominative": "ресторан",
@@ -427,14 +271,8 @@
       "animate": false,
       "meaning_es": "restaurante",
       "level": "A1",
-      "cases": {
-        "genitive": "ресторана",
-        "accusative": "ресторан",
-        "prepositional": "ресторане",
-        "dative": "ресторану",
-        "instrumental": "рестораном"
-      },
-      "tags": ["places", "food"]
+      "cases": { "genitive": "ресторана", "accusative": "ресторан", "prepositional": "ресторане", "dative": "ресторану", "instrumental": "рестораном" },
+      "tags": ["place", "destination", "food", "building"]
     },
     {
       "nominative": "музей",
@@ -442,14 +280,8 @@
       "animate": false,
       "meaning_es": "museo",
       "level": "A2",
-      "cases": {
-        "genitive": "музея",
-        "accusative": "музей",
-        "prepositional": "музее",
-        "dative": "музею",
-        "instrumental": "музеем"
-      },
-      "tags": ["places", "culture"]
+      "cases": { "genitive": "музея", "accusative": "музей", "prepositional": "музее", "dative": "музею", "instrumental": "музеем" },
+      "tags": ["place", "destination", "culture", "building"]
     },
     {
       "nominative": "парк",
@@ -457,14 +289,8 @@
       "animate": false,
       "meaning_es": "parque",
       "level": "A1",
-      "cases": {
-        "genitive": "парка",
-        "accusative": "парк",
-        "prepositional": "парке",
-        "dative": "парку",
-        "instrumental": "парком"
-      },
-      "tags": ["places"]
+      "cases": { "genitive": "парка", "accusative": "парк", "prepositional": "парке", "dative": "парку", "instrumental": "парком" },
+      "tags": ["place", "destination", "nature"]
     },
     {
       "nominative": "центр",
@@ -472,14 +298,8 @@
       "animate": false,
       "meaning_es": "centro",
       "level": "A1",
-      "cases": {
-        "genitive": "центра",
-        "accusative": "центр",
-        "prepositional": "центре",
-        "dative": "центру",
-        "instrumental": "центром"
-      },
-      "tags": ["places"]
+      "cases": { "genitive": "центра", "accusative": "центр", "prepositional": "центре", "dative": "центру", "instrumental": "центром" },
+      "tags": ["place", "destination", "building"]
     },
     {
       "nominative": "работа",
@@ -487,14 +307,8 @@
       "animate": false,
       "meaning_es": "trabajo",
       "level": "A1",
-      "cases": {
-        "genitive": "работы",
-        "accusative": "работу",
-        "prepositional": "работе",
-        "dative": "работе",
-        "instrumental": "работой"
-      },
-      "tags": ["places", "daily_life"]
+      "cases": { "genitive": "работы", "accusative": "работу", "prepositional": "работе", "dative": "работе", "instrumental": "работой" },
+      "tags": ["place", "work", "activity"]
     },
     {
       "nominative": "школа",
@@ -502,14 +316,8 @@
       "animate": false,
       "meaning_es": "escuela",
       "level": "A1",
-      "cases": {
-        "genitive": "школы",
-        "accusative": "школу",
-        "prepositional": "школе",
-        "dative": "школе",
-        "instrumental": "школой"
-      },
-      "tags": ["places"]
+      "cases": { "genitive": "школы", "accusative": "школу", "prepositional": "школе", "dative": "школе", "instrumental": "школой" },
+      "tags": ["place", "destination", "education", "building"]
     },
     {
       "nominative": "университет",
@@ -517,14 +325,8 @@
       "animate": false,
       "meaning_es": "universidad",
       "level": "A1",
-      "cases": {
-        "genitive": "университета",
-        "accusative": "университет",
-        "prepositional": "университете",
-        "dative": "университету",
-        "instrumental": "университетом"
-      },
-      "tags": ["places"]
+      "cases": { "genitive": "университета", "accusative": "университет", "prepositional": "университете", "dative": "университету", "instrumental": "университетом" },
+      "tags": ["place", "destination", "education", "building"]
     },
     {
       "nominative": "дом",
@@ -532,14 +334,8 @@
       "animate": false,
       "meaning_es": "casa",
       "level": "A1",
-      "cases": {
-        "genitive": "дома",
-        "accusative": "дом",
-        "prepositional": "доме",
-        "dative": "дому",
-        "instrumental": "домом"
-      },
-      "tags": ["places"]
+      "cases": { "genitive": "дома", "accusative": "дом", "prepositional": "доме", "dative": "дому", "instrumental": "домом" },
+      "tags": ["place", "destination", "building"]
     },
     {
       "nominative": "квартира",
@@ -547,14 +343,8 @@
       "animate": false,
       "meaning_es": "apartamento",
       "level": "A1",
-      "cases": {
-        "genitive": "квартиры",
-        "accusative": "квартиру",
-        "prepositional": "квартире",
-        "dative": "квартире",
-        "instrumental": "квартирой"
-      },
-      "tags": ["places"]
+      "cases": { "genitive": "квартиры", "accusative": "квартиру", "prepositional": "квартире", "dative": "квартире", "instrumental": "квартирой" },
+      "tags": ["place", "destination", "building"]
     },
     {
       "nominative": "клиника",
@@ -562,14 +352,8 @@
       "animate": false,
       "meaning_es": "clínica",
       "level": "A2",
-      "cases": {
-        "genitive": "клиники",
-        "accusative": "клинику",
-        "prepositional": "клинике",
-        "dative": "клинике",
-        "instrumental": "клиникой"
-      },
-      "tags": ["places"]
+      "cases": { "genitive": "клиники", "accusative": "клинику", "prepositional": "клинике", "dative": "клинике", "instrumental": "клиникой" },
+      "tags": ["place", "destination", "building"]
     },
     {
       "nominative": "берег",
@@ -577,14 +361,8 @@
       "animate": false,
       "meaning_es": "orilla / costa",
       "level": "A2",
-      "cases": {
-        "genitive": "берега",
-        "accusative": "берег",
-        "prepositional": "берегу",
-        "dative": "берегу",
-        "instrumental": "берегом"
-      },
-      "tags": ["places", "nature"]
+      "cases": { "genitive": "берега", "accusative": "берег", "prepositional": "берегу", "dative": "берегу", "instrumental": "берегом" },
+      "tags": ["place", "nature", "travel"]
     },
     {
       "nominative": "лес",
@@ -592,14 +370,8 @@
       "animate": false,
       "meaning_es": "bosque",
       "level": "A2",
-      "cases": {
-        "genitive": "леса",
-        "accusative": "лес",
-        "prepositional": "лесу",
-        "dative": "лесу",
-        "instrumental": "лесом"
-      },
-      "tags": ["places", "nature"]
+      "cases": { "genitive": "леса", "accusative": "лес", "prepositional": "лесу", "dative": "лесу", "instrumental": "лесом" },
+      "tags": ["place", "nature"]
     },
     {
       "nominative": "сад",
@@ -607,29 +379,17 @@
       "animate": false,
       "meaning_es": "jardín",
       "level": "A2",
-      "cases": {
-        "genitive": "сада",
-        "accusative": "сад",
-        "prepositional": "саду",
-        "dative": "саду",
-        "instrumental": "садом"
-      },
-      "tags": ["places", "nature"]
+      "cases": { "genitive": "сада", "accusative": "сад", "prepositional": "саду", "dative": "саду", "instrumental": "садом" },
+      "tags": ["place", "nature"]
     },
     {
-      "nominative": "угол",
-      "gender": "masculine",
+      "nominative": "море",
+      "gender": "neuter",
       "animate": false,
-      "meaning_es": "esquina / rincón",
-      "level": "A2",
-      "cases": {
-        "genitive": "угла",
-        "accusative": "угол",
-        "prepositional": "углу",
-        "dative": "углу",
-        "instrumental": "углом"
-      },
-      "tags": ["places"]
+      "meaning_es": "mar",
+      "level": "A1",
+      "cases": { "genitive": "моря", "accusative": "море", "prepositional": "море", "dative": "морю", "instrumental": "морем" },
+      "tags": ["place", "nature", "travel"]
     },
     {
       "nominative": "аэропорт",
@@ -637,14 +397,8 @@
       "animate": false,
       "meaning_es": "aeropuerto",
       "level": "A2",
-      "cases": {
-        "genitive": "аэропорта",
-        "accusative": "аэропорт",
-        "prepositional": "аэропорте",
-        "dative": "аэропорту",
-        "instrumental": "аэропортом"
-      },
-      "tags": ["places", "transport"]
+      "cases": { "genitive": "аэропорта", "accusative": "аэропорт", "prepositional": "аэропорте", "dative": "аэропорту", "instrumental": "аэропортом" },
+      "tags": ["place", "destination", "travel", "transport", "building"]
     },
     {
       "nominative": "метро",
@@ -653,14 +407,8 @@
       "meaning_es": "metro",
       "level": "A1",
       "indeclinable": true,
-      "cases": {
-        "genitive": "метро",
-        "accusative": "метро",
-        "prepositional": "метро",
-        "dative": "метро",
-        "instrumental": "метро"
-      },
-      "tags": ["places", "transport"]
+      "cases": { "genitive": "метро", "accusative": "метро", "prepositional": "метро", "dative": "метро", "instrumental": "метро" },
+      "tags": ["place", "transport", "vehicle"]
     },
     {
       "nominative": "станция",
@@ -668,14 +416,8 @@
       "animate": false,
       "meaning_es": "estación",
       "level": "A2",
-      "cases": {
-        "genitive": "станции",
-        "accusative": "станцию",
-        "prepositional": "станции",
-        "dative": "станции",
-        "instrumental": "станцией"
-      },
-      "tags": ["places", "transport"]
+      "cases": { "genitive": "станции", "accusative": "станцию", "prepositional": "станции", "dative": "станции", "instrumental": "станцией" },
+      "tags": ["place", "transport", "building"]
     },
     {
       "nominative": "филармония",
@@ -683,14 +425,8 @@
       "animate": false,
       "meaning_es": "filarmónica",
       "level": "B1",
-      "cases": {
-        "genitive": "филармонии",
-        "accusative": "филармонию",
-        "prepositional": "филармонии",
-        "dative": "филармонии",
-        "instrumental": "филармонией"
-      },
-      "tags": ["places", "culture"]
+      "cases": { "genitive": "филармонии", "accusative": "филармонию", "prepositional": "филармонии", "dative": "филармонии", "instrumental": "филармонией" },
+      "tags": ["place", "destination", "culture", "music", "building"]
     },
     {
       "nominative": "автобус",
@@ -698,14 +434,8 @@
       "animate": false,
       "meaning_es": "autobús",
       "level": "A1",
-      "cases": {
-        "genitive": "автобуса",
-        "accusative": "автобус",
-        "prepositional": "автобусе",
-        "dative": "автобусу",
-        "instrumental": "автобусом"
-      },
-      "tags": ["transport"]
+      "cases": { "genitive": "автобуса", "accusative": "автобус", "prepositional": "автобусе", "dative": "автобусу", "instrumental": "автобусом" },
+      "tags": ["transport", "vehicle"]
     },
     {
       "nominative": "поезд",
@@ -713,14 +443,8 @@
       "animate": false,
       "meaning_es": "tren",
       "level": "A1",
-      "cases": {
-        "genitive": "поезда",
-        "accusative": "поезд",
-        "prepositional": "поезде",
-        "dative": "поезду",
-        "instrumental": "поездом"
-      },
-      "tags": ["transport"]
+      "cases": { "genitive": "поезда", "accusative": "поезд", "prepositional": "поезде", "dative": "поезду", "instrumental": "поездом" },
+      "tags": ["transport", "vehicle", "travel"]
     },
     {
       "nominative": "машина",
@@ -728,14 +452,8 @@
       "animate": false,
       "meaning_es": "coche",
       "level": "A1",
-      "cases": {
-        "genitive": "машины",
-        "accusative": "машину",
-        "prepositional": "машине",
-        "dative": "машине",
-        "instrumental": "машиной"
-      },
-      "tags": ["transport", "daily_life"]
+      "cases": { "genitive": "машины", "accusative": "машину", "prepositional": "машине", "dative": "машине", "instrumental": "машиной" },
+      "tags": ["transport", "vehicle", "object"]
     },
     {
       "nominative": "мотоцикл",
@@ -743,14 +461,8 @@
       "animate": false,
       "meaning_es": "moto",
       "level": "A2",
-      "cases": {
-        "genitive": "мотоцикла",
-        "accusative": "мотоцикл",
-        "prepositional": "мотоцикле",
-        "dative": "мотоциклу",
-        "instrumental": "мотоциклом"
-      },
-      "tags": ["transport"]
+      "cases": { "genitive": "мотоцикла", "accusative": "мотоцикл", "prepositional": "мотоцикле", "dative": "мотоциклу", "instrumental": "мотоциклом" },
+      "tags": ["transport", "vehicle"]
     },
     {
       "nominative": "мясо",
@@ -758,13 +470,7 @@
       "animate": false,
       "meaning_es": "carne",
       "level": "A2",
-      "cases": {
-        "genitive": "мяса",
-        "accusative": "мясо",
-        "prepositional": "мясе",
-        "dative": "мясу",
-        "instrumental": "мясом"
-      },
+      "cases": { "genitive": "мяса", "accusative": "мясо", "prepositional": "мясе", "dative": "мясу", "instrumental": "мясом" },
       "tags": ["food"]
     },
     {
@@ -773,14 +479,8 @@
       "animate": false,
       "meaning_es": "agua",
       "level": "A1",
-      "cases": {
-        "genitive": "воды",
-        "accusative": "воду",
-        "prepositional": "воде",
-        "dative": "воде",
-        "instrumental": "водой"
-      },
-      "tags": ["food"]
+      "cases": { "genitive": "воды", "accusative": "воду", "prepositional": "воде", "dative": "воде", "instrumental": "водой" },
+      "tags": ["food", "drink"]
     },
     {
       "nominative": "молоко",
@@ -788,14 +488,8 @@
       "animate": false,
       "meaning_es": "leche",
       "level": "A1",
-      "cases": {
-        "genitive": "молока",
-        "accusative": "молоко",
-        "prepositional": "молоке",
-        "dative": "молоку",
-        "instrumental": "молоком"
-      },
-      "tags": ["food"]
+      "cases": { "genitive": "молока", "accusative": "молоко", "prepositional": "молоке", "dative": "молоку", "instrumental": "молоком" },
+      "tags": ["food", "drink"]
     },
     {
       "nominative": "сыр",
@@ -803,13 +497,7 @@
       "animate": false,
       "meaning_es": "queso",
       "level": "A1",
-      "cases": {
-        "genitive": "сыра",
-        "accusative": "сыр",
-        "prepositional": "сыре",
-        "dative": "сыру",
-        "instrumental": "сыром"
-      },
+      "cases": { "genitive": "сыра", "accusative": "сыр", "prepositional": "сыре", "dative": "сыру", "instrumental": "сыром" },
       "tags": ["food"]
     },
     {
@@ -818,13 +506,7 @@
       "animate": false,
       "meaning_es": "tarta / pastel",
       "level": "A1",
-      "cases": {
-        "genitive": "торта",
-        "accusative": "торт",
-        "prepositional": "торте",
-        "dative": "торту",
-        "instrumental": "тортом"
-      },
+      "cases": { "genitive": "торта", "accusative": "торт", "prepositional": "торте", "dative": "торту", "instrumental": "тортом" },
       "tags": ["food"]
     },
     {
@@ -833,13 +515,7 @@
       "animate": false,
       "meaning_es": "azúcar",
       "level": "A1",
-      "cases": {
-        "genitive": "сахара",
-        "accusative": "сахар",
-        "prepositional": "сахаре",
-        "dative": "сахару",
-        "instrumental": "сахаром"
-      },
+      "cases": { "genitive": "сахара", "accusative": "сахар", "prepositional": "сахаре", "dative": "сахару", "instrumental": "сахаром" },
       "tags": ["food"]
     },
     {
@@ -849,14 +525,8 @@
       "meaning_es": "café",
       "level": "A1",
       "indeclinable": true,
-      "cases": {
-        "genitive": "кофе",
-        "accusative": "кофе",
-        "prepositional": "кофе",
-        "dative": "кофе",
-        "instrumental": "кофе"
-      },
-      "tags": ["food"]
+      "cases": { "genitive": "кофе", "accusative": "кофе", "prepositional": "кофе", "dative": "кофе", "instrumental": "кофе" },
+      "tags": ["food", "drink"]
     },
     {
       "nominative": "чай",
@@ -864,14 +534,8 @@
       "animate": false,
       "meaning_es": "té",
       "level": "A1",
-      "cases": {
-        "genitive": "чая",
-        "accusative": "чай",
-        "prepositional": "чае",
-        "dative": "чаю",
-        "instrumental": "чаем"
-      },
-      "tags": ["food"]
+      "cases": { "genitive": "чая", "accusative": "чай", "prepositional": "чае", "dative": "чаю", "instrumental": "чаем" },
+      "tags": ["food", "drink"]
     },
     {
       "nominative": "подарок",
@@ -879,14 +543,8 @@
       "animate": false,
       "meaning_es": "regalo",
       "level": "A2",
-      "cases": {
-        "genitive": "подарка",
-        "accusative": "подарок",
-        "prepositional": "подарке",
-        "dative": "подарку",
-        "instrumental": "подарком"
-      },
-      "tags": ["food", "daily_life"]
+      "cases": { "genitive": "подарка", "accusative": "подарок", "prepositional": "подарке", "dative": "подарку", "instrumental": "подарком" },
+      "tags": ["object", "holiday"]
     },
     {
       "nominative": "перец",
@@ -894,13 +552,8 @@
       "animate": false,
       "meaning_es": "pimienta / pimiento",
       "level": "A2",
-      "cases": {
-        "genitive": "перца",
-        "accusative": "перец",
-        "prepositional": "перце",
-        "dative": "перцу",
-        "instrumental": "перцем"
-      },
+      "pedagogicBonus": 3,
+      "cases": { "genitive": "перца", "accusative": "перец", "prepositional": "перце", "dative": "перцу", "instrumental": "перцем" },
       "tags": ["food"]
     },
     {
@@ -909,14 +562,8 @@
       "animate": false,
       "meaning_es": "libro",
       "level": "A1",
-      "cases": {
-        "genitive": "книги",
-        "accusative": "книгу",
-        "prepositional": "книге",
-        "dative": "книге",
-        "instrumental": "книгой"
-      },
-      "tags": ["objects"]
+      "cases": { "genitive": "книги", "accusative": "книгу", "prepositional": "книге", "dative": "книге", "instrumental": "книгой" },
+      "tags": ["object", "literature", "topic"]
     },
     {
       "nominative": "газета",
@@ -924,14 +571,8 @@
       "animate": false,
       "meaning_es": "periódico",
       "level": "A2",
-      "cases": {
-        "genitive": "газеты",
-        "accusative": "газету",
-        "prepositional": "газете",
-        "dative": "газете",
-        "instrumental": "газетой"
-      },
-      "tags": ["objects"]
+      "cases": { "genitive": "газеты", "accusative": "газету", "prepositional": "газете", "dative": "газете", "instrumental": "газетой" },
+      "tags": ["object", "literature"]
     },
     {
       "nominative": "флаг",
@@ -939,14 +580,8 @@
       "animate": false,
       "meaning_es": "bandera",
       "level": "A2",
-      "cases": {
-        "genitive": "флага",
-        "accusative": "флаг",
-        "prepositional": "флаге",
-        "dative": "флагу",
-        "instrumental": "флагом"
-      },
-      "tags": ["objects"]
+      "cases": { "genitive": "флага", "accusative": "флаг", "prepositional": "флаге", "dative": "флагу", "instrumental": "флагом" },
+      "tags": ["object", "politics"]
     },
     {
       "nominative": "портрет",
@@ -954,14 +589,8 @@
       "animate": false,
       "meaning_es": "retrato",
       "level": "A2",
-      "cases": {
-        "genitive": "портрета",
-        "accusative": "портрет",
-        "prepositional": "портрете",
-        "dative": "портрету",
-        "instrumental": "портретом"
-      },
-      "tags": ["objects", "culture"]
+      "cases": { "genitive": "портрета", "accusative": "портрет", "prepositional": "портрете", "dative": "портрету", "instrumental": "портретом" },
+      "tags": ["object", "culture"]
     },
     {
       "nominative": "окно",
@@ -969,29 +598,8 @@
       "animate": false,
       "meaning_es": "ventana",
       "level": "A1",
-      "cases": {
-        "genitive": "окна",
-        "accusative": "окно",
-        "prepositional": "окне",
-        "dative": "окну",
-        "instrumental": "окном"
-      },
-      "tags": ["objects"]
-    },
-    {
-      "nominative": "море",
-      "gender": "neuter",
-      "animate": false,
-      "meaning_es": "mar",
-      "level": "A1",
-      "cases": {
-        "genitive": "моря",
-        "accusative": "море",
-        "prepositional": "море",
-        "dative": "морю",
-        "instrumental": "морем"
-      },
-      "tags": ["objects", "nature"]
+      "cases": { "genitive": "окна", "accusative": "окно", "prepositional": "окне", "dative": "окну", "instrumental": "окном" },
+      "tags": ["object", "building"]
     },
     {
       "nominative": "радио",
@@ -1000,14 +608,8 @@
       "meaning_es": "radio",
       "level": "A1",
       "indeclinable": true,
-      "cases": {
-        "genitive": "радио",
-        "accusative": "радио",
-        "prepositional": "радио",
-        "dative": "радио",
-        "instrumental": "радио"
-      },
-      "tags": ["objects"]
+      "cases": { "genitive": "радио", "accusative": "радио", "prepositional": "радио", "dative": "радио", "instrumental": "радио" },
+      "tags": ["object", "music", "technology"]
     },
     {
       "nominative": "музыка",
@@ -1015,14 +617,8 @@
       "animate": false,
       "meaning_es": "música",
       "level": "A1",
-      "cases": {
-        "genitive": "музыки",
-        "accusative": "музыку",
-        "prepositional": "музыке",
-        "dative": "музыке",
-        "instrumental": "музыкой"
-      },
-      "tags": ["objects", "culture"]
+      "cases": { "genitive": "музыки", "accusative": "музыку", "prepositional": "музыке", "dative": "музыке", "instrumental": "музыкой" },
+      "tags": ["music", "topic", "subject", "culture", "hobby"]
     },
     {
       "nominative": "фильм",
@@ -1030,14 +626,8 @@
       "animate": false,
       "meaning_es": "película",
       "level": "A1",
-      "cases": {
-        "genitive": "фильма",
-        "accusative": "фильм",
-        "prepositional": "фильме",
-        "dative": "фильму",
-        "instrumental": "фильмом"
-      },
-      "tags": ["objects", "culture"]
+      "cases": { "genitive": "фильма", "accusative": "фильм", "prepositional": "фильме", "dative": "фильму", "instrumental": "фильмом" },
+      "tags": ["culture", "topic", "hobby"]
     },
     {
       "nominative": "симфония",
@@ -1045,14 +635,8 @@
       "animate": false,
       "meaning_es": "sinfonía",
       "level": "B1",
-      "cases": {
-        "genitive": "симфонии",
-        "accusative": "симфонию",
-        "prepositional": "симфонии",
-        "dative": "симфонии",
-        "instrumental": "симфонией"
-      },
-      "tags": ["objects", "culture"]
+      "cases": { "genitive": "симфонии", "accusative": "симфонию", "prepositional": "симфонии", "dative": "симфонии", "instrumental": "симфонией" },
+      "tags": ["music", "culture"]
     },
     {
       "nominative": "время",
@@ -1060,13 +644,8 @@
       "animate": false,
       "meaning_es": "tiempo",
       "level": "A1",
-      "cases": {
-        "genitive": "времени",
-        "accusative": "время",
-        "prepositional": "времени",
-        "dative": "времени",
-        "instrumental": "временем"
-      },
+      "pedagogicBonus": 5,
+      "cases": { "genitive": "времени", "accusative": "время", "prepositional": "времени", "dative": "времени", "instrumental": "временем" },
       "tags": ["abstract"]
     },
     {
@@ -1075,14 +654,9 @@
       "animate": false,
       "meaning_es": "dinero",
       "level": "A1",
-      "cases": {
-        "genitive": "денег",
-        "accusative": "деньги",
-        "prepositional": "деньгах",
-        "dative": "деньгам",
-        "instrumental": "деньгами"
-      },
-      "tags": ["abstract", "daily_life"]
+      "pedagogicBonus": 4,
+      "cases": { "genitive": "денег", "accusative": "деньги", "prepositional": "деньгах", "dative": "деньгам", "instrumental": "деньгами" },
+      "tags": ["money", "abstract"]
     },
     {
       "nominative": "экзамен",
@@ -1090,14 +664,8 @@
       "animate": false,
       "meaning_es": "examen",
       "level": "A2",
-      "cases": {
-        "genitive": "экзамена",
-        "accusative": "экзамен",
-        "prepositional": "экзамене",
-        "dative": "экзамену",
-        "instrumental": "экзаменом"
-      },
-      "tags": ["abstract"]
+      "cases": { "genitive": "экзамена", "accusative": "экзамен", "prepositional": "экзамене", "dative": "экзамену", "instrumental": "экзаменом" },
+      "tags": ["education", "event", "activity"]
     },
     {
       "nominative": "жизнь",
@@ -1105,13 +673,7 @@
       "animate": false,
       "meaning_es": "vida",
       "level": "A2",
-      "cases": {
-        "genitive": "жизни",
-        "accusative": "жизнь",
-        "prepositional": "жизни",
-        "dative": "жизни",
-        "instrumental": "жизнью"
-      },
+      "cases": { "genitive": "жизни", "accusative": "жизнь", "prepositional": "жизни", "dative": "жизни", "instrumental": "жизнью" },
       "tags": ["abstract"]
     },
     {
@@ -1120,14 +682,44 @@
       "animate": false,
       "meaning_es": "amor",
       "level": "A2",
-      "cases": {
-        "genitive": "любви",
-        "accusative": "любовь",
-        "prepositional": "любви",
-        "dative": "любви",
-        "instrumental": "любовью"
-      },
-      "tags": ["abstract"]
+      "cases": { "genitive": "любви", "accusative": "любовь", "prepositional": "любви", "dative": "любви", "instrumental": "любовью" },
+      "tags": ["abstract", "emotion"]
+    },
+    {
+      "nominative": "история",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "historia",
+      "level": "A2",
+      "cases": { "genitive": "истории", "accusative": "историю", "prepositional": "истории", "dative": "истории", "instrumental": "историей" },
+      "tags": ["history", "subject", "topic", "education"]
+    },
+    {
+      "nominative": "спорт",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "deporte",
+      "level": "A1",
+      "cases": { "genitive": "спорта", "accusative": "спорт", "prepositional": "спорте", "dative": "спорту", "instrumental": "спортом" },
+      "tags": ["sport", "hobby", "activity", "topic"]
+    },
+    {
+      "nominative": "русский язык",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "ruso (idioma)",
+      "level": "A1",
+      "cases": { "genitive": "русского языка", "accusative": "русский язык", "prepositional": "русском языке", "dative": "русскому языку", "instrumental": "русским языком" },
+      "tags": ["language", "subject", "topic", "education"]
+    },
+    {
+      "nominative": "литература",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "literatura",
+      "level": "A2",
+      "cases": { "genitive": "литературы", "accusative": "литературу", "prepositional": "литературе", "dative": "литературе", "instrumental": "литературой" },
+      "tags": ["literature", "subject", "topic", "culture", "education"]
     },
     {
       "nominative": "январь",
@@ -1135,14 +727,8 @@
       "animate": false,
       "meaning_es": "enero",
       "level": "A1",
-      "cases": {
-        "genitive": "января",
-        "accusative": "январь",
-        "prepositional": "январе",
-        "dative": "январю",
-        "instrumental": "январём"
-      },
-      "tags": ["months"]
+      "cases": { "genitive": "января", "accusative": "январь", "prepositional": "январе", "dative": "январю", "instrumental": "январём" },
+      "tags": ["abstract"]
     },
     {
       "nominative": "февраль",
@@ -1150,14 +736,8 @@
       "animate": false,
       "meaning_es": "febrero",
       "level": "A1",
-      "cases": {
-        "genitive": "февраля",
-        "accusative": "февраль",
-        "prepositional": "феврале",
-        "dative": "февралю",
-        "instrumental": "февралём"
-      },
-      "tags": ["months"]
+      "cases": { "genitive": "февраля", "accusative": "февраль", "prepositional": "феврале", "dative": "февралю", "instrumental": "февралём" },
+      "tags": ["abstract"]
     },
     {
       "nominative": "март",
@@ -1165,14 +745,8 @@
       "animate": false,
       "meaning_es": "marzo",
       "level": "A1",
-      "cases": {
-        "genitive": "марта",
-        "accusative": "март",
-        "prepositional": "марте",
-        "dative": "марту",
-        "instrumental": "мартом"
-      },
-      "tags": ["months"]
+      "cases": { "genitive": "марта", "accusative": "март", "prepositional": "марте", "dative": "марту", "instrumental": "мартом" },
+      "tags": ["abstract"]
     },
     {
       "nominative": "среда",
@@ -1180,14 +754,8 @@
       "animate": false,
       "meaning_es": "miércoles",
       "level": "A1",
-      "cases": {
-        "genitive": "среды",
-        "accusative": "среду",
-        "prepositional": "среде",
-        "dative": "среде",
-        "instrumental": "средой"
-      },
-      "tags": ["days"]
+      "cases": { "genitive": "среды", "accusative": "среду", "prepositional": "среде", "dative": "среде", "instrumental": "средой" },
+      "tags": ["abstract"]
     },
     {
       "nominative": "пятница",
@@ -1195,14 +763,362 @@
       "animate": false,
       "meaning_es": "viernes",
       "level": "A1",
-      "cases": {
-        "genitive": "пятницы",
-        "accusative": "пятницу",
-        "prepositional": "пятнице",
-        "dative": "пятнице",
-        "instrumental": "пятницей"
-      },
-      "tags": ["days"]
+      "cases": { "genitive": "пятницы", "accusative": "пятницу", "prepositional": "пятнице", "dative": "пятнице", "instrumental": "пятницей" },
+      "tags": ["abstract"]
+    },
+
+    {
+      "nominative": "язык",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "idioma / lengua",
+      "level": "A1",
+      "cases": { "genitive": "языка", "accusative": "язык", "prepositional": "языке", "dative": "языку", "instrumental": "языком" },
+      "tags": ["language", "subject", "topic", "education"]
+    },
+    {
+      "nominative": "страна",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "país",
+      "level": "A1",
+      "cases": { "genitive": "страны", "accusative": "страну", "prepositional": "стране", "dative": "стране", "instrumental": "страной" },
+      "tags": ["country", "place", "destination", "travel"]
+    },
+    {
+      "nominative": "мир",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "mundo / paz",
+      "level": "A1",
+      "cases": { "genitive": "мира", "accusative": "мир", "prepositional": "мире", "dative": "миру", "instrumental": "миром" },
+      "tags": ["place", "abstract", "topic"]
+    },
+    {
+      "nominative": "север",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "norte",
+      "level": "A2",
+      "cases": { "genitive": "севера", "accusative": "север", "prepositional": "севере", "dative": "северу", "instrumental": "севером" },
+      "tags": ["place", "nature", "destination"]
+    },
+    {
+      "nominative": "Сибирь",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "Siberia",
+      "level": "A2",
+      "cases": { "genitive": "Сибири", "accusative": "Сибирь", "prepositional": "Сибири", "dative": "Сибири", "instrumental": "Сибирью" },
+      "tags": ["place", "destination", "travel", "nature"]
+    },
+    {
+      "nominative": "космос",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "espacio (exterior)",
+      "level": "A2",
+      "cases": { "genitive": "космоса", "accusative": "космос", "prepositional": "космосе", "dative": "космосу", "instrumental": "космосом" },
+      "tags": ["place", "topic", "subject"]
+    },
+    {
+      "nominative": "эколог",
+      "gender": "masculine",
+      "animate": true,
+      "meaning_es": "ecólogo",
+      "level": "B1",
+      "cases": { "genitive": "эколога", "accusative": "эколога", "prepositional": "экологе", "dative": "экологу", "instrumental": "экологом" },
+      "tags": ["person", "profession"]
+    },
+    {
+      "nominative": "филолог",
+      "gender": "masculine",
+      "animate": true,
+      "meaning_es": "filólogo",
+      "level": "B1",
+      "cases": { "genitive": "филолога", "accusative": "филолога", "prepositional": "филологе", "dative": "филологу", "instrumental": "филологом" },
+      "tags": ["person", "profession", "education"]
+    },
+    {
+      "nominative": "иностранец",
+      "gender": "masculine",
+      "animate": true,
+      "meaning_es": "extranjero",
+      "level": "A2",
+      "cases": { "genitive": "иностранца", "accusative": "иностранца", "prepositional": "иностранце", "dative": "иностранцу", "instrumental": "иностранцем" },
+      "tags": ["person"]
+    },
+    {
+      "nominative": "поэт",
+      "gender": "masculine",
+      "animate": true,
+      "meaning_es": "poeta",
+      "level": "A2",
+      "cases": { "genitive": "поэта", "accusative": "поэта", "prepositional": "поэте", "dative": "поэту", "instrumental": "поэтом" },
+      "tags": ["person", "profession", "culture", "literature"]
+    },
+    {
+      "nominative": "писатель",
+      "gender": "masculine",
+      "animate": true,
+      "meaning_es": "escritor",
+      "level": "A2",
+      "cases": { "genitive": "писателя", "accusative": "писателя", "prepositional": "писателе", "dative": "писателю", "instrumental": "писателем" },
+      "tags": ["person", "profession", "culture", "literature"]
+    },
+    {
+      "nominative": "музыкант",
+      "gender": "masculine",
+      "animate": true,
+      "meaning_es": "músico",
+      "level": "A2",
+      "cases": { "genitive": "музыканта", "accusative": "музыканта", "prepositional": "музыканте", "dative": "музыканту", "instrumental": "музыкантом" },
+      "tags": ["person", "profession", "music", "culture"]
+    },
+    {
+      "nominative": "читатель",
+      "gender": "masculine",
+      "animate": true,
+      "meaning_es": "lector",
+      "level": "A2",
+      "cases": { "genitive": "читателя", "accusative": "читателя", "prepositional": "читателе", "dative": "читателю", "instrumental": "читателем" },
+      "tags": ["person", "literature"]
+    },
+    {
+      "nominative": "инженер",
+      "gender": "masculine",
+      "animate": true,
+      "meaning_es": "ingeniero",
+      "level": "A2",
+      "cases": { "genitive": "инженера", "accusative": "инженера", "prepositional": "инженере", "dative": "инженеру", "instrumental": "инженером" },
+      "tags": ["person", "profession"]
+    },
+    {
+      "nominative": "композитор",
+      "gender": "masculine",
+      "animate": true,
+      "meaning_es": "compositor",
+      "level": "B1",
+      "cases": { "genitive": "композитора", "accusative": "композитора", "prepositional": "композиторе", "dative": "композитору", "instrumental": "композитором" },
+      "tags": ["person", "profession", "music", "culture"]
+    },
+    {
+      "nominative": "собака",
+      "gender": "feminine",
+      "animate": true,
+      "meaning_es": "perro",
+      "level": "A1",
+      "cases": { "genitive": "собаки", "accusative": "собаку", "prepositional": "собаке", "dative": "собаке", "instrumental": "собакой" },
+      "tags": ["animal", "object"]
+    },
+    {
+      "nominative": "ракета",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "cohete",
+      "level": "B1",
+      "cases": { "genitive": "ракеты", "accusative": "ракету", "prepositional": "ракете", "dative": "ракете", "instrumental": "ракетой" },
+      "tags": ["object", "transport", "vehicle"]
+    },
+    {
+      "nominative": "спутник",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "satélite / compañero",
+      "level": "B1",
+      "cases": { "genitive": "спутника", "accusative": "спутник", "prepositional": "спутнике", "dative": "спутнику", "instrumental": "спутником" },
+      "tags": ["object", "transport"]
+    },
+    {
+      "nominative": "поэзия",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "poesía",
+      "level": "B1",
+      "cases": { "genitive": "поэзии", "accusative": "поэзию", "prepositional": "поэзии", "dative": "поэзии", "instrumental": "поэзией" },
+      "tags": ["literature", "culture", "topic", "subject"]
+    },
+    {
+      "nominative": "стиль",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "estilo",
+      "level": "B1",
+      "cases": { "genitive": "стиля", "accusative": "стиль", "prepositional": "стиле", "dative": "стилю", "instrumental": "стилем" },
+      "tags": ["abstract", "topic", "culture"]
+    },
+    {
+      "nominative": "фамилия",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "apellido",
+      "level": "A2",
+      "cases": { "genitive": "фамилии", "accusative": "фамилию", "prepositional": "фамилии", "dative": "фамилии", "instrumental": "фамилией" },
+      "tags": ["abstract"]
+    },
+    {
+      "nominative": "талант",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "talento",
+      "level": "A2",
+      "cases": { "genitive": "таланта", "accusative": "талант", "prepositional": "таланте", "dative": "таланту", "instrumental": "талантом" },
+      "tags": ["abstract", "topic"]
+    },
+    {
+      "nominative": "песня",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "canción",
+      "level": "A1",
+      "cases": { "genitive": "песни", "accusative": "песню", "prepositional": "песне", "dative": "песне", "instrumental": "песней" },
+      "tags": ["music", "culture", "object"]
+    },
+    {
+      "nominative": "герой",
+      "gender": "masculine",
+      "animate": true,
+      "meaning_es": "héroe / personaje",
+      "level": "A2",
+      "cases": { "genitive": "героя", "accusative": "героя", "prepositional": "герое", "dative": "герою", "instrumental": "героем" },
+      "tags": ["person", "literature", "culture"]
+    },
+    {
+      "nominative": "интерес",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "interés",
+      "level": "A2",
+      "cases": { "genitive": "интереса", "accusative": "интерес", "prepositional": "интересе", "dative": "интересу", "instrumental": "интересом" },
+      "tags": ["abstract"]
+    },
+
+    {
+      "nominative": "культура",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "cultura",
+      "level": "A2",
+      "cases": { "genitive": "культуры", "accusative": "культуру", "prepositional": "культуре", "dative": "культуре", "instrumental": "культурой" },
+      "tags": ["culture", "topic", "subject"]
+    },
+    {
+      "nominative": "голос",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "voz",
+      "level": "A2",
+      "cases": { "genitive": "голоса", "accusative": "голос", "prepositional": "голосе", "dative": "голосу", "instrumental": "голосом" },
+      "tags": ["music", "abstract"]
+    },
+    {
+      "nominative": "певец",
+      "gender": "masculine",
+      "animate": true,
+      "meaning_es": "cantante (m)",
+      "level": "A2",
+      "cases": { "genitive": "певца", "accusative": "певца", "prepositional": "певце", "dative": "певцу", "instrumental": "певцом" },
+      "tags": ["person", "profession", "music", "culture"]
+    },
+    {
+      "nominative": "актёр",
+      "gender": "masculine",
+      "animate": true,
+      "meaning_es": "actor",
+      "level": "A2",
+      "cases": { "genitive": "актёра", "accusative": "актёра", "prepositional": "актёре", "dative": "актёру", "instrumental": "актёром" },
+      "tags": ["person", "profession", "culture"]
+    },
+    {
+      "nominative": "художница",
+      "gender": "feminine",
+      "animate": true,
+      "meaning_es": "artista / pintora",
+      "level": "B1",
+      "cases": { "genitive": "художницы", "accusative": "художницу", "prepositional": "художнице", "dative": "художнице", "instrumental": "художницей" },
+      "tags": ["person", "profession", "culture"]
+    },
+    {
+      "nominative": "спортсмен",
+      "gender": "masculine",
+      "animate": true,
+      "meaning_es": "deportista",
+      "level": "A2",
+      "cases": { "genitive": "спортсмена", "accusative": "спортсмена", "prepositional": "спортсмене", "dative": "спортсмену", "instrumental": "спортсменом" },
+      "tags": ["person", "sport"]
+    },
+    {
+      "nominative": "бой",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "combate / pelea",
+      "level": "B1",
+      "cases": { "genitive": "боя", "accusative": "бой", "prepositional": "бое", "dative": "бою", "instrumental": "боем" },
+      "tags": ["sport", "activity", "event"]
+    },
+    {
+      "nominative": "стереотип",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "estereotipo",
+      "level": "B1",
+      "cases": { "genitive": "стереотипа", "accusative": "стереотип", "prepositional": "стереотипе", "dative": "стереотипу", "instrumental": "стереотипом" },
+      "tags": ["abstract", "topic"]
+    },
+    {
+      "nominative": "мариачи",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "mariachi",
+      "level": "B1",
+      "indeclinable": true,
+      "cases": { "genitive": "мариачи", "accusative": "мариачи", "prepositional": "мариачи", "dative": "мариачи", "instrumental": "мариачи" },
+      "tags": ["music", "culture"]
+    },
+    {
+      "nominative": "поп",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "pop (música)",
+      "level": "A2",
+      "cases": { "genitive": "попа", "accusative": "поп", "prepositional": "попе", "dative": "попу", "instrumental": "попом" },
+      "tags": ["music", "culture", "topic"]
+    },
+    {
+      "nominative": "рок",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "rock (música)",
+      "level": "A2",
+      "cases": { "genitive": "рока", "accusative": "рок", "prepositional": "роке", "dative": "року", "instrumental": "роком" },
+      "tags": ["music", "culture", "topic"]
+    },
+    {
+      "nominative": "Мексика",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "México",
+      "level": "A1",
+      "cases": { "genitive": "Мексики", "accusative": "Мексику", "prepositional": "Мексике", "dative": "Мексике", "instrumental": "Мексикой" },
+      "tags": ["country", "place", "destination", "travel"]
+    },
+    {
+      "nominative": "Швеция",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "Suecia",
+      "level": "A1",
+      "cases": { "genitive": "Швеции", "accusative": "Швецию", "prepositional": "Швеции", "dative": "Швеции", "instrumental": "Швецией" },
+      "tags": ["country", "place", "destination", "travel"]
+    },
+    {
+      "nominative": "инженер-конструктор",
+      "gender": "masculine",
+      "animate": true,
+      "meaning_es": "ingeniero de diseño",
+      "level": "B1",
+      "cases": { "genitive": "инженера-конструктора", "accusative": "инженера-конструктора", "prepositional": "инженере-конструкторе", "dative": "инженеру-конструктору", "instrumental": "инженером-конструктором" },
+      "tags": ["person", "profession"]
     }
   ]
 }

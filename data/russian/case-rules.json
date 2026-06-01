@@ -1,87 +1,33 @@
 {
+  "nominative": {
+    "questions": ["кто?", "что?"],
+    "uses": ["sujeto", "predicado nominal con ser/estar"],
+    "prepositions": []
+  },
   "genitive": {
-    "questions": [
-      "кого?",
-      "чего?",
-      "откуда?",
-      "у кого?",
-      "сколько?"
-    ],
-    "uses": [
-      "negation нет",
-      "possession",
-      "quantity",
-      "origin",
-      "part/portion",
-      "dates"
-    ],
-    "prepositions": [
-      "из",
-      "с",
-      "для",
-      "после",
-      "от",
-      "до",
-      "без",
-      "у",
-      "кроме",
-      "вместо",
-      "около"
-    ]
+    "questions": ["кого?", "чего?", "откуда?", "у кого?", "сколько?"],
+    "uses": ["negación con нет", "posesión", "cantidad", "origen"],
+    "prepositions": ["из", "с", "для", "после", "от", "до", "без", "у", "около"]
   },
   "accusative": {
-    "questions": [
-      "кого?",
-      "что?",
-      "куда?"
-    ],
-    "uses": [
-      "direct object",
-      "direction",
-      "some time expressions"
-    ],
-    "rule": "animate nouns often follow genitive forms; inanimate often follow nominative forms"
+    "questions": ["кого?", "что?", "куда?"],
+    "uses": ["objeto directo", "dirección (движение)"],
+    "prepositions": ["в", "на", "за", "через", "про"],
+    "rule": "animados siguen la forma del genitivo; inanimados siguen el nominativo"
   },
   "prepositional": {
-    "questions": [
-      "где?",
-      "о ком?",
-      "о чём?",
-      "на чём?"
-    ],
-    "uses": [
-      "location",
-      "topic",
-      "transport/instrument with на"
-    ],
-    "prepositions": [
-      "в",
-      "на",
-      "о",
-      "об"
-    ]
+    "questions": ["где?", "о ком?", "о чём?"],
+    "uses": ["lugar", "tema de conversación"],
+    "prepositions": ["в", "на", "о", "об"]
   },
   "dative": {
-    "questions": [
-      "кому?",
-      "чему?"
-    ],
-    "uses": [
-      "recipient",
-      "liking with нравиться",
-      "help/call/tell/show to someone"
-    ]
+    "questions": ["кому?", "чему?"],
+    "uses": ["destinatario", "gustar con нравиться", "llamar/escribir/ayudar a alguien"],
+    "prepositions": ["к", "по"]
   },
   "instrumental": {
-    "questions": [
-      "кем?",
-      "чем?"
-    ],
-    "uses": [
-      "with/by",
-      "profession",
-      "activity with заниматься",
-      "transport with на"
-    ]
+    "questions": ["кем?", "чем?"],
+    "uses": ["instrumento o medio", "profesión con быть", "actividad con заниматься"],
+    "prepositions": ["с", "за", "над", "под", "перед", "между"]
   }
 }

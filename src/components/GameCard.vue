@@ -3,6 +3,7 @@
 
     <!-- ── Ending Choice ─────────────────────────────────────── -->
     <template v-if="ex.type === 'ending-choice'">
+      <p class="game-card__nominative">{{ ex.nominative }}</p>
       <p class="game-card__prompt">{{ ex.prompt }}</p>
       <p class="game-card__hint">{{ ex.hint_es }}</p>
       <div class="game-card__options">
@@ -21,6 +22,7 @@
 
     <!-- ── Case Choice ───────────────────────────────────────── -->
     <template v-else-if="ex.type === 'case-choice'">
+      <p class="game-card__nominative">{{ ex.nominative }}</p>
       <p class="game-card__prompt">{{ ex.prompt }}</p>
       <p class="game-card__hint">{{ ex.hint_es }}</p>
       <div class="game-card__options">
@@ -62,6 +64,7 @@
 
     <!-- ── Order Blocks ───────────────────────────────────────── -->
     <template v-else-if="ex.type === 'order-blocks'">
+      <p class="game-card__nominative">{{ ex.nominative }}</p>
       <p class="game-card__label">{{ t('game.orderPrompt') }}</p>
       <p class="game-card__hint">{{ ex.hint_es }}</p>
       <div class="game-card__drop-zone">
@@ -227,6 +230,14 @@ function btnClass(opt: string, answer: string) {
   background: #1e293b;
   border: 1px solid #334155;
   border-radius: 16px;
+}
+.game-card__nominative {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #64748b;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 .game-card__prompt {
   font-size: 1.4rem;

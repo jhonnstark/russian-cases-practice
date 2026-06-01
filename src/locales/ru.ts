@@ -11,6 +11,7 @@ export default {
     caseLabel: 'Падеж',
     modeLabel: 'Режим упражнения',
     cases: {
+      nominative:    'Именительный',
       genitive:      'Родительный',
       accusative:    'Винительный',
       prepositional: 'Предложный',
@@ -52,5 +53,6 @@ export default {
     changeMode: 'Сменить режим',
     outOf:      '{score} / {total} правильно',
     youWrote:   'Вы написали',
+    nominative: 'именительный',
   },
 }

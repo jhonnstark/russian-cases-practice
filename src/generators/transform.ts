@@ -1,7 +1,9 @@
 import type { RussianWord, Case, TransformExercise } from './types'
+import { getCaseForm } from './semanticValidator'
 
 // Pista contextual por caso para guiar al usuario
 const CASE_HINTS: Record<Case, string> = {
+  nominative:    'Это ___  /  Вот ___',
   genitive:      'У меня нет ___  /  Это для ___',
   accusative:    'Я вижу ___  /  Я читаю ___',
   prepositional: 'Я думаю о ___  /  Я живу в ___',
@@ -10,6 +12,7 @@ const CASE_HINTS: Record<Case, string> = {
 }
 
 const CASE_HINT_ES: Record<Case, string> = {
+  nominative:    'nominativo — sujeto, predicado nominal',
   genitive:      'genitivo — negación, posesión, origen',
   accusative:    'acusativo — objeto directo, dirección',
   prepositional: 'preposicional — lugar, tema',
@@ -30,7 +33,7 @@ export function generateTransform(word: RussianWord, targetCase: Case): Transfor
     type: 'transform',
     nominative: word.nominative,
     targetCase,
-    answer: word.cases[targetCase],
+    answer: getCaseForm(word, targetCase),
     meaning_es: word.meaning_es,
     level: word.level,
     hint_es: `${CASE_HINT_ES[targetCase]} — ${CASE_HINTS[targetCase]}`,
@@ -53,7 +56,7 @@ export function generateTransformBatch(
     ? words.filter(w => w.level === options.filterLevel)
     : words
 
-  const cases: Case[] = ['genitive', 'accusative', 'prepositional', 'dative', 'instrumental']
+  const cases: Case[] = ['nominative', 'genitive', 'accusative', 'prepositional', 'dative', 'instrumental']
   const exercises: TransformExercise[] = []
 
   // Evitar repetir la misma palabra+caso consecutivamente

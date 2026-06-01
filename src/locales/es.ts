@@ -11,6 +11,7 @@ export default {
     caseLabel: 'Caso gramatical',
     modeLabel: 'Modo de ejercicio',
     cases: {
+      nominative:    'Nominativo',
       genitive:      'Genitivo',
       accusative:    'Acusativo',
       prepositional: 'Preposicional',
@@ -52,5 +53,6 @@ export default {
     changeMode: 'Cambiar modo',
     outOf:      '{score} / {total} correctas',
     youWrote:   'Escribiste',
+    nominative: 'nominativo',
   },
 }

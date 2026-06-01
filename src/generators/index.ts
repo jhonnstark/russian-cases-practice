@@ -9,6 +9,9 @@ export type {
   MiniStoryExercise,
 } from './types'
 
+export { filterBySemantics, pickWordForPattern, getCaseForm } from './semanticValidator'
+export type { SemanticPattern } from './semanticValidator'
+
 export { generateEndingChoice, generateEndingChoiceBatch } from './endingChoice'
 export { generateCaseChoice, generateCaseChoiceBatch }     from './caseChoice'
 export { generateTransform, generateTransformBatch }       from './transform'

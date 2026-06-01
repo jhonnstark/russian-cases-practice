@@ -1,0 +1,261 @@
+[
+  {
+    "pattern": "Это {noun}.",
+    "case": "nominative",
+    "allowedTags": ["object", "food", "drink", "transport", "vehicle", "person", "family", "friend", "profession", "animal", "nature", "building", "place", "music", "literature"],
+    "preferredTags": ["object", "person", "food"],
+    "rejectedTags": ["abstract", "country", "city"]
+  },
+  {
+    "pattern": "Вот {noun}.",
+    "case": "nominative",
+    "allowedTags": ["object", "food", "drink", "transport", "vehicle", "animal", "nature", "building"],
+    "preferredTags": ["object", "food"],
+    "rejectedTags": ["abstract", "country", "city", "person"]
+  },
+  {
+    "pattern": "{noun} здесь.",
+    "case": "nominative",
+    "allowedTags": ["person", "family", "friend", "animal", "object", "vehicle"],
+    "preferredTags": ["person", "animal"],
+    "rejectedTags": ["abstract", "food", "country", "city"]
+  },
+  {
+    "pattern": "{noun} стоит дорого.",
+    "case": "nominative",
+    "allowedTags": ["object", "food", "drink", "transport", "vehicle"],
+    "preferredTags": ["object", "transport"],
+    "rejectedTags": ["abstract", "person", "country", "city", "nature"]
+  },
+  {
+    "pattern": "{noun} очень красивый.",
+    "case": "nominative",
+    "allowedTags": ["nature", "building", "place", "object", "animal"],
+    "preferredTags": ["nature", "building"],
+    "rejectedTags": ["abstract", "food", "money", "transport"]
+  },
+  {
+    "pattern": "{noun} работает здесь.",
+    "case": "nominative",
+    "allowedTags": ["person", "profession", "family", "friend"],
+    "preferredTags": ["person", "profession"],
+    "rejectedTags": ["food", "object", "transport", "nature", "abstract", "money"]
+  },
+  {
+    "pattern": "У меня нет {noun}.",
+    "case": "genitive",
+    "allowedTags": ["object", "food", "drink", "money", "person", "family", "friend", "abstract", "transport", "vehicle", "nature"],
+    "preferredTags": ["object", "food", "abstract"],
+    "rejectedTags": ["city", "country", "place", "destination"]
+  },
+  {
+    "pattern": "У нас нет {noun}.",
+    "case": "genitive",
+    "allowedTags": ["object", "food", "drink", "money", "abstract", "transport", "vehicle"],
+    "preferredTags": ["object", "food", "abstract"],
+    "rejectedTags": ["city", "country", "place", "destination", "person"]
+  },
+  {
+    "pattern": "Это портрет {noun}.",
+    "case": "genitive",
+    "allowedTags": ["person", "family", "friend", "profession"],
+    "preferredTags": ["person", "family"],
+    "rejectedTags": ["food", "money", "object", "transport", "nature", "abstract"]
+  },
+  {
+    "pattern": "Это флаг {noun}.",
+    "case": "genitive",
+    "allowedTags": ["country", "city"],
+    "preferredTags": ["country"],
+    "rejectedTags": ["food", "person", "object", "abstract", "transport"]
+  },
+  {
+    "pattern": "Я из {noun}.",
+    "case": "genitive",
+    "allowedTags": ["city", "country", "place"],
+    "preferredTags": ["city", "country"],
+    "rejectedTags": ["food", "money", "person", "object", "abstract", "transport"]
+  },
+  {
+    "pattern": "Это подарок для {noun}.",
+    "case": "genitive",
+    "allowedTags": ["person", "family", "friend", "profession"],
+    "preferredTags": ["family", "friend"],
+    "rejectedTags": ["food", "money", "object", "nature", "transport", "abstract"]
+  },
+  {
+    "pattern": "Кофе без {noun}.",
+    "case": "genitive",
+    "allowedTags": ["food", "drink"],
+    "preferredTags": ["food"],
+    "rejectedTags": ["person", "place", "transport", "abstract", "money", "nature"]
+  },
+  {
+    "pattern": "После {noun} я отдыхаю.",
+    "case": "genitive",
+    "allowedTags": ["work", "education", "activity", "event"],
+    "preferredTags": ["work", "education"],
+    "rejectedTags": ["country", "city", "food", "person", "money", "nature", "transport"]
+  },
+  {
+    "pattern": "Я живу около {noun}.",
+    "case": "genitive",
+    "allowedTags": ["place", "destination", "building", "nature"],
+    "preferredTags": ["place", "building"],
+    "rejectedTags": ["food", "person", "money", "abstract", "transport"]
+  },
+  {
+    "pattern": "Я читаю {noun}.",
+    "case": "accusative",
+    "allowedTags": ["object", "literature"],
+    "preferredTags": ["literature"],
+    "rejectedTags": ["food", "person", "money", "place", "transport", "abstract"]
+  },
+  {
+    "pattern": "Я люблю {noun}.",
+    "case": "accusative",
+    "allowedTags": ["music", "sport", "culture", "food", "drink", "hobby", "literature", "nature", "person", "family", "friend"],
+    "preferredTags": ["music", "sport", "food"],
+    "rejectedTags": ["money", "transport", "building"]
+  },
+  {
+    "pattern": "Я слушаю {noun}.",
+    "case": "accusative",
+    "allowedTags": ["music", "culture"],
+    "preferredTags": ["music"],
+    "rejectedTags": ["food", "money", "place", "transport", "abstract", "person"]
+  },
+  {
+    "pattern": "Я вижу {noun}.",
+    "case": "accusative",
+    "allowedTags": ["person", "family", "friend", "place", "building", "nature", "object", "vehicle", "transport"],
+    "preferredTags": ["person", "building"],
+    "rejectedTags": ["abstract", "money", "food"]
+  },
+  {
+    "pattern": "Я жду {noun}.",
+    "case": "accusative",
+    "allowedTags": ["person", "family", "friend", "transport", "vehicle"],
+    "preferredTags": ["person", "friend"],
+    "rejectedTags": ["food", "money", "abstract", "nature", "object"]
+  },
+  {
+    "pattern": "Я еду в {noun}.",
+    "case": "accusative",
+    "allowedTags": ["city", "country", "place", "destination"],
+    "preferredTags": ["city", "country"],
+    "rejectedTags": ["food", "money", "animal", "emotion", "object", "abstract", "transport"]
+  },
+  {
+    "pattern": "Я иду в {noun}.",
+    "case": "accusative",
+    "allowedTags": ["place", "destination", "building"],
+    "preferredTags": ["building", "place"],
+    "rejectedTags": ["food", "money", "abstract", "transport", "nature", "country"]
+  },
+  {
+    "pattern": "Мы говорим о {noun}.",
+    "case": "prepositional",
+    "allowedTags": ["topic", "subject", "culture", "music", "history", "literature", "sport", "person", "family", "friend", "politics"],
+    "preferredTags": ["topic", "culture", "person"],
+    "rejectedTags": ["food", "money", "transport", "building"]
+  },
+  {
+    "pattern": "Я думаю о {noun}.",
+    "case": "prepositional",
+    "allowedTags": ["person", "family", "friend", "topic", "abstract", "nature", "place", "travel"],
+    "preferredTags": ["person", "family"],
+    "rejectedTags": ["food", "money", "transport", "building"]
+  },
+  {
+    "pattern": "Я живу в {noun}.",
+    "case": "prepositional",
+    "allowedTags": ["city", "country", "place", "destination", "building"],
+    "preferredTags": ["city", "country"],
+    "rejectedTags": ["food", "money", "abstract", "transport", "object"]
+  },
+  {
+    "pattern": "Я работаю в {noun}.",
+    "case": "prepositional",
+    "allowedTags": ["place", "building", "work", "education"],
+    "preferredTags": ["building", "work"],
+    "rejectedTags": ["food", "money", "abstract", "transport", "nature", "country"]
+  },
+  {
+    "pattern": "Я учусь в {noun}.",
+    "case": "prepositional",
+    "allowedTags": ["education", "building", "place"],
+    "preferredTags": ["education"],
+    "rejectedTags": ["food", "money", "abstract", "transport", "nature"]
+  },
+  {
+    "pattern": "Я играю на {noun}.",
+    "case": "prepositional",
+    "allowedTags": ["music", "object"],
+    "preferredTags": ["music"],
+    "rejectedTags": ["food", "money", "person", "transport", "abstract"]
+  },
+  {
+    "pattern": "Я звоню {noun}.",
+    "case": "dative",
+    "allowedTags": ["person", "family", "friend", "profession"],
+    "preferredTags": ["family", "friend"],
+    "rejectedTags": ["food", "money", "object", "nature", "transport", "abstract"]
+  },
+  {
+    "pattern": "Я пишу {noun}.",
+    "case": "dative",
+    "allowedTags": ["person", "family", "friend", "profession"],
+    "preferredTags": ["family", "friend"],
+    "rejectedTags": ["food", "money", "object", "nature", "transport", "abstract"]
+  },
+  {
+    "pattern": "Я помогаю {noun}.",
+    "case": "dative",
+    "allowedTags": ["person", "family", "friend", "profession"],
+    "preferredTags": ["family", "friend"],
+    "rejectedTags": ["food", "money", "object", "nature", "transport", "abstract"]
+  },
+  {
+    "pattern": "Я дарю подарок {noun}.",
+    "case": "dative",
+    "allowedTags": ["person", "family", "friend", "profession"],
+    "preferredTags": ["family", "friend"],
+    "rejectedTags": ["nature", "food", "money", "object", "transport", "abstract"]
+  },
+  {
+    "pattern": "Я еду на {noun}.",
+    "case": "instrumental",
+    "allowedTags": ["transport", "vehicle"],
+    "preferredTags": ["vehicle"],
+    "rejectedTags": ["food", "money", "person", "abstract", "nature", "building"]
+  },
+  {
+    "pattern": "Я занимаюсь {noun}.",
+    "case": "instrumental",
+    "allowedTags": ["sport", "hobby", "activity", "music", "language", "subject"],
+    "preferredTags": ["sport", "hobby"],
+    "rejectedTags": ["food", "money", "vehicle", "transport", "building", "person"]
+  },
+  {
+    "pattern": "Я восхищаюсь {noun}.",
+    "case": "instrumental",
+    "allowedTags": ["person", "nature", "culture", "music", "history", "literature"],
+    "preferredTags": ["nature", "culture"],
+    "rejectedTags": ["food", "money", "transport", "building"]
+  },
+  {
+    "pattern": "Я горжусь {noun}.",
+    "case": "instrumental",
+    "allowedTags": ["person", "family", "friend", "culture", "history"],
+    "preferredTags": ["family", "person"],
+    "rejectedTags": ["food", "money", "transport", "object"]
+  },
+  {
+    "pattern": "Я интересуюсь {noun}.",
+    "case": "instrumental",
+    "allowedTags": ["language", "subject", "topic", "culture", "history", "music", "sport", "literature"],
+    "preferredTags": ["language", "sport", "history"],
+    "rejectedTags": ["food", "money", "vehicle", "transport", "building", "person"]
+  }
+]
