@@ -140,7 +140,7 @@
 import { ref, computed, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import FeedbackBox from './FeedbackBox.vue'
-import type { Exercise, MiniStoryExercise, OrderBlocksExercise } from '../generators/types'
+import type { Exercise, MiniStoryExercise, OrderBlocksExercise } from '@/generators'
 
 const { t } = useI18n()
 
@@ -201,7 +201,7 @@ function submit(userAnswer: string) {
   if (answered.value) return
   const n = (s: string) => s.trim().toLowerCase()
   const e = ex.value
-  let correct = false
+  let correct: boolean
 
   if (e.type === 'mini-story') {
     const parts = userAnswer.split('|').map(n)

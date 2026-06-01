@@ -71,8 +71,8 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
 import Button from 'primevue/button'
-import { useGameStore } from '../store'
-import type { Exercise, Case } from '../generators/types'
+import { useGameStore } from '@/store'
+import type { Exercise, Case } from '@/generators'
 import caseRules from '@data/russian/case-rules.json'
 
 const { t } = useI18n()
