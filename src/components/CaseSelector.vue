@@ -1,7 +1,6 @@
 <template>
   <div class="selector">
-    <!-- Case selector -->
-    <label class="selector__label">Caso gramatical</label>
+    <label class="selector__label">{{ t('selector.caseLabel') }}</label>
     <div class="selector__grid">
       <div
         v-for="c in caseOptions"
@@ -11,12 +10,11 @@
         @click="store.setCase(c.value)"
       >
         <i :class="c.icon" />
-        <span>{{ c.label }}</span>
+        <span>{{ t(`selector.cases.${c.value}`) }}</span>
       </div>
     </div>
 
-    <!-- Mode selector -->
-    <label class="selector__label" style="margin-top:1.25rem">Modo de ejercicio</label>
+    <label class="selector__label" style="margin-top:1.25rem">{{ t('selector.modeLabel') }}</label>
     <div class="selector__grid selector__grid--modes">
       <div
         v-for="m in modeOptions"
@@ -26,34 +24,36 @@
         @click="store.setMode(m.value)"
       >
         <i :class="m.icon" />
-        <span>{{ m.label }}</span>
+        <span>{{ t(`selector.modes.${m.value}`) }}</span>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import { useGameStore } from '../store'
 import type { GameMode } from '../store'
 import type { Case } from '../generators/types'
 
+const { t } = useI18n()
 const store = useGameStore()
 
-const caseOptions: { value: Case | 'mixed'; label: string; icon: string }[] = [
-  { value: 'genitive',      label: 'Genitivo',       icon: 'pi pi-minus-circle' },
-  { value: 'accusative',    label: 'Acusativo',       icon: 'pi pi-arrow-right' },
-  { value: 'prepositional', label: 'Preposicional',   icon: 'pi pi-map-marker' },
-  { value: 'dative',        label: 'Dativo',          icon: 'pi pi-user' },
-  { value: 'instrumental',  label: 'Instrumental',    icon: 'pi pi-wrench' },
-  { value: 'mixed',         label: 'Mezclado',        icon: 'pi pi-shuffle' },
+const caseOptions: { value: Case | 'mixed'; icon: string }[] = [
+  { value: 'genitive',      icon: 'pi pi-minus-circle' },
+  { value: 'accusative',    icon: 'pi pi-arrow-right' },
+  { value: 'prepositional', icon: 'pi pi-map-marker' },
+  { value: 'dative',        icon: 'pi pi-user' },
+  { value: 'instrumental',  icon: 'pi pi-wrench' },
+  { value: 'mixed',         icon: 'pi pi-shuffle' },
 ]
 
-const modeOptions: { value: GameMode; label: string; icon: string }[] = [
-  { value: 'ending-choice', label: 'Terminación',  icon: 'pi pi-pencil' },
-  { value: 'case-choice',   label: 'Forma',        icon: 'pi pi-list' },
-  { value: 'transform',     label: 'Transformar',  icon: 'pi pi-sync' },
-  { value: 'order-blocks',  label: 'Ordenar',      icon: 'pi pi-sort' },
-  { value: 'mini-story',    label: 'Mini Historia',icon: 'pi pi-book' },
+const modeOptions: { value: GameMode; icon: string }[] = [
+  { value: 'ending-choice', icon: 'pi pi-pencil' },
+  { value: 'case-choice',   icon: 'pi pi-list' },
+  { value: 'transform',     icon: 'pi pi-sync' },
+  { value: 'order-blocks',  icon: 'pi pi-sort' },
+  { value: 'mini-story',    icon: 'pi pi-book' },
 ]
 </script>
 

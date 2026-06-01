@@ -40,29 +40,29 @@
     <!-- ── Transform ─────────────────────────────────────────── -->
     <template v-else-if="ex.type === 'transform'">
       <p class="game-card__prompt">
-        Escribe <strong>{{ ex.nominative }}</strong> en
-        <span class="game-card__case-tag">{{ ex.targetCase }}</span>
+        {{ t('game.transformPrompt', { word: ex.nominative }) }}
+        <span class="game-card__case-tag">{{ t(`selector.cases.${ex.targetCase}`) }}</span>
       </p>
       <p class="game-card__hint">{{ ex.hint_es }}</p>
       <input
         v-model="textInput"
         class="game-card__input"
         :class="{ correct: answered && isCorrect, wrong: answered && !isCorrect }"
-        placeholder="Escribe la forma..."
+        :placeholder="t('game.check') + '...'"
         :disabled="answered"
         @keyup.enter="submit(textInput)"
       />
       <button class="game-card__submit" :disabled="answered || !textInput" @click="submit(textInput)">
-        Comprobar
+        {{ t('game.check') }}
       </button>
       <p v-if="answered && !isCorrect" class="game-card__answer-reveal">
-        Respuesta correcta: <strong>{{ ex.answer }}</strong>
+        {{ t('game.correctAnswer') }} <strong>{{ ex.answer }}</strong>
       </p>
     </template>
 
     <!-- ── Order Blocks ───────────────────────────────────────── -->
     <template v-else-if="ex.type === 'order-blocks'">
-      <p class="game-card__label">Ordena las palabras:</p>
+      <p class="game-card__label">{{ t('game.orderPrompt') }}</p>
       <p class="game-card__hint">{{ ex.hint_es }}</p>
       <div class="game-card__drop-zone">
         <span
@@ -84,15 +84,15 @@
         class="game-card__submit"
         :disabled="answered || selected.length === 0"
         @click="submit(selected.join(' '))"
-      >Comprobar</button>
+      >{{ t('game.check') }}</button>
       <p v-if="answered && !isCorrect" class="game-card__answer-reveal">
-        Respuesta correcta: <strong>{{ ex.answer }}</strong>
+        {{ t('game.correctAnswer') }} <strong>{{ ex.answer }}</strong>
       </p>
     </template>
 
     <!-- ── Mini Story ─────────────────────────────────────────── -->
     <template v-else-if="ex.type === 'mini-story'">
-      <p class="game-card__label">Rellena los huecos:</p>
+      <p class="game-card__label">{{ t('game.storyPrompt') }}</p>
       <div class="game-card__story">
         <p v-for="(line, i) in storyLines" :key="i" class="game-card__story-line">
           <template v-for="(part, j) in line" :key="j">
@@ -115,7 +115,7 @@
         class="game-card__submit"
         :disabled="answered || storyInputs.some(s => !s)"
         @click="submit(storyInputs.join('|'))"
-      >Comprobar</button>
+      >{{ t('game.check') }}</button>
       <div v-if="answered && !isCorrect" class="game-card__answer-reveal">
         <span v-for="(b, i) in ex.blanks" :key="i">
           {{ b.nominative }} → <strong>{{ b.answer }}</strong>&nbsp;
@@ -126,7 +126,7 @@
     <!-- ── Feedback ───────────────────────────────────────────── -->
     <FeedbackBox
       v-if="answered"
-      :message="isCorrect ? '¡Correcto! ✓' : 'Incorrecto ✗'"
+      :message="isCorrect ? t('game.correct') : t('game.incorrect')"
       :correct="isCorrect"
       :incorrect="!isCorrect"
     />
@@ -135,8 +135,11 @@
 
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 import FeedbackBox from './FeedbackBox.vue'
 import type { Exercise, MiniStoryExercise, OrderBlocksExercise } from '../generators/types'
+
+const { t } = useI18n()
 
 const props = defineProps<{ exercise: Exercise }>()
 const emit  = defineEmits<{ (e: 'answer', userAnswer: string): void }>()

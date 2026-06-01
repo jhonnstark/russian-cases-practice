@@ -24,7 +24,7 @@ export const useGameStore = defineStore('game', {
     score:         0,
     streak:        0,
     bestStreak:    0,
-    mistakes:      [] as Exercise[],
+    mistakes:      [] as { exercise: Exercise; userAnswer: string }[],
     answers:       [] as { exercise: Exercise; userAnswer: string; correct: boolean }[],
     sessionDone:   false,
   }),
@@ -100,7 +100,7 @@ export const useGameStore = defineStore('game', {
         if (this.streak > this.bestStreak) this.bestStreak = this.streak
       } else {
         this.streak = 0
-        this.mistakes.push(ex)
+        this.mistakes.push({ exercise: ex, userAnswer })
       }
 
       if (this.currentIndex < this.exercises.length - 1) {

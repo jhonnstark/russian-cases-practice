@@ -4,7 +4,7 @@
 
       <!-- Header -->
       <div class="game-view__header">
-        <button class="game-view__back" @click="$router.push('/')">← Salir</button>
+        <button class="game-view__back" @click="$router.push('/')">{{ t('nav.exit') }}</button>
         <div class="game-view__stats">
           <span class="game-view__stat">⭐ {{ store.score }}</span>
           <span class="game-view__stat game-view__stat--streak" v-if="store.streak > 1">
@@ -27,7 +27,7 @@
       <!-- Next button -->
       <div class="game-view__footer" v-if="answered">
         <button class="game-view__next" @click="next">
-          {{ store.sessionDone ? 'Ver resultados →' : 'Siguiente →' }}
+          {{ store.sessionDone ? t('game.toResults') : t('game.next') }}
         </button>
       </div>
 
@@ -37,11 +37,13 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
 import { useGameStore } from '../store'
 import GameCard from '../components/GameCard.vue'
 import MyProgressBar from '../components/ProgressBar.vue'
 
+const { t } = useI18n()
 const store  = useGameStore()
 const router = useRouter()
 const answered = ref(false)

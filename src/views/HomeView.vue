@@ -1,15 +1,15 @@
 <template>
   <div class="home">
     <div class="home__hero">
-      <h1 class="home__title">🇷🇺 Russian Cases</h1>
-      <p class="home__subtitle">Practice Russian grammar cases with real A2 sentences</p>
+      <h1 class="home__title">{{ t('home.title') }}</h1>
+      <p class="home__subtitle">{{ t('home.subtitle') }}</p>
     </div>
 
     <Card class="home__card">
       <template #content>
         <CaseSelector />
         <Button
-          label="Start Practice"
+          :label="t('home.start')"
           icon="pi pi-play"
           size="large"
           class="start-btn"
@@ -21,9 +21,12 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import Card from 'primevue/card'
 import Button from 'primevue/button'
 import CaseSelector from '../components/CaseSelector.vue'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>
