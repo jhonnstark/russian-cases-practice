@@ -1,8 +1,15 @@
 export default {
   nav: {
     exit: '← Salir',
+    home: '← Inicio',
   },
   home: {
+    appTitle:    'Práctica de Ruso',
+    appSubtitle: 'Elige un juego para practicar',
+    casesTitle:  'Casos Gramaticales',
+    casesDesc:   'Practica nominativo, genitivo, acusativo y más',
+    aspectTitle: 'Aspectos verbales СВ / НСВ',
+    aspectDesc:  'Aprende la diferencia entre perfectivo e imperfectivo',
     title: '🇷🇺 Casos Rusos',
     subtitle: 'Practica los casos gramaticales del ruso con frases reales A2',
     start: 'Empezar',
@@ -55,4 +62,31 @@ export default {
     youWrote:   'Escribiste',
     nominative: 'nominativo',
   },
+  aspect: {
+    home: {
+      title:     'Aspectos Verbales',
+      subtitle:  'СВ (perfectivo) vs НСВ (imperfectivo)',
+      modeLabel: 'Modo de juego',
+      start:     'Empezar juego',
+    },
+    modes: {
+      guessAspect:          'Adivina el aspecto',
+      guessAspectDesc:      'Ve un verbo — elige НСВ o СВ',
+      findPair:             'Encuentra el par',
+      findPairDesc:         'Busca el par aspectual del verbo',
+      completeSentence:     'Completa la frase',
+      completeSentenceDesc: 'Elige la forma correcta según el contexto',
+    },
+    game: {
+      guessPrompt:    '¿Qué aspecto tiene este verbo?',
+      pairPrompt:     'Encuentra el par aspectual de',
+      completePrompt: 'Completa la frase:',
+      clue:           'Pista',
+    },
+    results: {
+      pairOf:   'Par aspectual de',
+      backHome: '← Todos los juegos',
+    },
+  },
 }
+

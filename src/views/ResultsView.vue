@@ -59,7 +59,7 @@
 
       <div class="results-view__actions">
         <Button :label="t('results.playAgain')" icon="pi pi-refresh" @click="playAgain" />
-        <Button :label="t('results.changeMode')" icon="pi pi-home" outlined @click="$router.push('/')" />
+        <Button :label="t('results.changeMode')" icon="pi pi-home" outlined @click="$router.push('/cases')" />
       </div>
 
     </div>

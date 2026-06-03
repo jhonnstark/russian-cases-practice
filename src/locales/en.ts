@@ -1,8 +1,15 @@
 export default {
   nav: {
     exit: '← Exit',
+    home: '← Home',
   },
   home: {
+    appTitle:    'Russian Practice',
+    appSubtitle: 'Choose a game to practice',
+    casesTitle:  'Grammar Cases',
+    casesDesc:   'Practice nominative, genitive, accusative and more',
+    aspectTitle: 'Verb Aspects СВ / НСВ',
+    aspectDesc:  'Learn the difference between perfective and imperfective',
     title: '🇷🇺 Russian Cases',
     subtitle: 'Practice Russian grammar cases with real A2 sentences',
     start: 'Start Practice',
@@ -55,4 +62,31 @@ export default {
     youWrote:   'You wrote',
     nominative: 'nominative',
   },
+  aspect: {
+    home: {
+      title:     'Verb Aspects',
+      subtitle:  'СВ (perfective) vs НСВ (imperfective)',
+      modeLabel: 'Game Mode',
+      start:     'Start Game',
+    },
+    modes: {
+      guessAspect:          'Guess the Aspect',
+      guessAspectDesc:      'See a verb — pick НСВ or СВ',
+      findPair:             'Find the Pair',
+      findPairDesc:         'Find the aspectual partner of the verb',
+      completeSentence:     'Complete the Sentence',
+      completeSentenceDesc: 'Choose the right verb form for the context',
+    },
+    game: {
+      guessPrompt:    'What aspect is this verb?',
+      pairPrompt:     'Find the aspectual pair of',
+      completePrompt: 'Complete the sentence:',
+      clue:           'Clue',
+    },
+    results: {
+      pairOf:   'Aspectual pair of',
+      backHome: '← All Games',
+    },
+  },
 }
+

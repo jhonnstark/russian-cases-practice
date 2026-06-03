@@ -48,3 +48,47 @@ jobs:
           CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
         run: |
           aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+
+      - name: Configure CloudFront SPA error pages
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+        run: |
+          # Get current distribution config and ETag
+          aws cloudfront get-distribution-config \
+            --id $CLOUDFRONT_DISTRIBUTION_ID \
+            --query '{ETag: ETag, Config: DistributionConfig}' \
+            --output json > dist-config.json
+
+          ETAG=$(jq -r '.ETag' dist-config.json)
+          CONFIG=$(jq '.Config' dist-config.json)
+
+          # Inject custom error responses for SPA routing (403 and 404 → /index.html with 200)
+          UPDATED=$(echo "$CONFIG" | jq '
+            .CustomErrorResponses = {
+              "Quantity": 2,
+              "Items": [
+                {
+                  "ErrorCode": 403,
+                  "ResponsePagePath": "/index.html",
+                  "ResponseCode": "200",
+                  "ErrorCachingMinTTL": 0
+                },
+                {
+                  "ErrorCode": 404,
+                  "ResponsePagePath": "/index.html",
+                  "ResponseCode": "200",
+                  "ErrorCachingMinTTL": 0
+                }
+              ]
+            }
+          ')
+
+          echo "$UPDATED" > updated-config.json
+
+          aws cloudfront update-distribution \
+            --id $CLOUDFRONT_DISTRIBUTION_ID \
+            --if-match "$ETAG" \
+            --distribution-config file://updated-config.json

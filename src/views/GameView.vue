@@ -4,7 +4,7 @@
 
       <!-- Header -->
       <div class="game-view__header">
-        <button class="game-view__back" @click="$router.push('/')">{{ t('nav.exit') }}</button>
+        <button class="game-view__back" @click="$router.push('/cases')">{{ t('nav.exit') }}</button>
         <div class="game-view__stats">
           <span class="game-view__stat">⭐ {{ store.score }}</span>
           <span class="game-view__stat game-view__stat--streak" v-if="store.streak > 1">
