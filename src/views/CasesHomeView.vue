@@ -83,4 +83,34 @@ const { t } = useI18n()
   width: 100%;
   margin-top: 1rem;
 }
+
+@media (max-width: 560px) {
+  .home {
+    justify-content: flex-start;
+    min-height: 100svh;
+    padding: 4.5rem 1rem 1.25rem;
+  }
+
+  .back-btn {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .home__hero {
+    margin-bottom: 1.25rem;
+  }
+
+  .home__title {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .home__subtitle {
+    font-size: 1rem;
+  }
+
+  .home__card {
+    max-width: 100%;
+  }
+}
 </style>

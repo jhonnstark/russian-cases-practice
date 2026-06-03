@@ -123,10 +123,11 @@ export const useGameStore = defineStore('game', {
           return normalize(userAnswer) === normalize(ex.answer)
         case 'order-blocks':
           return normalize(userAnswer) === normalize(ex.answer)
-        case 'mini-story':
+        case 'mini-story': {
           // userAnswer = "форма1|форма2"
           const parts = userAnswer.split('|').map(normalize)
           return ex.blanks.every((b, i) => parts[i] === normalize(b.answer))
+        }
       }
     },
   },

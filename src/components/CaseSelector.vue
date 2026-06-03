@@ -32,9 +32,9 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { useGameStore } from '../store'
-import type { GameMode } from '../store'
-import type { Case } from '../generators/types'
+import { useGameStore } from '@/store'
+import type { GameMode } from '@/store'
+import type { Case } from '@/generators'
 
 const { t } = useI18n()
 const store = useGameStore()
@@ -70,18 +70,20 @@ const modeOptions: { value: GameMode; icon: string }[] = [
 
 .selector__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
   gap: 0.6rem;
 }
 
 .selector__grid--modes {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
 }
 
 .selector__chip {
   display: flex;
   align-items: center;
   gap: 0.4rem;
+  min-width: 0;
+  min-height: 2.75rem;
   padding: 0.6rem 0.75rem;
   border: 2px solid #334155;
   border-radius: 10px;
@@ -90,6 +92,16 @@ const modeOptions: { value: GameMode; icon: string }[] = [
   font-weight: 500;
   color: #94a3b8;
   transition: all 0.15s;
+}
+
+.selector__chip i {
+  flex: 0 0 auto;
+}
+
+.selector__chip span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  line-height: 1.2;
 }
 
 .selector__chip:hover {
@@ -102,5 +114,16 @@ const modeOptions: { value: GameMode; icon: string }[] = [
   background: #1e1b4b;
   color: #a5b4fc;
   font-weight: 700;
+}
+
+@media (max-width: 420px) {
+  .selector__grid,
+  .selector__grid--modes {
+    grid-template-columns: 1fr;
+  }
+
+  .selector__chip {
+    padding: 0.65rem 0.75rem;
+  }
 }
 </style>

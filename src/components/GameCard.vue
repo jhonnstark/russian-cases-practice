@@ -140,7 +140,7 @@
 import { ref, computed, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import FeedbackBox from './FeedbackBox.vue'
-import type { Exercise, MiniStoryExercise, OrderBlocksExercise } from '@/generators'
+import type { Exercise, MiniStoryExercise, OrderBlocksExercise, EndingChoiceExercise, CaseChoiceExercise, TransformExercise } from '@/generators'
 
 const { t } = useI18n()
 
@@ -207,7 +207,7 @@ function submit(userAnswer: string) {
     const parts = userAnswer.split('|').map(n)
     correct = (e as MiniStoryExercise).blanks.every((b, i) => parts[i] === n(b.answer))
   } else {
-    correct = n(userAnswer) === n((e as any).answer)
+    correct = n(userAnswer) === n((e as EndingChoiceExercise | CaseChoiceExercise | TransformExercise | OrderBlocksExercise).answer)
   }
 
   answered.value  = true
