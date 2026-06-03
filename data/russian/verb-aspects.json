@@ -558,84 +558,96 @@
         "hint_es": "Cada día... → acción repetida → НСВ",
         "clue": "каждый день",
         "verbKey": "читать",
-        "form": "читаю"
+        "form": "читаю",
+        "contrastForm": "прочитаю"
       },
       {
         "template": "Обычно она ___ суп на обед.",
         "hint_es": "Normalmente... → hábito → НСВ",
         "clue": "обычно",
         "verbKey": "готовить",
-        "form": "готовит"
+        "form": "готовит",
+        "contrastForm": "приготовит"
       },
       {
         "template": "Вчера я весь день ___ письмо.",
         "hint_es": "todo el día... → proceso → НСВ",
         "clue": "весь день",
         "verbKey": "писать",
-        "form": "писал"
+        "form": "писал",
+        "contrastForm": "написал"
       },
       {
         "template": "Он часто ___ фильмы по вечерам.",
         "hint_es": "con frecuencia... → hábito → НСВ",
         "clue": "часто",
         "verbKey": "смотреть",
-        "form": "смотрит"
+        "form": "смотрит",
+        "contrastForm": "посмотрит"
       },
       {
         "template": "Каждое утро я ___ рано.",
         "hint_es": "Cada mañana... → hábito → НСВ",
         "clue": "каждое утро",
         "verbKey": "вставать",
-        "form": "встаю"
+        "form": "встаю",
+        "contrastForm": "встану"
       },
       {
         "template": "Иногда мы ___ пиццу.",
         "hint_es": "A veces... → acción repetida → НСВ",
         "clue": "иногда",
         "verbKey": "заказывать",
-        "form": "заказываем"
+        "form": "заказываем",
+        "contrastForm": "закажем"
       },
       {
         "template": "Она всегда ___ на вопросы.",
         "hint_es": "Siempre... → hábito → НСВ",
         "clue": "всегда",
         "verbKey": "отвечать",
-        "form": "отвечает"
+        "form": "отвечает",
+        "contrastForm": "ответит"
       },
       {
         "template": "Я долго ___ задание.",
         "hint_es": "durante mucho tiempo... → proceso → НСВ",
         "clue": "долго",
         "verbKey": "делать",
-        "form": "делал"
+        "form": "делал",
+        "contrastForm": "сделал"
       },
       {
         "template": "Она каждое воскресенье ___ маме.",
         "hint_es": "cada domingo... → hábito → НСВ",
         "clue": "каждое воскресенье",
         "verbKey": "звонить",
-        "form": "звонит"
+        "form": "звонит",
+        "contrastForm": "позвонит"
       },
       {
         "template": "Он обычно ___ продукты в субботу.",
         "hint_es": "normalmente... → hábito → НСВ",
         "clue": "обычно",
         "verbKey": "покупать",
-        "form": "покупает"
+        "form": "покупает",
+        "contrastForm": "купит"
       },
       {
         "template": "Я весь вечер ___ слова.",
         "hint_es": "toda la noche... → proceso → НСВ",
         "clue": "весь вечер",
         "verbKey": "учить",
-        "form": "учил"
+        "form": "учил",
+        "contrastForm": "выучил"
       },
       {
         "template": "Дети часто ___ во дворе.",
         "hint_es": "con frecuencia... → hábito → НСВ",
         "clue": "часто",
         "verbKey": "прыгать",
-        "form": "прыгают"
+        "form": "прыгают",
+        "contrastForm": "прыгнут"
       }
     ],
     "perfective": [
@@ -644,84 +656,96 @@
         "hint_es": "Ya... → resultado completado → СВ",
         "clue": "уже",
         "verbKey": "прочитать",
-        "form": "прочитал"
+        "form": "прочитал",
+        "contrastForm": "читал"
       },
       {
         "template": "Наконец она ___ суп.",
         "hint_es": "Por fin... → resultado → СВ",
         "clue": "наконец",
         "verbKey": "приготовить",
-        "form": "приготовила"
+        "form": "приготовила",
+        "contrastForm": "готовила"
       },
       {
         "template": "Я ___ письмо и отправил его.",
         "hint_es": "acción terminada + resultado → СВ",
         "clue": "result",
         "verbKey": "написать",
-        "form": "написал"
+        "form": "написал",
+        "contrastForm": "писал"
       },
       {
         "template": "Вчера я ___ этот фильм до конца.",
         "hint_es": "hasta el final → acción completada → СВ",
         "clue": "до конца",
         "verbKey": "посмотреть",
-        "form": "посмотрел"
+        "form": "посмотрел",
+        "contrastForm": "смотрел"
       },
       {
         "template": "Он один раз ___ мне об этом.",
         "hint_es": "una sola vez → evento único → СВ",
         "clue": "один раз",
         "verbKey": "рассказать",
-        "form": "рассказал"
+        "form": "рассказал",
+        "contrastForm": "рассказывал"
       },
       {
         "template": "Я наконец ___ на его сообщение.",
         "hint_es": "por fin → resultado → СВ",
         "clue": "наконец",
         "verbKey": "ответить",
-        "form": "ответил"
+        "form": "ответил",
+        "contrastForm": "отвечал"
       },
       {
         "template": "Мы ___ продукты и пошли домой.",
         "hint_es": "acción completada + continuación → СВ",
         "clue": "result",
         "verbKey": "купить",
-        "form": "купили"
+        "form": "купили",
+        "contrastForm": "покупали"
       },
       {
         "template": "Она уже ___ домашнее задание.",
         "hint_es": "Ya... → resultado → СВ",
         "clue": "уже",
         "verbKey": "сделать",
-        "form": "сделала"
+        "form": "сделала",
+        "contrastForm": "делала"
       },
       {
         "template": "Он наконец ___ работу.",
         "hint_es": "por fin → resultado → СВ",
         "clue": "наконец",
         "verbKey": "найти",
-        "form": "нашёл"
+        "form": "нашёл",
+        "contrastForm": "искал"
       },
       {
         "template": "Я уже ___ все слова к уроку.",
         "hint_es": "Ya... → resultado completado → СВ",
         "clue": "уже",
         "verbKey": "выучить",
-        "form": "выучил"
+        "form": "выучил",
+        "contrastForm": "учил"
       },
       {
         "template": "Она наконец ___ проблему.",
         "hint_es": "por fin → resultado → СВ",
         "clue": "наконец",
         "verbKey": "решить",
-        "form": "решила"
+        "form": "решила",
+        "contrastForm": "решала"
       },
       {
         "template": "Он один раз ___ в воду с мостика.",
         "hint_es": "una sola vez → evento único → СВ",
         "clue": "один раз",
         "verbKey": "прыгнуть",
-        "form": "прыгнул"
+        "form": "прыгнул",
+        "contrastForm": "прыгал"
       }
     ]
   }

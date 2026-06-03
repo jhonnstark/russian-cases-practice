@@ -9,6 +9,7 @@ type SentenceEntry = {
   clue: string
   verbKey: string
   form: string
+  contrastForm: string
 }
 
 const IMP_SENTENCES: SentenceEntry[] = verbAspectsData.sentences.imperfective as SentenceEntry[]
@@ -74,17 +75,9 @@ function generateFindPair(verb: VerbPair, useImperfective: boolean): FindPairExe
 
 // ── Mode 3: Complete the Sentence ─────────────────────────────────────────────
 function generateCompleteSentence(entry: SentenceEntry, isImperfective: boolean): CompleteSentenceExercise {
-  // Find the corresponding pair form for the wrong option
-  const verb = VERBS.find(v =>
-    isImperfective ? v.imperfective === entry.verbKey : v.perfective === entry.verbKey
-  )
+  const impForm = isImperfective ? entry.form : entry.contrastForm
+  const pfvForm = isImperfective ? entry.contrastForm : entry.form
 
-  const impForm = isImperfective ? entry.form : (verb?.imperfective ?? entry.form)
-  const pfvForm = isImperfective ? (verb?.perfective ?? entry.form) : entry.form
-
-  // For complete-sentence we need both conjugated forms.
-  // The data already stores the conjugated form; we use the pair's base as fallback.
-  // We store [imperfective-conjugated, perfective-conjugated]
   const options: [string, string] = [impForm, pfvForm]
 
   const answer = entry.form
