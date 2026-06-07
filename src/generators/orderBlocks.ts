@@ -1,7 +1,7 @@
 import type { RussianWord, Case, OrderBlocksExercise } from './types'
 import semanticPatternsRaw from '../../data/russian/semantic-patterns.json'
-import { pickWordForPattern, getCaseForm } from './semanticValidator'
-import type { SemanticPattern } from './semanticValidator'
+import { createGenerationContext, getCaseForm, isPatternOnCooldown, pickWordForPattern } from './semanticValidator'
+import type { GenerationContext, SemanticPattern } from './semanticValidator'
 
 const SEMANTIC_PATTERNS = semanticPatternsRaw as SemanticPattern[]
 
@@ -68,17 +68,26 @@ function pick<T>(arr: T[]): T {
  * Genera un ejercicio de tipo Order Blocks para un caso dado,
  * eligiendo semánticamente una palabra y patrón compatibles.
  */
-export function generateOrderBlocks(words: RussianWord[], targetCase: Case): OrderBlocksExercise {
+export function generateOrderBlocks(
+  words: RussianWord[],
+  targetCase: Case,
+  context?: GenerationContext,
+): OrderBlocksExercise {
   // Get all block templates for the target case
-  const casePatterns = SEMANTIC_PATTERNS.filter(p => p.case === targetCase)
-  const semanticPattern = pick(casePatterns)
+  const casePatterns = SEMANTIC_PATTERNS.filter(p =>
+    p.case === targetCase && !isPatternOnCooldown(p, context)
+  )
+  const semanticPattern = pick(casePatterns.length > 0
+    ? casePatterns
+    : SEMANTIC_PATTERNS.filter(p => p.case === targetCase)
+  )
   const blockTemplate = BLOCK_TEMPLATES.find(t => t.patternKey === semanticPattern.pattern)
     ?? BLOCK_TEMPLATES.find(t => {
       const sp = getSemanticPattern(t.patternKey)
       return sp?.case === targetCase
     })!
 
-  const word = pickWordForPattern(words, semanticPattern)
+  const word = pickWordForPattern(words, semanticPattern, context)
   const form = getCaseForm(word, targetCase)
   const orderedBlocks = blockTemplate.words(form)
   const answer = orderedBlocks.join(' ')
@@ -111,12 +120,12 @@ export function generateOrderBlocksBatch(
 
   const cases: Case[] = ['nominative', 'genitive', 'accusative', 'prepositional', 'dative', 'instrumental']
   const exercises: OrderBlocksExercise[] = []
+  const context = createGenerationContext()
 
   for (let i = 0; i < count; i++) {
     const targetCase = options?.filterCase ?? pick(cases)
-    exercises.push(generateOrderBlocks(pool, targetCase))
+    exercises.push(generateOrderBlocks(pool, targetCase, context))
   }
 
   return exercises
 }
-

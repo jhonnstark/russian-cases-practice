@@ -6,6 +6,73 @@
 
 import type { RussianWord, Case } from './types'
 
+const DEFAULT_NOUN_COOLDOWN = 30
+const DEFAULT_PATTERN_COOLDOWN = 10
+const DEFAULT_CATEGORY_WINDOW = 30
+const DEFAULT_MAX_CATEGORY_SHARE = 0.2
+const DEFAULT_MIN_CANDIDATE_POOL = 8
+
+export interface GenerationContext {
+  step: number
+  nounCooldown: number
+  patternCooldown: number
+  categoryWindow: number
+  maxCategoryShare: number
+  minCandidatePool: number
+  lastSeenByLemma: Map<string, number>
+  diversityPenaltyByLemma: Map<string, number>
+  recentPatterns: string[]
+  recentCategories: string[]
+}
+
+export function createGenerationContext(options?: Partial<Pick<
+  GenerationContext,
+  'nounCooldown' | 'patternCooldown' | 'categoryWindow' | 'maxCategoryShare' | 'minCandidatePool'
+>>): GenerationContext {
+  return {
+    step: 0,
+    nounCooldown: options?.nounCooldown ?? DEFAULT_NOUN_COOLDOWN,
+    patternCooldown: options?.patternCooldown ?? DEFAULT_PATTERN_COOLDOWN,
+    categoryWindow: options?.categoryWindow ?? DEFAULT_CATEGORY_WINDOW,
+    maxCategoryShare: options?.maxCategoryShare ?? DEFAULT_MAX_CATEGORY_SHARE,
+    minCandidatePool: options?.minCandidatePool ?? DEFAULT_MIN_CANDIDATE_POOL,
+    lastSeenByLemma: new Map(),
+    diversityPenaltyByLemma: new Map(),
+    recentPatterns: [],
+    recentCategories: [],
+  }
+}
+
+const CATEGORY_TAGS = [
+  'family',
+  'friend',
+  'person',
+  'city',
+  'country',
+  'place',
+  'food',
+  'drink',
+  'animal',
+  'education',
+  'school',
+  'study',
+  'work',
+  'career',
+  'travel',
+  'tourism',
+  'nature',
+  'history',
+  'culture',
+  'literature',
+  'technology',
+  'transport',
+  'holiday',
+  'music',
+  'sport',
+  'object',
+  'abstract',
+]
+
 /**
  * Picks a random word from an array using pedagogicBonus as weight.
  * A word with pedagogicBonus=5 appears ~5× more often than one with no bonus.
@@ -18,6 +85,104 @@ function weightedPick(words: RussianWord[]): RussianWord {
     if (r <= 0) return w
   }
   return words[words.length - 1]
+}
+
+function weightedPickByScore(words: RussianWord[], score: (word: RussianWord) => number): RussianWord {
+  const weights = words.map(w => Math.max(0.1, score(w)))
+  const totalWeight = weights.reduce((sum, weight) => sum + weight, 0)
+  let r = Math.random() * totalWeight
+
+  for (let i = 0; i < words.length; i++) {
+    r -= weights[i]
+    if (r <= 0) return words[i]
+  }
+
+  return words[words.length - 1]
+}
+
+function primaryCategory(word: RussianWord): string {
+  return word.tags.find(t => CATEGORY_TAGS.includes(t)) ?? word.tags[0] ?? 'other'
+}
+
+function isInNounCooldown(word: RussianWord, context: GenerationContext): boolean {
+  const lastSeen = context.lastSeenByLemma.get(word.nominative)
+  return lastSeen !== undefined && context.step - lastSeen < context.nounCooldown
+}
+
+function isCategoryOverLimit(word: RussianWord, context: GenerationContext): boolean {
+  const recent = context.recentCategories.slice(-context.categoryWindow)
+  if (recent.length < 5) return false
+
+  const category = primaryCategory(word)
+  const occurrences = recent.filter(c => c === category).length
+  return (occurrences + 1) / (recent.length + 1) > context.maxCategoryShare
+}
+
+function diversityScore(word: RussianWord, context: GenerationContext): number {
+  const penalty = context.diversityPenaltyByLemma.get(word.nominative) ?? 0
+  return Math.max(0, 10 - penalty * 2)
+}
+
+function recencyScore(word: RussianWord, context: GenerationContext): number {
+  const lastSeen = context.lastSeenByLemma.get(word.nominative)
+  if (lastSeen === undefined) return 10
+
+  const distance = context.step - lastSeen
+  if (distance < context.nounCooldown) return 0
+  return Math.min(10, 4 + distance / 3)
+}
+
+function semanticScore(word: RussianWord, pattern?: SemanticPattern): number {
+  if (!pattern) return 7
+  if (word.tags.some(t => pattern.preferredTags.includes(t))) return 10
+  if (word.tags.some(t => pattern.allowedTags.includes(t))) return 7
+  return 0
+}
+
+function effectiveScore(
+  word: RussianWord,
+  targetCase: Case | undefined,
+  context: GenerationContext,
+  pattern?: SemanticPattern,
+): number {
+  const grammarScore = targetCase ? learningScore(word, targetCase) : (word.pedagogicBonus ?? 1) * 2
+
+  return (
+    grammarScore * 0.25 +
+    diversityScore(word, context) * 0.35 +
+    recencyScore(word, context) * 0.25 +
+    semanticScore(word, pattern) * 0.15
+  )
+}
+
+function applyDiversityFilters(words: RussianWord[], context?: GenerationContext): RussianWord[] {
+  if (!context) return words
+
+  const filtered = words.filter(w =>
+    !isInNounCooldown(w, context) &&
+    !isCategoryOverLimit(w, context)
+  )
+
+  return filtered.length >= Math.min(context.minCandidatePool, words.length) ? filtered : words
+}
+
+function registerSelection(word: RussianWord, pattern: SemanticPattern | undefined, context?: GenerationContext): void {
+  if (!context) return
+
+  context.lastSeenByLemma.set(word.nominative, context.step)
+  context.diversityPenaltyByLemma.set(
+    word.nominative,
+    (context.diversityPenaltyByLemma.get(word.nominative) ?? 0) + 1,
+  )
+
+  if (pattern) {
+    context.recentPatterns.push(pattern.pattern)
+    context.recentPatterns = context.recentPatterns.slice(-context.patternCooldown)
+  }
+
+  context.recentCategories.push(primaryCategory(word))
+  context.recentCategories = context.recentCategories.slice(-context.categoryWindow)
+  context.step += 1
 }
 
 /**
@@ -100,6 +265,26 @@ export function isGoodForChoiceExercise(word: RussianWord, targetCase: Case): bo
 
 }
 
+export function validChoiceCandidates(
+  words: RussianWord[],
+  pattern: SemanticPattern,
+  targetCase: Case,
+): RussianWord[] {
+  const compatible = words.filter(w => isCompatible(w, pattern))
+  const pool = compatible.length > 0 ? compatible : words
+
+  if (targetCase === 'nominative') {
+    return pool.filter(w => !isFullyIndeclinable(w))
+  }
+
+  return pool.filter(w => isGoodForChoiceExercise(w, targetCase))
+}
+
+export function isPatternOnCooldown(pattern: SemanticPattern, context?: GenerationContext): boolean {
+  if (!context) return false
+  return context.recentPatterns.includes(pattern.pattern)
+}
+
 /**
  * Picks a word for choice exercises, preferring words with higher learning scores
  * and filtering out indeclinables / no-change words for the target case.
@@ -110,6 +295,7 @@ export function pickWordForChoiceExercise(
   words: RussianWord[],
   pattern: SemanticPattern,
   targetCase: Case,
+  context?: GenerationContext,
 ): RussianWord {
   // Start with semantically compatible words
   const compatible = words.filter(w => isCompatible(w, pattern))
@@ -122,24 +308,58 @@ export function pickWordForChoiceExercise(
     )
     const good = pool.filter(w => !isFullyIndeclinable(w))
     const source = preferred.length > 0 && Math.random() < 0.7 ? preferred : (good.length > 0 ? good : pool)
-    return weightedPick(source)
+    const diverseSource = applyDiversityFilters(source, context)
+    const selected = context
+      ? weightedPickByScore(diverseSource, w => effectiveScore(w, targetCase, context, pattern))
+      : weightedPick(diverseSource)
+    registerSelection(selected, pattern, context)
+    return selected
   }
 
   // Filter to words where the form actually changes for this case
   const changing = pool.filter(w => isGoodForChoiceExercise(w, targetCase))
   const usable = changing.length > 0 ? changing : pool
+  const diverseUsable = applyDiversityFilters(usable, context)
 
   // Prefer high learning-score words (score >= 7) with 75% probability
-  const highScore = usable.filter(w => learningScore(w, targetCase) >= 7)
+  const highScore = diverseUsable.filter(w => learningScore(w, targetCase) >= 7)
   const preferredHigh = highScore.filter(w => w.tags.some(t => pattern.preferredTags.includes(t)))
 
+  let selected: RussianWord
   if (preferredHigh.length > 0 && Math.random() < 0.75) {
-    return weightedPick(preferredHigh)
+    selected = context
+      ? weightedPickByScore(preferredHigh, w => effectiveScore(w, targetCase, context, pattern))
+      : weightedPick(preferredHigh)
+  } else if (highScore.length > 0 && Math.random() < 0.75) {
+    selected = context
+      ? weightedPickByScore(highScore, w => effectiveScore(w, targetCase, context, pattern))
+      : weightedPick(highScore)
+  } else {
+    selected = context
+      ? weightedPickByScore(diverseUsable, w => effectiveScore(w, targetCase, context, pattern))
+      : weightedPick(diverseUsable)
   }
-  if (highScore.length > 0 && Math.random() < 0.75) {
-    return weightedPick(highScore)
-  }
-  return weightedPick(usable)
+
+  registerSelection(selected, pattern, context)
+  return selected
+}
+
+export function pickWordForFormExercise(
+  words: RussianWord[],
+  targetCase: Case,
+  context?: GenerationContext,
+): RussianWord {
+  const usable = targetCase === 'nominative'
+    ? words.filter(w => !isFullyIndeclinable(w))
+    : words.filter(w => isGoodForChoiceExercise(w, targetCase))
+  const source = usable.length > 0 ? usable : words
+  const diverseSource = applyDiversityFilters(source, context)
+  const selected = context
+    ? weightedPickByScore(diverseSource, w => effectiveScore(w, targetCase, context))
+    : weightedPick(diverseSource)
+
+  registerSelection(selected, undefined, context)
+  return selected
 }
 
 export interface SemanticPattern {
@@ -181,12 +401,18 @@ export function filterBySemantics(
  */
 export function pickWordForPattern(
   words: RussianWord[],
-  pattern: SemanticPattern
+  pattern: SemanticPattern,
+  context?: GenerationContext,
 ): RussianWord {
   const compatible = words.filter(w => isCompatible(w, pattern))
 
   if (compatible.length === 0) {
-    return weightedPick(words)
+    const source = applyDiversityFilters(words, context)
+    const selected = context
+      ? weightedPickByScore(source, w => effectiveScore(w, pattern.case, context, pattern))
+      : weightedPick(source)
+    registerSelection(selected, pattern, context)
+    return selected
   }
 
   const preferred = compatible.filter(w =>
@@ -194,5 +420,11 @@ export function pickWordForPattern(
   )
 
   const pool = preferred.length > 0 && Math.random() < 0.7 ? preferred : compatible
-  return weightedPick(pool)
+  const diversePool = applyDiversityFilters(pool, context)
+  const selected = context
+    ? weightedPickByScore(diversePool, w => effectiveScore(w, pattern.case, context, pattern))
+    : weightedPick(diversePool)
+
+  registerSelection(selected, pattern, context)
+  return selected
 }

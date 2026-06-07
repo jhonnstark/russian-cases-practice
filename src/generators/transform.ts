@@ -1,5 +1,5 @@
 import type { RussianWord, Case, TransformExercise } from './types'
-import { getCaseForm } from './semanticValidator'
+import { createGenerationContext, getCaseForm, pickWordForFormExercise } from './semanticValidator'
 
 // Pista contextual por caso para guiar al usuario
 const CASE_HINTS: Record<Case, string> = {
@@ -59,24 +59,11 @@ export function generateTransformBatch(
   const cases: Case[] = ['nominative', 'genitive', 'accusative', 'prepositional', 'dative', 'instrumental']
   const exercises: TransformExercise[] = []
 
-  // Evitar repetir la misma palabra+caso consecutivamente
-  let lastKey = ''
+  const context = createGenerationContext()
 
   for (let i = 0; i < count; i++) {
-    let word: RussianWord
-    let targetCase: Case
-    let key: string
-
-    // Intentar hasta 5 veces evitar repetición
-    let attempts = 0
-    do {
-      word = pick(pool)
-      targetCase = options?.filterCase ?? pick(cases)
-      key = `${word.nominative}-${targetCase}`
-      attempts++
-    } while (key === lastKey && attempts < 5)
-
-    lastKey = key
+    const targetCase = options?.filterCase ?? pick(cases)
+    const word = pickWordForFormExercise(pool, targetCase, context)
     exercises.push(generateTransform(word, targetCase))
   }
 

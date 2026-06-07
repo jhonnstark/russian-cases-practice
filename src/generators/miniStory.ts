@@ -1,7 +1,7 @@
 import type { RussianWord, Case, MiniStoryExercise } from './types'
 import semanticPatternsRaw from '../../data/russian/semantic-patterns.json'
-import { pickWordForPattern, getCaseForm } from './semanticValidator'
-import type { SemanticPattern } from './semanticValidator'
+import { createGenerationContext, getCaseForm, pickWordForPattern } from './semanticValidator'
+import type { GenerationContext, SemanticPattern } from './semanticValidator'
 
 const SEMANTIC_PATTERNS = semanticPatternsRaw as SemanticPattern[]
 
@@ -128,19 +128,19 @@ function getPattern(patternHint: string): SemanticPattern | undefined {
  * Genera un ejercicio de Mini Story eligiendo semánticamente
  * palabras compatibles con cada hueco de la plantilla.
  */
-export function generateMiniStory(words: RussianWord[]): MiniStoryExercise {
+export function generateMiniStory(words: RussianWord[], context?: GenerationContext): MiniStoryExercise {
   const template = pick(STORY_TEMPLATES)
   const [b1, b2] = template.blanks
 
   const p1 = getPattern(b1.patternHint)
   const p2 = getPattern(b2.patternHint)
 
-  const word1 = p1 ? pickWordForPattern(words, p1) : pick(words)
+  const word1 = p1 ? pickWordForPattern(words, p1, context) : pick(words)
   // Ensure word2 differs from word1
   let word2: RussianWord
   let attempts = 0
   do {
-    word2 = p2 ? pickWordForPattern(words, p2) : pick(words)
+    word2 = p2 ? pickWordForPattern(words, p2, context) : pick(words)
     attempts++
   } while (word2.nominative === word1.nominative && attempts < 10)
 
@@ -174,9 +174,10 @@ export function generateMiniStoryBatch(
 ): MiniStoryExercise[] {
   const pool = filterLevel ? words.filter(w => w.level === filterLevel) : words
   const exercises: MiniStoryExercise[] = []
+  const context = createGenerationContext()
 
   for (let i = 0; i < count; i++) {
-    exercises.push(generateMiniStory(pool))
+    exercises.push(generateMiniStory(pool, context))
   }
 
   return exercises

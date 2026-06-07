@@ -1,7 +1,13 @@
 import type { RussianWord, Case, CaseChoiceExercise } from './types'
 import semanticPatternsRaw from '../../data/russian/semantic-patterns.json'
-import { pickWordForChoiceExercise, getCaseForm } from './semanticValidator'
-import type { SemanticPattern } from './semanticValidator'
+import {
+  createGenerationContext,
+  getCaseForm,
+  isPatternOnCooldown,
+  pickWordForChoiceExercise,
+  validChoiceCandidates,
+} from './semanticValidator'
+import type { GenerationContext, SemanticPattern } from './semanticValidator'
 
 const SEMANTIC_PATTERNS = semanticPatternsRaw as SemanticPattern[]
 
@@ -60,13 +66,34 @@ function pickPatternForCase(targetCase: Case): SemanticPattern {
   return pick(patterns)
 }
 
+function pickViablePatternForCase(
+  words: RussianWord[],
+  targetCase: Case,
+  context?: GenerationContext,
+): SemanticPattern {
+  const patterns = shuffle(SEMANTIC_PATTERNS.filter(p =>
+    p.case === targetCase && !isPatternOnCooldown(p, context)
+  ))
+  const fallbackPatterns = patterns.length > 0
+    ? patterns
+    : shuffle(SEMANTIC_PATTERNS.filter(p => p.case === targetCase))
+
+  return fallbackPatterns.find(p =>
+    validChoiceCandidates(words, p, targetCase).length >= (context?.minCandidatePool ?? 8)
+  ) ?? fallbackPatterns[0] ?? pickPatternForCase(targetCase)
+}
+
 /**
  * Attempts to build a CaseChoiceExercise for the given case.
  * Returns null if the word produces < 2 unique options (Rule 5).
  */
-function tryGenerateCaseChoice(words: RussianWord[], targetCase: Case): CaseChoiceExercise | null {
-  const semanticPattern = pickPatternForCase(targetCase)
-  const word = pickWordForChoiceExercise(words, semanticPattern, targetCase)
+function tryGenerateCaseChoice(
+  words: RussianWord[],
+  targetCase: Case,
+  context?: GenerationContext,
+): CaseChoiceExercise | null {
+  const semanticPattern = pickViablePatternForCase(words, targetCase, context)
+  const word = pickWordForChoiceExercise(words, semanticPattern, targetCase, context)
 
   const correctForm = getCaseForm(word, targetCase)
   const prompt = semanticPattern.pattern.replace('{noun}', '___')
@@ -139,10 +166,12 @@ export function generateCaseChoiceBatch(
   const pool = options?.filterLevel ? words.filter(w => w.level === options.filterLevel) : words
   const cases: Case[] = ['nominative', 'genitive', 'accusative', 'prepositional', 'dative', 'instrumental']
   const exercises: CaseChoiceExercise[] = []
+  const context = createGenerationContext()
 
   for (let i = 0; i < count; i++) {
     const targetCase = options?.filterCase ?? pick(cases)
-    exercises.push(generateCaseChoice(pool, targetCase))
+    const ex = tryGenerateCaseChoice(pool, targetCase, context)
+    if (ex) exercises.push(ex)
   }
 
   return exercises

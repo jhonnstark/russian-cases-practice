@@ -1,7 +1,13 @@
 import type { RussianWord, Case, EndingChoiceExercise } from './types'
 import semanticPatternsRaw from '../../data/russian/semantic-patterns.json'
-import { pickWordForChoiceExercise, getCaseForm } from './semanticValidator'
-import type { SemanticPattern } from './semanticValidator'
+import {
+  createGenerationContext,
+  getCaseForm,
+  isPatternOnCooldown,
+  pickWordForChoiceExercise,
+  validChoiceCandidates,
+} from './semanticValidator'
+import type { GenerationContext, SemanticPattern } from './semanticValidator'
 
 const SEMANTIC_PATTERNS = semanticPatternsRaw as SemanticPattern[]
 
@@ -70,6 +76,23 @@ function pickPatternForCase(targetCase: Case): SemanticPattern {
   return pick(patterns)
 }
 
+function pickViablePatternForCase(
+  words: RussianWord[],
+  targetCase: Case,
+  context?: GenerationContext,
+): SemanticPattern {
+  const patterns = shuffle(SEMANTIC_PATTERNS.filter(p =>
+    p.case === targetCase && !isPatternOnCooldown(p, context)
+  ))
+  const fallbackPatterns = patterns.length > 0
+    ? patterns
+    : shuffle(SEMANTIC_PATTERNS.filter(p => p.case === targetCase))
+
+  return fallbackPatterns.find(p =>
+    validChoiceCandidates(words, p, targetCase).length >= (context?.minCandidatePool ?? 8)
+  ) ?? fallbackPatterns[0] ?? pickPatternForCase(targetCase)
+}
+
 /**
  * Extrae el "stem" visible y el ending correcto a partir del nominativo y la forma del caso.
  * Ej: nominative="машина", form="машины" → stem="машин", ending="ы"
@@ -87,9 +110,13 @@ function splitStemEnding(nominative: string, form: string): { stem: string; endi
  * Attempts to build an EndingChoiceExercise.
  * Returns null if unique options < 2 (Rule 5 — e.g. indeclinable slipped through).
  */
-function tryGenerateEndingChoice(words: RussianWord[], targetCase: Case): EndingChoiceExercise | null {
-  const semanticPattern = pickPatternForCase(targetCase)
-  const word = pickWordForChoiceExercise(words, semanticPattern, targetCase)
+function tryGenerateEndingChoice(
+  words: RussianWord[],
+  targetCase: Case,
+  context?: GenerationContext,
+): EndingChoiceExercise | null {
+  const semanticPattern = pickViablePatternForCase(words, targetCase, context)
+  const word = pickWordForChoiceExercise(words, semanticPattern, targetCase, context)
 
   const form = getCaseForm(word, targetCase)
   const { stem, ending: correctEnding } = splitStemEnding(word.nominative, form)
@@ -154,10 +181,12 @@ export function generateEndingChoiceBatch(
   const pool = options?.filterLevel ? words.filter(w => w.level === options.filterLevel) : words
   const cases: Case[] = ['nominative', 'genitive', 'accusative', 'prepositional', 'dative', 'instrumental']
   const exercises: EndingChoiceExercise[] = []
+  const context = createGenerationContext()
 
   for (let i = 0; i < count; i++) {
     const targetCase = options?.filterCase ?? pick(cases)
-    exercises.push(generateEndingChoice(pool, targetCase))
+    const ex = tryGenerateEndingChoice(pool, targetCase, context)
+    if (ex) exercises.push(ex)
   }
 
   return exercises
