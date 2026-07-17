@@ -31,8 +31,7 @@
           <p>{{ lesson.goal }}</p>
           <small>{{ lesson.type }}</small>
         </div>
-        <button v-if="lesson.route" @click="router.push(lesson.route)">Practicar</button>
-        <button v-else disabled>Diseñado</button>
+        <button @click="openLesson(lesson)">Practicar</button>
       </article>
     </section>
   </div>
@@ -63,6 +62,15 @@ const campaign = computed(() => {
   const found = campaignData.campaigns.find(c => c.id === route.params.id) as Campaign | undefined
   return found?.status === 'available' ? found : undefined
 })
+
+function openLesson(lesson: { id: string; route?: string }) {
+  if (lesson.route) {
+    router.push(lesson.route)
+    return
+  }
+
+  router.push(`/campaigns/${route.params.id}/lessons/${lesson.id}`)
+}
 </script>
 
 <style scoped>
@@ -205,4 +213,5 @@ button:disabled {
   }
 }
 </style>
+
 

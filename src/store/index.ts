@@ -7,12 +7,14 @@ import { generateOrderBlocksBatch }  from '@/generators'
 import { generateMiniStoryBatch }    from '@/generators'
 import dictionaryData from '@data/russian/russian_dictionary.json'
 import foodDictionaryData from '@data/russian/food-dictionary.json'
+import campaignDictionaryData from '@data/russian/campaign-dictionary.json'
 
 export type GameMode = 'ending-choice' | 'case-choice' | 'transform' | 'order-blocks' | 'mini-story'
 
 const WORDS: RussianWord[] = [
   ...(dictionaryData.words as RussianWord[]),
   ...(foodDictionaryData.words as RussianWord[]),
+  ...(campaignDictionaryData.words as RussianWord[]),
 ]
 const EXERCISES_PER_ROUND = 10
 
@@ -136,4 +138,5 @@ export const useGameStore = defineStore('game', {
     },
   },
 })
+
 

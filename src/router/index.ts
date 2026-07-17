@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+﻿import { createRouter, createWebHashHistory } from 'vue-router';
 
 const routes = [
   {
@@ -57,6 +57,11 @@ const routes = [
     component: () => import('../views/CampaignMapView.vue'),
   },
   {
+    path: '/campaigns/:id/lessons/:lessonId',
+    name: 'CampaignLesson',
+    component: () => import('../views/CampaignLessonView.vue'),
+  },
+  {
     path: '/campaigns/:id',
     name: 'CampaignDetail',
     component: () => import('../views/CampaignDetailView.vue'),
@@ -69,3 +74,4 @@ const router = createRouter({
 });
 
 export default router;
+
