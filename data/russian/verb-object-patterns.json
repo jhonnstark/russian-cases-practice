@@ -1,0 +1,113 @@
+{
+  "verb_object_patterns": [
+    {
+      "id": "love-borsch",
+      "phrase": "любить борщ",
+      "topic": "food",
+      "case": "accusative",
+      "pattern": "{verb} {accusative}",
+      "verb": {
+        "infinitive": "любить",
+        "aspect": "imperfective",
+        "present": "люблю",
+        "perfective": "полюбить"
+      },
+      "object": {
+        "nominative": "борщ",
+        "accusative": "борщ",
+        "gender": "masculine",
+        "animate": false
+      },
+      "prompts": {
+        "build": "любить + ?",
+        "answer": "любить борщ"
+      },
+      "examples": [
+        "Я люблю борщ.",
+        "Мы любим борщ."
+      ]
+    },
+    {
+      "id": "eat-bread",
+      "phrase": "есть хлеб",
+      "topic": "food",
+      "case": "accusative",
+      "pattern": "{verb} {accusative}",
+      "verb": {
+        "infinitive": "есть",
+        "aspect": "imperfective",
+        "present": "ем",
+        "perfective": "съесть"
+      },
+      "object": {
+        "nominative": "хлеб",
+        "accusative": "хлеб",
+        "gender": "masculine",
+        "animate": false
+      },
+      "prompts": {
+        "build": "есть + ?",
+        "answer": "есть хлеб"
+      },
+      "examples": [
+        "Я ем хлеб.",
+        "Мы едим хлеб."
+      ]
+    },
+    {
+      "id": "cook-pie",
+      "phrase": "готовить пирог",
+      "topic": "food",
+      "case": "accusative",
+      "pattern": "{verb} {accusative}",
+      "verb": {
+        "infinitive": "готовить",
+        "aspect": "imperfective",
+        "present": "готовлю",
+        "perfective": "приготовить"
+      },
+      "object": {
+        "nominative": "пирог",
+        "accusative": "пирог",
+        "gender": "masculine",
+        "animate": false
+      },
+      "prompts": {
+        "build": "готовить + ?",
+        "answer": "готовить пирог"
+      },
+      "examples": [
+        "Я готовлю пирог.",
+        "Мы готовим пирог."
+      ]
+    },
+    {
+      "id": "try-cuisine",
+      "phrase": "пробовать кухню",
+      "fullPhrase": "пробовать русскую кухню",
+      "topic": "russian-food",
+      "case": "accusative",
+      "pattern": "{verb} {accusative}",
+      "verb": {
+        "infinitive": "пробовать",
+        "aspect": "imperfective",
+        "present": "пробую",
+        "perfective": "попробовать"
+      },
+      "object": {
+        "nominative": "русская кухня",
+        "accusative": "русскую кухню",
+        "gender": "feminine",
+        "animate": false
+      },
+      "prompts": {
+        "build": "пробовать + ?",
+        "answer": "пробовать русскую кухню"
+      },
+      "examples": [
+        "Я хочу пробовать русскую кухню.",
+        "Туристы любят пробовать русскую кухню."
+      ]
+    }
+  ]
+}
