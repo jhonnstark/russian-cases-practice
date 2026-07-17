@@ -1,14 +1,219 @@
 {
   "campaigns": [
     {
+      "id": "food",
+      "emoji": "🍽️",
+      "title": "Food & Drinks",
+      "subtitle": "Shopping, restaurant, cooking",
+      "theme": "Order an entire dinner in Russian.",
+      "status": "available",
+      "reward": "Restaurant Master",
+      "unlock": "shopping",
+      "topics": [
+        "shopping",
+        "restaurant",
+        "cooking",
+        "healthy food"
+      ],
+      "cases": [
+        "accusative",
+        "instrumental",
+        "genitive"
+      ],
+      "comparatives": true,
+      "conversation": true,
+      "roleplay": true,
+      "bossChallenge": "Order an entire dinner in Russian.",
+      "vocabulary": [
+        "суп",
+        "мясо",
+        "курица",
+        "рыба",
+        "рис",
+        "паста",
+        "яйцо",
+        "хлеб",
+        "масло",
+        "сыр",
+        "мёд",
+        "морепродукты",
+        "яблоко",
+        "картофель",
+        "виноград",
+        "киви",
+        "помидор",
+        "гриб",
+        "апельсин",
+        "огурец",
+        "лук",
+        "морковь",
+        "капуста",
+        "свёкла",
+        "редис",
+        "салат",
+        "орехи",
+        "шоколад",
+        "пирожок",
+        "торт",
+        "мороженое",
+        "молоко",
+        "кефир",
+        "квас",
+        "морс",
+        "пиво"
+      ],
+      "grammar": [
+        "accusative",
+        "instrumental",
+        "genitive",
+        "comparatives",
+        "conversation"
+      ],
+      "roles": [
+        "Customer",
+        "Restaurant Waiter",
+        "Friend",
+        "Doctor",
+        "Nutritionist",
+        "Cashier"
+      ],
+      "conversationCards": [
+        "Мне, пожалуйста...",
+        "Сколько стоит?",
+        "Я хочу купить...",
+        "У вас есть...?",
+        "Спасибо.",
+        "Я думаю, что яблоко полезнее.",
+        "Я ем хлеб с сыром.",
+        "Я пью чай с мёдом."
+      ],
+      "lessons": [
+        {
+          "id": "food-vocabulary",
+          "number": 1,
+          "type": "vocabulary",
+          "title": "Vocabulary",
+          "goal": "Learn food, drink, fruit and vegetable words.",
+          "items": [
+            "хлеб",
+            "молоко",
+            "сыр",
+            "яблоко",
+            "картофель",
+            "чай",
+            "лимон",
+            "мёд"
+          ]
+        },
+        {
+          "id": "food-shopping-list",
+          "number": 2,
+          "type": "shopping-list",
+          "title": "Shopping List",
+          "goal": "Buy products and say what you bought.",
+          "shoppingList": [
+            "хлеб",
+            "молоко",
+            "сыр",
+            "яблоки"
+          ],
+          "resultPattern": "Я купил..."
+        },
+        {
+          "id": "food-cooking",
+          "number": 3,
+          "type": "cooking",
+          "title": "Cooking Game",
+          "goal": "Prepare борщ with ingredients.",
+          "recipe": "Сегодня мы готовим борщ.",
+          "ingredients": [
+            "капуста",
+            "лук",
+            "морковь",
+            "свёкла"
+          ]
+        },
+        {
+          "id": "food-instrumental",
+          "number": 4,
+          "type": "instrumental",
+          "title": "Instrumental Builder",
+          "goal": "Build natural phrases with с + instrumental.",
+          "examples": [
+            "Я пью чай с лимоном.",
+            "Я ем хлеб с маслом.",
+            "Я люблю кофе с молоком."
+          ]
+        },
+        {
+          "id": "food-healthy",
+          "number": 5,
+          "type": "comparatives",
+          "title": "Healthy Food",
+          "goal": "Choose what is healthier and explain why.",
+          "prompt": "Что полезнее?",
+          "examples": [
+            "Я думаю, что яблоко полезнее.",
+            "Фрукты полезнее, чем торт."
+          ],
+          "route": "/comparatives"
+        },
+        {
+          "id": "food-restaurant",
+          "number": 6,
+          "type": "conversation",
+          "title": "Restaurant Conversation",
+          "goal": "Order, pay and invite a friend.",
+          "roles": [
+            "Customer",
+            "Restaurant Waiter"
+          ],
+          "phrases": [
+            "Мне, пожалуйста...",
+            "Сколько стоит?",
+            "Я хочу заказать...",
+            "Спасибо."
+          ]
+        },
+        {
+          "id": "food-boss",
+          "number": 7,
+          "type": "boss",
+          "title": "Boss Conversation",
+          "goal": "Order an entire dinner in Russian.",
+          "requirements": [
+            "2 accusative phrases",
+            "1 genitive phrase",
+            "1 instrumental phrase",
+            "1 polite restaurant phrase"
+          ]
+        }
+      ]
+    },
+    {
       "id": "travel",
-      "emoji": "✈",
+      "emoji": "✈️",
       "title": "Travel",
-      "subtitle": "Planning a vacation",
-      "theme": "Convince your partner to choose your destination.",
+      "subtitle": "Vacation, hotels, mountains, transport",
+      "theme": "Convince your partner to visit your destination.",
       "status": "available",
       "reward": "Travel Badge",
       "unlock": "nature",
+      "topics": [
+        "vacation",
+        "hotel",
+        "mountains",
+        "transport"
+      ],
+      "cases": [
+        "genitive",
+        "accusative",
+        "prepositional"
+      ],
+      "comparatives": true,
+      "conversation": true,
+      "persuasion": true,
+      "bossChallenge": "Convince your partner to visit your destination.",
       "vocabulary": [
         "пляж",
         "отель",
@@ -19,6 +224,7 @@
         "отпуск",
         "билет",
         "курорт",
+        "регион",
         "национальный парк",
         "Сочи",
         "Кемер",
@@ -37,29 +243,45 @@
         "Guide",
         "Friend",
         "Hotel Receptionist",
-        "Taxi Driver",
-        "Restaurant Waiter"
+        "Taxi Driver"
       ],
       "partnerPersonalities": [
         {
           "id": "friendly",
           "label": "Friendly",
-          "reactions": ["Да.", "Но...", "Maybe.", "Хорошая идея."]
+          "reactions": [
+            "Да.",
+            "Но...",
+            "Maybe.",
+            "Хорошая идея."
+          ]
         },
         {
           "id": "stubborn",
           "label": "Stubborn",
-          "reactions": ["Нет.", "Мне не нравится.", "Convince me."]
+          "reactions": [
+            "Нет.",
+            "Мне не нравится.",
+            "Convince me."
+          ]
         },
         {
           "id": "budget",
           "label": "Budget Traveler",
-          "reactions": ["Это дорого.", "А где дешевле?", "Мне нужен бюджетный вариант."]
+          "reactions": [
+            "Это дорого.",
+            "А где дешевле?",
+            "Мне нужен бюджетный вариант."
+          ]
         },
         {
           "id": "adventurous",
           "label": "Adventurous",
-          "reactions": ["Хочу что-то интересное.", "А там есть горы?", "Давайте активный отдых."]
+          "reactions": [
+            "Хочу что-то интересное.",
+            "А там есть горы?",
+            "Давайте активный отдых."
+          ]
         }
       ],
       "conversationCards": [
@@ -72,9 +294,7 @@
         "А если...?",
         "Может быть...",
         "Для меня это важно.",
-        "Для меня это не очень важно.",
-        "Давайте...",
-        "Мне больше нравится..."
+        "Давайте..."
       ],
       "lessons": [
         {
@@ -82,9 +302,17 @@
           "number": 1,
           "type": "vocabulary",
           "title": "Vocabulary",
-          "goal": "Learn 20 travel words.",
-          "items": ["пляж", "отель", "горы", "озеро", "самолёт", "поезд", "отпуск", "билет"],
-          "objective": "Recognize travel words before grammar practice."
+          "goal": "Learn travel words.",
+          "items": [
+            "пляж",
+            "отель",
+            "горы",
+            "озеро",
+            "самолёт",
+            "поезд",
+            "отпуск",
+            "билет"
+          ]
         },
         {
           "id": "travel-cases",
@@ -92,8 +320,17 @@
           "type": "cases",
           "title": "Cases",
           "goal": "Practice endings inside travel contexts.",
-          "cases": ["genitive", "accusative", "prepositional"],
-          "examples": ["из Москвы", "до отеля", "без билета", "около моря"],
+          "cases": [
+            "genitive",
+            "accusative",
+            "prepositional"
+          ],
+          "examples": [
+            "из Москвы",
+            "до отеля",
+            "без билета",
+            "около моря"
+          ],
           "route": "/cases"
         },
         {
@@ -102,7 +339,11 @@
           "type": "aspect",
           "title": "Verb Aspect",
           "goal": "Practice travel motion and completed actions.",
-          "verbs": ["ехать", "ездить", "поехать"],
+          "verbs": [
+            "ехать",
+            "ездить",
+            "поехать"
+          ],
           "route": "/aspect"
         },
         {
@@ -111,7 +352,13 @@
           "type": "comparatives",
           "title": "Comparatives",
           "goal": "Compare destinations naturally.",
-          "items": ["дороже", "дешевле", "лучше", "хуже", "теплее", "выше"],
+          "items": [
+            "дороже",
+            "дешевле",
+            "лучше",
+            "хуже",
+            "выше"
+          ],
           "route": "/comparatives"
         },
         {
@@ -123,7 +370,12 @@
           "dialogue": [
             {
               "partner": "Мне нравится Сочи.",
-              "options": ["Я согласен.", "Да, но...", "Я предпочитаю Кемер.", "А если поехать в Альпы?"]
+              "options": [
+                "Я согласен.",
+                "Да, но...",
+                "Я предпочитаю Кемер.",
+                "А если поехать в Альпы?"
+              ]
             }
           ]
         },
@@ -133,63 +385,155 @@
           "type": "role-play",
           "title": "Role Play",
           "goal": "Convince your partner.",
-          "roles": ["Tourist", "Friend"],
-          "requirements": ["2 comparisons", "1 partial agreement", "1 compromise"]
-        },
-        {
-          "id": "travel-mini-story",
-          "number": 7,
-          "type": "mini-story",
-          "title": "Mini Story",
-          "goal": "Complete a short travel story.",
-          "story": [
-            "Я хочу поехать в {blank}.",
-            "Без {blank} путешествие невозможно.",
-            "Мне больше нравится спокойный отдых."
+          "roles": [
+            "Tourist",
+            "Friend"
+          ],
+          "requirements": [
+            "2 comparisons",
+            "1 partial agreement",
+            "1 compromise"
           ]
         },
         {
           "id": "travel-boss",
-          "number": 8,
+          "number": 7,
           "type": "boss",
           "title": "Boss Battle",
-          "goal": "Convince your partner to visit your city.",
+          "goal": "Convince your partner to visit your destination.",
           "requirements": [
             "2 comparisons",
             "2 Russian cases",
             "1 verb aspect pair",
             "1 compromise",
             "1 partial agreement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "making-choices",
+      "emoji": "🗣️",
+      "title": "Making Choices",
+      "subtitle": "Opinions, debate, compromise",
+      "theme": "Choose between two options and defend your opinion.",
+      "status": "available",
+      "reward": "Conversation Hero",
+      "vocabulary": [
+        "кофе",
+        "молоко",
+        "отпуск",
+        "семья",
+        "друзья",
+        "книга",
+        "фильм",
+        "море",
+        "горы",
+        "метро"
+      ],
+      "grammar": [
+        "comparatives",
+        "instrumental",
+        "genitive",
+        "conjunctions",
+        "conversation"
+      ],
+      "roles": [
+        "Friend",
+        "Coworker",
+        "Tourist",
+        "Waiter"
+      ],
+      "conversationCards": [
+        "Я выбираю...",
+        "потому что...",
+        "Но иногда...",
+        "Я предпочитаю...",
+        "Ты согласен?",
+        "Убедите меня.",
+        "Тогда лучше...",
+        "Я думаю..."
+      ],
+      "lessons": [
+        {
+          "id": "choices-opinion",
+          "number": 1,
+          "type": "opinion-challenge",
+          "title": "Opinion Challenge",
+          "goal": "Choose one option and explain why.",
+          "requirements": [
+            "2 complete sentences",
+            "1 comparison",
+            "1 conjunction"
+          ]
+        },
+        {
+          "id": "choices-debate",
+          "number": 2,
+          "type": "debate",
+          "title": "Debate Mode",
+          "goal": "Continue a discussion instead of only answering correct/incorrect.",
+          "example": "Я люблю чай с мёдом. Интересно. Но чай с вареньем тоже вкусный."
+        },
+        {
+          "id": "choices-preference",
+          "number": 3,
+          "type": "preference",
+          "title": "Preference Campaign",
+          "goal": "Build opinions from choice cards.",
+          "examples": [
+            "Кофе с молоком или без молока?",
+            "Торт или фрукты?",
+            "Большой чемодан или рюкзак?"
+          ]
+        },
+        {
+          "id": "choices-persuasion",
+          "number": 4,
+          "type": "persuasion",
+          "title": "Persuasion Campaign",
+          "goal": "Convince the partner using comparison, opinion, because and compromise.",
+          "requirements": [
+            "comparison",
+            "opinion",
+            "because",
+            "compromise"
           ],
-          "example": "Да, но в Байкале природа красивее. Тогда лучше поехать летом."
+          "example": "С друзьями веселее. Но иногда отпуск с семьёй лучше. Поэтому сначала поедем с друзьями, а потом с семьёй."
+        },
+        {
+          "id": "choices-boss",
+          "number": 5,
+          "type": "boss",
+          "title": "Boss Debate",
+          "goal": "Win a real dialogue using natural Russian.",
+          "requirements": [
+            "2 complete sentences",
+            "1 comparison",
+            "1 conjunction",
+            "1 compromise"
+          ]
         }
       ]
     },
     {
       "id": "nature",
-      "emoji": "🏞",
+      "emoji": "🏞️",
       "title": "Nature",
       "subtitle": "Parks, lakes, mountains",
       "status": "locked",
       "unlockRequirement": "Complete Travel"
     },
     {
-      "id": "restaurants",
-      "emoji": "🍽",
-      "title": "Restaurants",
-      "subtitle": "Order food and compare places",
-      "status": "planned"
-    },
-    {
       "id": "shopping",
-      "emoji": "🛍",
+      "emoji": "🛍️",
       "title": "Shopping",
       "subtitle": "Prices, preferences, purchases",
       "status": "planned"
     },
     {
       "id": "culture",
-      "emoji": "🏛",
+      "emoji": "🏛️",
       "title": "Culture",
       "subtitle": "Museums, theatre, holidays",
       "status": "planned"

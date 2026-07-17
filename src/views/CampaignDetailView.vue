@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div class="campaign-detail" v-if="campaign">
     <button class="back-btn" @click="router.push('/campaigns')">← Mapa</button>
 
@@ -205,3 +205,4 @@ button:disabled {
   }
 }
 </style>
+

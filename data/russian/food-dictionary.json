@@ -1,0 +1,652 @@
+{
+  "words": [
+    {
+      "nominative": "суп",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "sopa",
+      "level": "A1",
+      "cases": {
+        "genitive": "супа",
+        "accusative": "суп",
+        "prepositional": "супе",
+        "dative": "супу",
+        "instrumental": "супом"
+      },
+      "tags": [
+        "food",
+        "restaurant",
+        "cooking",
+        "preference"
+      ]
+    },
+    {
+      "nominative": "курица",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "pollo",
+      "level": "A1",
+      "cases": {
+        "genitive": "курицы",
+        "accusative": "курицу",
+        "prepositional": "курице",
+        "dative": "курице",
+        "instrumental": "курицей"
+      },
+      "tags": [
+        "food",
+        "meat",
+        "cooking",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "рыба",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "pescado / pez",
+      "level": "A1",
+      "cases": {
+        "genitive": "рыбы",
+        "accusative": "рыбу",
+        "prepositional": "рыбе",
+        "dative": "рыбе",
+        "instrumental": "рыбой"
+      },
+      "tags": [
+        "food",
+        "fish",
+        "cooking",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "рис",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "arroz",
+      "level": "A1",
+      "cases": {
+        "genitive": "риса",
+        "accusative": "рис",
+        "prepositional": "рисе",
+        "dative": "рису",
+        "instrumental": "рисом"
+      },
+      "tags": [
+        "food",
+        "cooking",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "паста",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "pasta",
+      "level": "A1",
+      "cases": {
+        "genitive": "пасты",
+        "accusative": "пасту",
+        "prepositional": "пасте",
+        "dative": "пасте",
+        "instrumental": "пастой"
+      },
+      "tags": [
+        "food",
+        "cooking",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "яйцо",
+      "gender": "neuter",
+      "animate": false,
+      "meaning_es": "huevo",
+      "level": "A1",
+      "cases": {
+        "genitive": "яйца",
+        "accusative": "яйцо",
+        "prepositional": "яйце",
+        "dative": "яйцу",
+        "instrumental": "яйцом"
+      },
+      "tags": [
+        "food",
+        "breakfast",
+        "cooking",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "хлеб",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "pan",
+      "level": "A1",
+      "cases": {
+        "genitive": "хлеба",
+        "accusative": "хлеб",
+        "prepositional": "хлебе",
+        "dative": "хлебу",
+        "instrumental": "хлебом"
+      },
+      "tags": [
+        "food",
+        "breakfast",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "масло",
+      "gender": "neuter",
+      "animate": false,
+      "meaning_es": "mantequilla / aceite",
+      "level": "A1",
+      "cases": {
+        "genitive": "масла",
+        "accusative": "масло",
+        "prepositional": "масле",
+        "dative": "маслу",
+        "instrumental": "маслом"
+      },
+      "tags": [
+        "food",
+        "cooking",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "мёд",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "miel",
+      "level": "A2",
+      "cases": {
+        "genitive": "мёда",
+        "accusative": "мёд",
+        "prepositional": "мёде",
+        "dative": "мёду",
+        "instrumental": "мёдом"
+      },
+      "tags": [
+        "food",
+        "dessert",
+        "breakfast"
+      ]
+    },
+    {
+      "nominative": "морепродукты",
+      "gender": "plural",
+      "animate": false,
+      "meaning_es": "mariscos",
+      "level": "A2",
+      "cases": {
+        "genitive": "морепродуктов",
+        "accusative": "морепродукты",
+        "prepositional": "морепродуктах",
+        "dative": "морепродуктам",
+        "instrumental": "морепродуктами"
+      },
+      "tags": [
+        "food",
+        "seafood",
+        "restaurant"
+      ]
+    },
+    {
+      "nominative": "яблоко",
+      "gender": "neuter",
+      "animate": false,
+      "meaning_es": "manzana",
+      "level": "A1",
+      "cases": {
+        "genitive": "яблока",
+        "accusative": "яблоко",
+        "prepositional": "яблоке",
+        "dative": "яблоку",
+        "instrumental": "яблоком"
+      },
+      "tags": [
+        "food",
+        "fruit",
+        "diet",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "картофель",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "patata / papa",
+      "level": "A2",
+      "cases": {
+        "genitive": "картофеля",
+        "accusative": "картофель",
+        "prepositional": "картофеле",
+        "dative": "картофелю",
+        "instrumental": "картофелем"
+      },
+      "tags": [
+        "food",
+        "vegetable",
+        "cooking",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "виноград",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "uvas",
+      "level": "A2",
+      "cases": {
+        "genitive": "винограда",
+        "accusative": "виноград",
+        "prepositional": "винограде",
+        "dative": "винограду",
+        "instrumental": "виноградом"
+      },
+      "tags": [
+        "food",
+        "fruit",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "киви",
+      "gender": "neuter",
+      "animate": false,
+      "meaning_es": "kiwi",
+      "level": "A2",
+      "indeclinable": true,
+      "cases": {
+        "genitive": "киви",
+        "accusative": "киви",
+        "prepositional": "киви",
+        "dative": "киви",
+        "instrumental": "киви"
+      },
+      "tags": [
+        "food",
+        "fruit",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "помидор",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "tomate",
+      "level": "A1",
+      "cases": {
+        "genitive": "помидора",
+        "accusative": "помидор",
+        "prepositional": "помидоре",
+        "dative": "помидору",
+        "instrumental": "помидором"
+      },
+      "tags": [
+        "food",
+        "vegetable",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "гриб",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "hongo / seta",
+      "level": "A2",
+      "cases": {
+        "genitive": "гриба",
+        "accusative": "гриб",
+        "prepositional": "грибе",
+        "dative": "грибу",
+        "instrumental": "грибом"
+      },
+      "tags": [
+        "food",
+        "vegetable",
+        "cooking"
+      ]
+    },
+    {
+      "nominative": "апельсин",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "naranja",
+      "level": "A1",
+      "cases": {
+        "genitive": "апельсина",
+        "accusative": "апельсин",
+        "prepositional": "апельсине",
+        "dative": "апельсину",
+        "instrumental": "апельсином"
+      },
+      "tags": [
+        "food",
+        "fruit",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "огурец",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "pepino",
+      "level": "A1",
+      "cases": {
+        "genitive": "огурца",
+        "accusative": "огурец",
+        "prepositional": "огурце",
+        "dative": "огурцу",
+        "instrumental": "огурцом"
+      },
+      "tags": [
+        "food",
+        "vegetable",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "лук",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "cebolla",
+      "level": "A1",
+      "cases": {
+        "genitive": "лука",
+        "accusative": "лук",
+        "prepositional": "луке",
+        "dative": "луку",
+        "instrumental": "луком"
+      },
+      "tags": [
+        "food",
+        "vegetable",
+        "cooking"
+      ]
+    },
+    {
+      "nominative": "морковь",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "zanahoria",
+      "level": "A1",
+      "cases": {
+        "genitive": "моркови",
+        "accusative": "морковь",
+        "prepositional": "моркови",
+        "dative": "моркови",
+        "instrumental": "морковью"
+      },
+      "tags": [
+        "food",
+        "vegetable",
+        "cooking"
+      ]
+    },
+    {
+      "nominative": "капуста",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "col / repollo",
+      "level": "A1",
+      "cases": {
+        "genitive": "капусты",
+        "accusative": "капусту",
+        "prepositional": "капусте",
+        "dative": "капусте",
+        "instrumental": "капустой"
+      },
+      "tags": [
+        "food",
+        "vegetable",
+        "cooking"
+      ]
+    },
+    {
+      "nominative": "свёкла",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "remolacha",
+      "level": "A2",
+      "cases": {
+        "genitive": "свёклы",
+        "accusative": "свёклу",
+        "prepositional": "свёкле",
+        "dative": "свёкле",
+        "instrumental": "свёклой"
+      },
+      "tags": [
+        "food",
+        "vegetable",
+        "cooking"
+      ]
+    },
+    {
+      "nominative": "редис",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "rábano",
+      "level": "A2",
+      "cases": {
+        "genitive": "редиса",
+        "accusative": "редис",
+        "prepositional": "редисе",
+        "dative": "редису",
+        "instrumental": "редисом"
+      },
+      "tags": [
+        "food",
+        "vegetable",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "салат",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "ensalada / lechuga",
+      "level": "A1",
+      "cases": {
+        "genitive": "салата",
+        "accusative": "салат",
+        "prepositional": "салате",
+        "dative": "салату",
+        "instrumental": "салатом"
+      },
+      "tags": [
+        "food",
+        "vegetable",
+        "restaurant"
+      ]
+    },
+    {
+      "nominative": "орехи",
+      "gender": "plural",
+      "animate": false,
+      "meaning_es": "nueces",
+      "level": "A2",
+      "cases": {
+        "genitive": "орехов",
+        "accusative": "орехи",
+        "prepositional": "орехах",
+        "dative": "орехам",
+        "instrumental": "орехами"
+      },
+      "tags": [
+        "food",
+        "dessert",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "шоколад",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "chocolate",
+      "level": "A1",
+      "cases": {
+        "genitive": "шоколада",
+        "accusative": "шоколад",
+        "prepositional": "шоколаде",
+        "dative": "шоколаду",
+        "instrumental": "шоколадом"
+      },
+      "tags": [
+        "food",
+        "dessert",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "пирожок",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "pirozhok / empanadita rusa",
+      "level": "A2",
+      "cases": {
+        "genitive": "пирожка",
+        "accusative": "пирожок",
+        "prepositional": "пирожке",
+        "dative": "пирожку",
+        "instrumental": "пирожком"
+      },
+      "tags": [
+        "food",
+        "dessert",
+        "restaurant"
+      ]
+    },
+    {
+      "nominative": "мороженое",
+      "gender": "neuter",
+      "animate": false,
+      "meaning_es": "helado",
+      "level": "A1",
+      "cases": {
+        "genitive": "мороженого",
+        "accusative": "мороженое",
+        "prepositional": "мороженом",
+        "dative": "мороженому",
+        "instrumental": "мороженым"
+      },
+      "tags": [
+        "food",
+        "dessert"
+      ]
+    },
+    {
+      "nominative": "кефир",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "kéfir",
+      "level": "A2",
+      "cases": {
+        "genitive": "кефира",
+        "accusative": "кефир",
+        "prepositional": "кефире",
+        "dative": "кефиру",
+        "instrumental": "кефиром"
+      },
+      "tags": [
+        "food",
+        "drink"
+      ]
+    },
+    {
+      "nominative": "квас",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "kvas",
+      "level": "A2",
+      "cases": {
+        "genitive": "кваса",
+        "accusative": "квас",
+        "prepositional": "квасе",
+        "dative": "квасу",
+        "instrumental": "квасом"
+      },
+      "tags": [
+        "food",
+        "drink"
+      ]
+    },
+    {
+      "nominative": "морс",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "mors / bebida de bayas",
+      "level": "A2",
+      "cases": {
+        "genitive": "морса",
+        "accusative": "морс",
+        "prepositional": "морсе",
+        "dative": "морсу",
+        "instrumental": "морсом"
+      },
+      "tags": [
+        "food",
+        "drink"
+      ]
+    },
+    {
+      "nominative": "пиво",
+      "gender": "neuter",
+      "animate": false,
+      "meaning_es": "cerveza",
+      "level": "A1",
+      "cases": {
+        "genitive": "пива",
+        "accusative": "пиво",
+        "prepositional": "пиве",
+        "dative": "пиву",
+        "instrumental": "пивом"
+      },
+      "tags": [
+        "food",
+        "drink"
+      ]
+    },
+    {
+      "nominative": "лимон",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "limón",
+      "level": "A1",
+      "cases": {
+        "genitive": "лимона",
+        "accusative": "лимон",
+        "prepositional": "лимоне",
+        "dative": "лимону",
+        "instrumental": "лимоном"
+      },
+      "tags": [
+        "food",
+        "fruit",
+        "instrumental"
+      ]
+    },
+    {
+      "nominative": "варенье",
+      "gender": "neuter",
+      "animate": false,
+      "meaning_es": "mermelada",
+      "level": "A2",
+      "cases": {
+        "genitive": "варенья",
+        "accusative": "варенье",
+        "prepositional": "варенье",
+        "dative": "варенью",
+        "instrumental": "вареньем"
+      },
+      "tags": [
+        "food",
+        "dessert",
+        "instrumental"
+      ]
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { defineStore } from 'pinia'
+﻿import { defineStore } from 'pinia'
 import type { Case, Exercise, RussianWord } from '@/generators'
 import { generateEndingChoiceBatch } from '@/generators'
 import { generateCaseChoiceBatch }   from '@/generators'
@@ -6,10 +6,14 @@ import { generateTransformBatch }    from '@/generators'
 import { generateOrderBlocksBatch }  from '@/generators'
 import { generateMiniStoryBatch }    from '@/generators'
 import dictionaryData from '@data/russian/russian_dictionary.json'
+import foodDictionaryData from '@data/russian/food-dictionary.json'
 
 export type GameMode = 'ending-choice' | 'case-choice' | 'transform' | 'order-blocks' | 'mini-story'
 
-const WORDS: RussianWord[] = dictionaryData.words as RussianWord[]
+const WORDS: RussianWord[] = [
+  ...(dictionaryData.words as RussianWord[]),
+  ...(foodDictionaryData.words as RussianWord[]),
+]
 const EXERCISES_PER_ROUND = 10
 
 export const useGameStore = defineStore('game', {
@@ -132,3 +136,4 @@ export const useGameStore = defineStore('game', {
     },
   },
 })
+

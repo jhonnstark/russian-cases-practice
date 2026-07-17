@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div class="campaign-map">
     <button class="back-btn" @click="router.push('/')">← Inicio</button>
 
@@ -154,3 +154,4 @@ function statusLabel(status: CampaignStatus) {
   }
 }
 </style>
+

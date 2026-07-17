@@ -1,84 +1,211 @@
 {
   "choice_cards": [
     {
-      "id": "vacation-family-friends",
-      "topic": "travel",
-      "prompt": "Отпуск с семьёй или с друзьями?",
-      "options": ["отпуск с семьёй", "отпуск с друзьями"],
-      "requirements": ["2 complete sentences", "1 comparison", "1 conjunction"],
-      "example": "Я выбираю отпуск с друзьями, потому что мы любим путешествовать. Но иногда отпуск с семьёй лучше."
+      "id": "soup-meat",
+      "topic": "food",
+      "left": "суп",
+      "right": "мясо",
+      "prompt": "Суп или мясо?",
+      "options": [
+        "суп",
+        "мясо"
+      ],
+      "follow_up": "Почему?",
+      "requirements": [
+        "1 preference",
+        "1 reason",
+        "1 contrast"
+      ],
+      "preferenceHint": {
+        "likes": [
+          "soup"
+        ],
+        "dislikes": [
+          "meat"
+        ]
+      },
+      "example": "Я выбираю суп, потому что мне не нравится мясо."
     },
     {
       "id": "coffee-milk",
       "topic": "food",
+      "left": "кофе с молоком",
+      "right": "кофе без молока",
       "prompt": "Кофе с молоком или без молока?",
-      "options": ["кофе с молоком", "кофе без молока"],
-      "requirements": ["1 opinion", "1 case phrase", "1 reason"],
+      "options": [
+        "кофе с молоком",
+        "кофе без молока"
+      ],
+      "follow_up": "Почему?",
+      "requirements": [
+        "1 opinion",
+        "1 case phrase",
+        "1 reason"
+      ],
       "partnerReply": "Нет. Я предпочитаю кофе без молока. Почему?"
+    },
+    {
+      "id": "vacation-family-friends",
+      "topic": "travel",
+      "left": "отпуск с семьёй",
+      "right": "отпуск с друзьями",
+      "prompt": "Отпуск с семьёй или с друзьями?",
+      "options": [
+        "отпуск с семьёй",
+        "отпуск с друзьями"
+      ],
+      "follow_up": "Убедите партнёра.",
+      "requirements": [
+        "2 complete sentences",
+        "1 comparison",
+        "1 conjunction"
+      ],
+      "example": "Я выбираю отпуск с друзьями, потому что мы любим путешествовать. Но иногда отпуск с семьёй лучше."
     },
     {
       "id": "book-film",
       "topic": "culture",
+      "left": "книга",
+      "right": "фильм",
       "prompt": "Книга или фильм?",
-      "options": ["книга", "фильм"],
-      "requirements": ["1 preference", "1 reason"]
+      "options": [
+        "книга",
+        "фильм"
+      ],
+      "follow_up": "Почему?",
+      "requirements": [
+        "1 preference",
+        "1 reason"
+      ]
     },
     {
       "id": "sea-mountains",
       "topic": "travel",
+      "left": "море",
+      "right": "горы",
       "prompt": "Море или горы?",
-      "options": ["море", "горы"],
-      "requirements": ["1 comparison", "1 conjunction"]
+      "options": [
+        "море",
+        "горы"
+      ],
+      "follow_up": "Почему?",
+      "requirements": [
+        "1 comparison",
+        "1 conjunction"
+      ]
     },
     {
       "id": "bus-metro",
       "topic": "transport",
+      "left": "автобус",
+      "right": "метро",
       "prompt": "Автобус или метро?",
-      "options": ["автобус", "метро"],
-      "requirements": ["1 comparison", "1 reason"]
+      "options": [
+        "автобус",
+        "метро"
+      ],
+      "follow_up": "Почему?",
+      "requirements": [
+        "1 comparison",
+        "1 reason"
+      ]
     },
     {
       "id": "restaurant-cafe",
       "topic": "restaurant",
+      "left": "ресторан",
+      "right": "кафе",
       "prompt": "Ресторан или кафе?",
-      "options": ["ресторан", "кафе"],
-      "requirements": ["1 preference", "1 comparison"]
+      "options": [
+        "ресторан",
+        "кафе"
+      ],
+      "follow_up": "Почему?",
+      "requirements": [
+        "1 preference",
+        "1 comparison"
+      ]
     },
     {
       "id": "moscow-petersburg",
       "topic": "city",
+      "left": "Москва",
+      "right": "Петербург",
       "prompt": "Москва или Петербург?",
-      "options": ["Москва", "Петербург"],
-      "requirements": ["1 comparison", "1 opinion"]
+      "options": [
+        "Москва",
+        "Петербург"
+      ],
+      "follow_up": "Почему?",
+      "requirements": [
+        "1 comparison",
+        "1 opinion"
+      ]
     },
     {
       "id": "tea-coffee",
       "topic": "food",
+      "left": "чай",
+      "right": "кофе",
       "prompt": "Чай или кофе?",
-      "options": ["чай", "кофе"],
-      "requirements": ["1 preference", "1 instrumental phrase"]
+      "options": [
+        "чай",
+        "кофе"
+      ],
+      "follow_up": "Почему?",
+      "requirements": [
+        "1 preference",
+        "1 instrumental phrase"
+      ]
     },
     {
       "id": "pizza-borsch",
       "topic": "food",
+      "left": "пицца",
+      "right": "борщ",
       "prompt": "Пицца или борщ?",
-      "options": ["пицца", "борщ"],
-      "requirements": ["1 opinion", "1 reason"]
+      "options": [
+        "пицца",
+        "борщ"
+      ],
+      "follow_up": "Почему?",
+      "requirements": [
+        "1 opinion",
+        "1 reason"
+      ]
     },
     {
       "id": "cake-fruit",
       "topic": "diet",
+      "left": "торт",
+      "right": "фрукты",
       "prompt": "Торт или фрукты?",
-      "options": ["торт", "фрукты"],
-      "requirements": ["1 healthy comparison", "1 reason"],
+      "options": [
+        "торт",
+        "фрукты"
+      ],
+      "follow_up": "Что полезнее?",
+      "requirements": [
+        "1 healthy comparison",
+        "1 reason"
+      ],
       "example": "Я думаю, что фрукты полезнее, потому что в них меньше сахара."
     },
     {
       "id": "suitcase-backpack",
       "topic": "travel",
+      "left": "большой чемодан",
+      "right": "рюкзак",
       "prompt": "Большой чемодан или рюкзак?",
-      "options": ["большой чемодан", "рюкзак"],
-      "requirements": ["1 practical reason", "1 comparison"]
+      "options": [
+        "большой чемодан",
+        "рюкзак"
+      ],
+      "follow_up": "Убедите партнёра.",
+      "requirements": [
+        "1 practical reason",
+        "1 comparison"
+      ]
     }
   ]
 }
