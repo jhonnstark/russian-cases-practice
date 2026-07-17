@@ -1,0 +1,388 @@
+{
+  "adjectives": [
+    {
+      "adjective": "жирный",
+      "meaning_es": "fatty / greasy",
+      "level": "A2",
+      "tags": [
+        "food",
+        "quality"
+      ],
+      "comparable": true,
+      "comparative": "жирнее",
+      "adverb": "жирно",
+      "forms": {
+        "masculine": {
+          "nominative": "жирный",
+          "genitive": "жирного",
+          "dative": "жирному",
+          "accusative_inanimate": "жирный",
+          "accusative_animate": "жирного",
+          "instrumental": "жирным",
+          "prepositional": "жирном"
+        },
+        "feminine": {
+          "nominative": "жирная",
+          "genitive": "жирной",
+          "dative": "жирной",
+          "accusative": "жирную",
+          "instrumental": "жирной",
+          "prepositional": "жирной"
+        },
+        "neuter": {
+          "nominative": "жирное",
+          "genitive": "жирного",
+          "dative": "жирному",
+          "accusative": "жирное",
+          "instrumental": "жирным",
+          "prepositional": "жирном"
+        },
+        "plural": {
+          "nominative": "жирные",
+          "genitive": "жирных",
+          "dative": "жирным",
+          "accusative_inanimate": "жирные",
+          "accusative_animate": "жирных",
+          "instrumental": "жирными",
+          "prepositional": "жирных"
+        }
+      }
+    },
+    {
+      "adjective": "вкусный",
+      "meaning_es": "tasty",
+      "level": "A1",
+      "tags": [
+        "food",
+        "quality"
+      ],
+      "comparable": true,
+      "comparative": "вкуснее",
+      "adverb": "вкусно",
+      "forms": {
+        "masculine": {
+          "nominative": "вкусный",
+          "genitive": "вкусного",
+          "dative": "вкусному",
+          "accusative_inanimate": "вкусный",
+          "accusative_animate": "вкусного",
+          "instrumental": "вкусным",
+          "prepositional": "вкусном"
+        },
+        "feminine": {
+          "nominative": "вкусная",
+          "genitive": "вкусной",
+          "dative": "вкусной",
+          "accusative": "вкусную",
+          "instrumental": "вкусной",
+          "prepositional": "вкусной"
+        },
+        "neuter": {
+          "nominative": "вкусное",
+          "genitive": "вкусного",
+          "dative": "вкусному",
+          "accusative": "вкусное",
+          "instrumental": "вкусным",
+          "prepositional": "вкусном"
+        },
+        "plural": {
+          "nominative": "вкусные",
+          "genitive": "вкусных",
+          "dative": "вкусным",
+          "accusative_inanimate": "вкусные",
+          "accusative_animate": "вкусных",
+          "instrumental": "вкусными",
+          "prepositional": "вкусных"
+        }
+      }
+    },
+    {
+      "adjective": "горячий",
+      "meaning_es": "hot",
+      "level": "A1",
+      "tags": [
+        "food",
+        "temperature"
+      ],
+      "comparable": true,
+      "comparative": "горячее",
+      "adverb": "горячо",
+      "forms": {
+        "masculine": {
+          "nominative": "горячий",
+          "genitive": "горячего",
+          "dative": "горячему",
+          "accusative_inanimate": "горячий",
+          "accusative_animate": "горячего",
+          "instrumental": "горячим",
+          "prepositional": "горячем"
+        },
+        "feminine": {
+          "nominative": "горячая",
+          "genitive": "горячей",
+          "dative": "горячей",
+          "accusative": "горячую",
+          "instrumental": "горячей",
+          "prepositional": "горячей"
+        },
+        "neuter": {
+          "nominative": "горячее",
+          "genitive": "горячего",
+          "dative": "горячему",
+          "accusative": "горячее",
+          "instrumental": "горячим",
+          "prepositional": "горячем"
+        },
+        "plural": {
+          "nominative": "горячие",
+          "genitive": "горячих",
+          "dative": "горячим",
+          "accusative_inanimate": "горячие",
+          "accusative_animate": "горячих",
+          "instrumental": "горячими",
+          "prepositional": "горячих"
+        }
+      }
+    },
+    {
+      "adjective": "национальный",
+      "meaning_es": "national",
+      "level": "A2",
+      "tags": [
+        "culture",
+        "travel"
+      ],
+      "comparable": false,
+      "comparative": null,
+      "adverb": null,
+      "forms": {
+        "masculine": {
+          "nominative": "национальный",
+          "genitive": "национального",
+          "dative": "национальному",
+          "accusative_inanimate": "национальный",
+          "accusative_animate": "национального",
+          "instrumental": "национальным",
+          "prepositional": "национальном"
+        },
+        "feminine": {
+          "nominative": "национальная",
+          "genitive": "национальной",
+          "dative": "национальной",
+          "accusative": "национальную",
+          "instrumental": "национальной",
+          "prepositional": "национальной"
+        },
+        "neuter": {
+          "nominative": "национальное",
+          "genitive": "национального",
+          "dative": "национальному",
+          "accusative": "национальное",
+          "instrumental": "национальным",
+          "prepositional": "национальном"
+        },
+        "plural": {
+          "nominative": "национальные",
+          "genitive": "национальных",
+          "dative": "национальным",
+          "accusative_inanimate": "национальные",
+          "accusative_animate": "национальных",
+          "instrumental": "национальными",
+          "prepositional": "национальных"
+        }
+      }
+    },
+    {
+      "adjective": "иностранный",
+      "meaning_es": "foreign",
+      "level": "A2",
+      "tags": [
+        "culture",
+        "travel"
+      ],
+      "comparable": false,
+      "comparative": null,
+      "adverb": null,
+      "forms": {
+        "masculine": {
+          "nominative": "иностранный",
+          "genitive": "иностранного",
+          "dative": "иностранному",
+          "accusative_inanimate": "иностранный",
+          "accusative_animate": "иностранного",
+          "instrumental": "иностранным",
+          "prepositional": "иностранном"
+        },
+        "feminine": {
+          "nominative": "иностранная",
+          "genitive": "иностранной",
+          "dative": "иностранной",
+          "accusative": "иностранную",
+          "instrumental": "иностранной",
+          "prepositional": "иностранной"
+        },
+        "neuter": {
+          "nominative": "иностранное",
+          "genitive": "иностранного",
+          "dative": "иностранному",
+          "accusative": "иностранное",
+          "instrumental": "иностранным",
+          "prepositional": "иностранном"
+        },
+        "plural": {
+          "nominative": "иностранные",
+          "genitive": "иностранных",
+          "dative": "иностранным",
+          "accusative_inanimate": "иностранные",
+          "accusative_animate": "иностранных",
+          "instrumental": "иностранными",
+          "prepositional": "иностранных"
+        }
+      }
+    },
+    {
+      "adjective": "любимый",
+      "meaning_es": "favorite / beloved",
+      "level": "A1",
+      "tags": [
+        "opinion",
+        "quality"
+      ],
+      "comparable": false,
+      "comparative": null,
+      "adverb": null,
+      "forms": {
+        "masculine": {
+          "nominative": "любимый",
+          "genitive": "любимого",
+          "dative": "любимому",
+          "accusative_inanimate": "любимый",
+          "accusative_animate": "любимого",
+          "instrumental": "любимым",
+          "prepositional": "любимом"
+        },
+        "feminine": {
+          "nominative": "любимая",
+          "genitive": "любимой",
+          "dative": "любимой",
+          "accusative": "любимую",
+          "instrumental": "любимой",
+          "prepositional": "любимой"
+        },
+        "neuter": {
+          "nominative": "любимое",
+          "genitive": "любимого",
+          "dative": "любимому",
+          "accusative": "любимое",
+          "instrumental": "любимым",
+          "prepositional": "любимом"
+        },
+        "plural": {
+          "nominative": "любимые",
+          "genitive": "любимых",
+          "dative": "любимым",
+          "accusative_inanimate": "любимые",
+          "accusative_animate": "любимых",
+          "instrumental": "любимыми",
+          "prepositional": "любимых"
+        }
+      }
+    },
+    {
+      "adjective": "красивый",
+      "meaning_es": "beautiful",
+      "level": "A1",
+      "tags": [
+        "quality",
+        "culture"
+      ],
+      "comparable": true,
+      "comparative": "красивее",
+      "adverb": "красиво",
+      "forms": {
+        "masculine": {
+          "nominative": "красивый",
+          "genitive": "красивого",
+          "dative": "красивому",
+          "accusative_inanimate": "красивый",
+          "accusative_animate": "красивого",
+          "instrumental": "красивым",
+          "prepositional": "красивом"
+        },
+        "feminine": {
+          "nominative": "красивая",
+          "genitive": "красивой",
+          "dative": "красивой",
+          "accusative": "красивую",
+          "instrumental": "красивой",
+          "prepositional": "красивой"
+        },
+        "neuter": {
+          "nominative": "красивое",
+          "genitive": "красивого",
+          "dative": "красивому",
+          "accusative": "красивое",
+          "instrumental": "красивым",
+          "prepositional": "красивом"
+        },
+        "plural": {
+          "nominative": "красивые",
+          "genitive": "красивых",
+          "dative": "красивым",
+          "accusative_inanimate": "красивые",
+          "accusative_animate": "красивых",
+          "instrumental": "красивыми",
+          "prepositional": "красивых"
+        }
+      }
+    },
+    {
+      "adjective": "голодный",
+      "meaning_es": "hungry",
+      "level": "A1",
+      "tags": [
+        "feeling",
+        "food"
+      ],
+      "comparable": true,
+      "comparative": "голоднее",
+      "adverb": "голодно",
+      "forms": {
+        "masculine": {
+          "nominative": "голодный",
+          "genitive": "голодного",
+          "dative": "голодному",
+          "accusative_inanimate": "голодный",
+          "accusative_animate": "голодного",
+          "instrumental": "голодным",
+          "prepositional": "голодном"
+        },
+        "feminine": {
+          "nominative": "голодная",
+          "genitive": "голодной",
+          "dative": "голодной",
+          "accusative": "голодную",
+          "instrumental": "голодной",
+          "prepositional": "голодной"
+        },
+        "neuter": {
+          "nominative": "голодное",
+          "genitive": "голодного",
+          "dative": "голодному",
+          "accusative": "голодное",
+          "instrumental": "голодным",
+          "prepositional": "голодном"
+        },
+        "plural": {
+          "nominative": "голодные",
+          "genitive": "голодных",
+          "dative": "голодным",
+          "accusative_inanimate": "голодные",
+          "accusative_animate": "голодных",
+          "instrumental": "голодными",
+          "prepositional": "голодных"
+        }
+      }
+    }
+  ]
+}

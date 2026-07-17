@@ -943,6 +943,142 @@
         "fast-food",
         "diet"
       ]
+    },
+    {
+      "nominative": "картошка",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "papa / patata",
+      "level": "A1",
+      "cases": {
+        "genitive": "картошки",
+        "accusative": "картошку",
+        "prepositional": "картошке",
+        "dative": "картошке",
+        "instrumental": "картошкой"
+      },
+      "tags": [
+        "food",
+        "vegetable",
+        "cooking",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "майонез",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "mayonesa",
+      "level": "A2",
+      "cases": {
+        "genitive": "майонеза",
+        "accusative": "майонез",
+        "prepositional": "майонезе",
+        "dative": "майонезу",
+        "instrumental": "майонезом"
+      },
+      "tags": [
+        "food",
+        "sauce",
+        "russian-food"
+      ]
+    },
+    {
+      "nominative": "икра",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "caviar / huevas",
+      "level": "A2",
+      "cases": {
+        "genitive": "икры",
+        "accusative": "икру",
+        "prepositional": "икре",
+        "dative": "икре",
+        "instrumental": "икрой"
+      },
+      "tags": [
+        "food",
+        "seafood",
+        "russian-food"
+      ]
+    },
+    {
+      "nominative": "фрукты",
+      "gender": "plural",
+      "animate": false,
+      "meaning_es": "frutas",
+      "level": "A1",
+      "cases": {
+        "genitive": "фруктов",
+        "accusative": "фрукты",
+        "prepositional": "фруктах",
+        "dative": "фруктам",
+        "instrumental": "фруктами"
+      },
+      "tags": [
+        "food",
+        "fruit",
+        "diet",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "вино",
+      "gender": "neuter",
+      "animate": false,
+      "meaning_es": "vino",
+      "level": "A2",
+      "cases": {
+        "genitive": "вина",
+        "accusative": "вино",
+        "prepositional": "вине",
+        "dative": "вину",
+        "instrumental": "вином"
+      },
+      "tags": [
+        "food",
+        "drink",
+        "restaurant"
+      ]
+    },
+    {
+      "nominative": "соус",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "salsa",
+      "level": "A2",
+      "cases": {
+        "genitive": "соуса",
+        "accusative": "соус",
+        "prepositional": "соусе",
+        "dative": "соусу",
+        "instrumental": "соусом"
+      },
+      "tags": [
+        "food",
+        "sauce",
+        "restaurant"
+      ]
+    },
+    {
+      "nominative": "холодец",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "jalea salada de carne",
+      "level": "B1",
+      "cases": {
+        "genitive": "холодца",
+        "accusative": "холодец",
+        "prepositional": "холодце",
+        "dative": "холодцу",
+        "instrumental": "холодцом"
+      },
+      "tags": [
+        "food",
+        "russian-food",
+        "meat",
+        "holiday"
+      ]
     }
   ]
 }
