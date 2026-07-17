@@ -1,0 +1,148 @@
+{
+  "combinations": [
+    {
+      "id": "borsch-sour-cream",
+      "phrase": "борщ со сметаной",
+      "base": "борщ",
+      "connector": "со",
+      "with": "сметана",
+      "instrumental": "сметаной",
+      "topic": "russian-food",
+      "pattern": "{base} {connector} {instrumental}",
+      "case": "instrumental",
+      "prompts": {
+        "build": "борщ + со + ?",
+        "answer": "борщ со сметаной"
+      },
+      "examples": [
+        "борщ со сметаной"
+      ]
+    },
+    {
+      "id": "pie-meat",
+      "phrase": "пирог с мясом",
+      "base": "пирог",
+      "connector": "с",
+      "with": "мясо",
+      "instrumental": "мясом",
+      "topic": "food",
+      "pattern": "{base} {connector} {instrumental}",
+      "case": "instrumental",
+      "prompts": {
+        "build": "пирог + с + ?",
+        "answer": "пирог с мясом"
+      },
+      "examples": [
+        "пирог с мясом"
+      ]
+    },
+    {
+      "id": "pie-chicken",
+      "phrase": "пирог с курицей",
+      "base": "пирог",
+      "connector": "с",
+      "with": "курица",
+      "instrumental": "курицей",
+      "topic": "food",
+      "pattern": "{base} {connector} {instrumental}",
+      "case": "instrumental",
+      "prompts": {
+        "build": "пирог + с + ?",
+        "answer": "пирог с курицей"
+      },
+      "examples": [
+        "пирог с курицей"
+      ]
+    },
+    {
+      "id": "pie-fish",
+      "phrase": "пирог с рыбой",
+      "base": "пирог",
+      "connector": "с",
+      "with": "рыба",
+      "instrumental": "рыбой",
+      "topic": "food",
+      "pattern": "{base} {connector} {instrumental}",
+      "case": "instrumental",
+      "prompts": {
+        "build": "пирог + с + ?",
+        "answer": "пирог с рыбой"
+      },
+      "examples": [
+        "пирог с рыбой"
+      ]
+    },
+    {
+      "id": "pie-mushrooms",
+      "phrase": "пирог с грибами",
+      "base": "пирог",
+      "connector": "с",
+      "with": "грибы",
+      "instrumental": "грибами",
+      "topic": "food",
+      "pattern": "{base} {connector} {instrumental}",
+      "case": "instrumental",
+      "prompts": {
+        "build": "пирог + с + ?",
+        "answer": "пирог с грибами"
+      },
+      "examples": [
+        "пирог с грибами"
+      ]
+    },
+    {
+      "id": "tea-lemon",
+      "phrase": "чай с лимоном",
+      "base": "чай",
+      "connector": "с",
+      "with": "лимон",
+      "instrumental": "лимоном",
+      "topic": "drink",
+      "pattern": "{base} {connector} {instrumental}",
+      "case": "instrumental",
+      "prompts": {
+        "build": "чай + с + ?",
+        "answer": "чай с лимоном"
+      },
+      "examples": [
+        "чай с лимоном"
+      ]
+    },
+    {
+      "id": "tea-honey",
+      "phrase": "чай с мёдом",
+      "base": "чай",
+      "connector": "с",
+      "with": "мёд",
+      "instrumental": "мёдом",
+      "topic": "drink",
+      "pattern": "{base} {connector} {instrumental}",
+      "case": "instrumental",
+      "prompts": {
+        "build": "чай + с + ?",
+        "answer": "чай с мёдом"
+      },
+      "examples": [
+        "чай с мёдом"
+      ]
+    },
+    {
+      "id": "tea-jam",
+      "phrase": "чай с вареньем",
+      "base": "чай",
+      "connector": "с",
+      "with": "варенье",
+      "instrumental": "вареньем",
+      "topic": "drink",
+      "pattern": "{base} {connector} {instrumental}",
+      "case": "instrumental",
+      "prompts": {
+        "build": "чай + с + ?",
+        "answer": "чай с вареньем"
+      },
+      "examples": [
+        "чай с вареньем"
+      ]
+    }
+  ]
+}

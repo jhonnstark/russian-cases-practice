@@ -1079,6 +1079,79 @@
         "meat",
         "holiday"
       ]
+    },
+    {
+      "nominative": "пирог",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "pastel / pie",
+      "level": "A2",
+      "cases": {
+        "genitive": "пирога",
+        "accusative": "пирог",
+        "prepositional": "пироге",
+        "dative": "пирогу",
+        "instrumental": "пирогом"
+      },
+      "tags": [
+        "food",
+        "dessert",
+        "russian-food"
+      ]
+    },
+    {
+      "nominative": "продукты",
+      "gender": "plural",
+      "animate": false,
+      "meaning_es": "productos / víveres",
+      "level": "A1",
+      "cases": {
+        "genitive": "продуктов",
+        "accusative": "продукты",
+        "prepositional": "продуктах",
+        "dative": "продуктам",
+        "instrumental": "продуктами"
+      },
+      "tags": [
+        "food",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "туристы",
+      "gender": "plural",
+      "animate": true,
+      "meaning_es": "turistas",
+      "level": "A1",
+      "cases": {
+        "genitive": "туристов",
+        "accusative": "туристов",
+        "prepositional": "туристах",
+        "dative": "туристам",
+        "instrumental": "туристами"
+      },
+      "tags": [
+        "people",
+        "travel"
+      ]
+    },
+    {
+      "nominative": "аппетит",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "apetito",
+      "level": "A2",
+      "cases": {
+        "genitive": "аппетита",
+        "accusative": "аппетит",
+        "prepositional": "аппетите",
+        "dative": "аппетиту",
+        "instrumental": "аппетитом"
+      },
+      "tags": [
+        "food",
+        "feeling"
+      ]
     }
   ]
 }

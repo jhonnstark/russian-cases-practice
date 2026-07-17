@@ -383,6 +383,54 @@
           "prepositional": "голодных"
         }
       }
+    },
+    {
+      "adjective": "сладкий",
+      "meaning_es": "dulce",
+      "level": "A1",
+      "tags": [
+        "food",
+        "quality"
+      ],
+      "comparable": true,
+      "comparative": "слаще",
+      "adverb": "сладко",
+      "forms": {
+        "masculine": {
+          "nominative": "сладкий",
+          "genitive": "сладкого",
+          "dative": "сладкому",
+          "accusative_inanimate": "сладкий",
+          "accusative_animate": "сладкого",
+          "instrumental": "сладким",
+          "prepositional": "сладком"
+        },
+        "feminine": {
+          "nominative": "сладкая",
+          "genitive": "сладкой",
+          "dative": "сладкой",
+          "accusative": "сладкую",
+          "instrumental": "сладкой",
+          "prepositional": "сладкой"
+        },
+        "neuter": {
+          "nominative": "сладкое",
+          "genitive": "сладкого",
+          "dative": "сладкому",
+          "accusative": "сладкое",
+          "instrumental": "сладким",
+          "prepositional": "сладком"
+        },
+        "plural": {
+          "nominative": "сладкие",
+          "genitive": "сладких",
+          "dative": "сладким",
+          "accusative_inanimate": "сладкие",
+          "accusative_animate": "сладких",
+          "instrumental": "сладкими",
+          "prepositional": "сладких"
+        }
+      }
     }
   ]
 }
