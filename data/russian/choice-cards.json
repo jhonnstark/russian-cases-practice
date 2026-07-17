@@ -1,0 +1,84 @@
+{
+  "choice_cards": [
+    {
+      "id": "vacation-family-friends",
+      "topic": "travel",
+      "prompt": "Отпуск с семьёй или с друзьями?",
+      "options": ["отпуск с семьёй", "отпуск с друзьями"],
+      "requirements": ["2 complete sentences", "1 comparison", "1 conjunction"],
+      "example": "Я выбираю отпуск с друзьями, потому что мы любим путешествовать. Но иногда отпуск с семьёй лучше."
+    },
+    {
+      "id": "coffee-milk",
+      "topic": "food",
+      "prompt": "Кофе с молоком или без молока?",
+      "options": ["кофе с молоком", "кофе без молока"],
+      "requirements": ["1 opinion", "1 case phrase", "1 reason"],
+      "partnerReply": "Нет. Я предпочитаю кофе без молока. Почему?"
+    },
+    {
+      "id": "book-film",
+      "topic": "culture",
+      "prompt": "Книга или фильм?",
+      "options": ["книга", "фильм"],
+      "requirements": ["1 preference", "1 reason"]
+    },
+    {
+      "id": "sea-mountains",
+      "topic": "travel",
+      "prompt": "Море или горы?",
+      "options": ["море", "горы"],
+      "requirements": ["1 comparison", "1 conjunction"]
+    },
+    {
+      "id": "bus-metro",
+      "topic": "transport",
+      "prompt": "Автобус или метро?",
+      "options": ["автобус", "метро"],
+      "requirements": ["1 comparison", "1 reason"]
+    },
+    {
+      "id": "restaurant-cafe",
+      "topic": "restaurant",
+      "prompt": "Ресторан или кафе?",
+      "options": ["ресторан", "кафе"],
+      "requirements": ["1 preference", "1 comparison"]
+    },
+    {
+      "id": "moscow-petersburg",
+      "topic": "city",
+      "prompt": "Москва или Петербург?",
+      "options": ["Москва", "Петербург"],
+      "requirements": ["1 comparison", "1 opinion"]
+    },
+    {
+      "id": "tea-coffee",
+      "topic": "food",
+      "prompt": "Чай или кофе?",
+      "options": ["чай", "кофе"],
+      "requirements": ["1 preference", "1 instrumental phrase"]
+    },
+    {
+      "id": "pizza-borsch",
+      "topic": "food",
+      "prompt": "Пицца или борщ?",
+      "options": ["пицца", "борщ"],
+      "requirements": ["1 opinion", "1 reason"]
+    },
+    {
+      "id": "cake-fruit",
+      "topic": "diet",
+      "prompt": "Торт или фрукты?",
+      "options": ["торт", "фрукты"],
+      "requirements": ["1 healthy comparison", "1 reason"],
+      "example": "Я думаю, что фрукты полезнее, потому что в них меньше сахара."
+    },
+    {
+      "id": "suitcase-backpack",
+      "topic": "travel",
+      "prompt": "Большой чемодан или рюкзак?",
+      "options": ["большой чемодан", "рюкзак"],
+      "requirements": ["1 practical reason", "1 comparison"]
+    }
+  ]
+}

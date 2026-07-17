@@ -1,104 +1,955 @@
 {
   "comparatives": [
     {
-      "base": "хороший",
-      "comparative": "лучше"
+      "id": "cmp-хорошии",
+      "adjective": "хороший",
+      "adverb": "хорошо",
+      "comparative": "лучше",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s хороший",
+      "examples": [
+        "??? лучше, ??? ??????."
+      ],
+      "learningScore": 10
     },
     {
-      "base": "плохой",
-      "comparative": "хуже"
+      "id": "cmp-плохои",
+      "adjective": "плохой",
+      "adverb": "плохо",
+      "comparative": "хуже",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s плохой",
+      "examples": [
+        "??? хуже, ??? ??????."
+      ],
+      "learningScore": 10
     },
     {
-      "base": "частый",
-      "comparative": "чаще"
+      "id": "cmp-умныи",
+      "adjective": "умный",
+      "comparative": "умнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s умный",
+      "examples": [
+        "??? умнее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "редкий",
-      "comparative": "реже"
+      "id": "cmp-активныи",
+      "adjective": "активный",
+      "comparative": "активнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s активный",
+      "examples": [
+        "??? активнее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "большой",
-      "comparative": "больше"
+      "id": "cmp-интересныи",
+      "adjective": "интересный",
+      "comparative": "интереснее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s интересный",
+      "examples": [
+        "??? интереснее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "маленький",
-      "comparative": "меньше"
+      "id": "cmp-трудныи",
+      "adjective": "трудный",
+      "comparative": "труднее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s трудный",
+      "examples": [
+        "??? труднее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "высокий",
-      "comparative": "выше"
+      "id": "cmp-приятныи",
+      "adjective": "приятный",
+      "comparative": "приятнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s приятный",
+      "examples": [
+        "??? приятнее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "низкий",
-      "comparative": "ниже"
+      "id": "cmp-вкусныи",
+      "adjective": "вкусный",
+      "comparative": "вкуснее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s вкусный",
+      "examples": [
+        "??? вкуснее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "короткий",
-      "comparative": "короче"
+      "id": "cmp-важныи",
+      "adjective": "важный",
+      "comparative": "важнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s важный",
+      "examples": [
+        "??? важнее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "широкий",
-      "comparative": "шире"
+      "id": "cmp-популярныи",
+      "adjective": "популярный",
+      "comparative": "популярнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s популярный",
+      "examples": [
+        "??? популярнее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "узкий",
-      "comparative": "уже"
+      "id": "cmp-прекрасныи",
+      "adjective": "прекрасный",
+      "comparative": "прекраснее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s прекрасный",
+      "examples": [
+        "??? прекраснее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "дорогой",
-      "comparative": "дороже"
+      "id": "cmp-известныи",
+      "adjective": "известный",
+      "comparative": "известнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s известный",
+      "examples": [
+        "??? известнее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "дешёвый",
-      "comparative": "дешевле"
+      "id": "cmp-красныи",
+      "adjective": "красный",
+      "comparative": "краснее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s красный",
+      "examples": [
+        "??? краснее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "жаркий",
-      "comparative": "жарче"
+      "id": "cmp-новыи",
+      "adjective": "новый",
+      "comparative": "новее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s новый",
+      "examples": [
+        "??? новее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "лёгкий",
-      "comparative": "легче"
+      "id": "cmp-счастливыи",
+      "adjective": "счастливый",
+      "comparative": "счастливее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s счастливый",
+      "examples": [
+        "??? счастливее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "чистый",
-      "comparative": "чище"
+      "id": "cmp-свободныи",
+      "adjective": "свободный",
+      "comparative": "свободнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s свободный",
+      "examples": [
+        "??? свободнее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "громкий",
-      "comparative": "громче"
+      "id": "cmp-светлыи",
+      "adjective": "светлый",
+      "comparative": "светлее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s светлый",
+      "examples": [
+        "??? светлее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "тихий",
-      "comparative": "тише"
+      "id": "cmp-ужасныи",
+      "adjective": "ужасный",
+      "comparative": "ужаснее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s ужасный",
+      "examples": [
+        "??? ужаснее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "молодой",
-      "comparative": "моложе"
+      "id": "cmp-красивыи",
+      "adjective": "красивый",
+      "comparative": "красивее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s красивый",
+      "examples": [
+        "??? красивее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "старый",
-      "comparative": "старше"
+      "id": "cmp-свежии",
+      "adjective": "свежий",
+      "comparative": "свежее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s свежий",
+      "examples": [
+        "??? свежее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "толстый",
-      "comparative": "толще"
+      "id": "cmp-культурныи",
+      "adjective": "культурный",
+      "comparative": "культурнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s культурный",
+      "examples": [
+        "??? культурнее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "тонкий",
-      "comparative": "тоньше"
+      "id": "cmp-безопасныи",
+      "adjective": "безопасный",
+      "comparative": "безопаснее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s безопасный",
+      "examples": [
+        "??? безопаснее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "рано",
-      "comparative": "раньше"
+      "id": "cmp-спокоиныи",
+      "adjective": "спокойный",
+      "comparative": "спокойнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s спокойный",
+      "examples": [
+        "??? спокойнее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "поздно",
-      "comparative": "позже"
+      "id": "cmp-динамичныи",
+      "adjective": "динамичный",
+      "comparative": "динамичнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s динамичный",
+      "examples": [
+        "??? динамичнее, ??? ??????."
+      ],
+      "learningScore": 6
     },
     {
-      "base": "простой",
-      "comparative": "проще"
+      "id": "cmp-шумныи",
+      "adjective": "шумный",
+      "comparative": "шумнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s шумный",
+      "examples": [
+        "??? шумнее, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-роднои",
+      "adjective": "родной",
+      "comparative": "роднее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s родной",
+      "examples": [
+        "??? роднее, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-добрыи",
+      "adjective": "добрый",
+      "comparative": "добрее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s добрый",
+      "examples": [
+        "??? добрее, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-мягкии",
+      "adjective": "мягкий",
+      "comparative": "мягче",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s мягкий",
+      "examples": [
+        "??? мягче, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-чeрныи",
+      "adjective": "чёрный",
+      "comparative": "чёрнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s чёрный",
+      "examples": [
+        "??? чёрнее, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-сильныи",
+      "adjective": "сильный",
+      "comparative": "сильнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s сильный",
+      "examples": [
+        "??? сильнее, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-быстрыи",
+      "adjective": "быстрый",
+      "comparative": "быстрее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s быстрый",
+      "examples": [
+        "??? быстрее, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-тeплыи",
+      "adjective": "тёплый",
+      "comparative": "теплее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s тёплый",
+      "examples": [
+        "??? теплее, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-частыи",
+      "adjective": "частый",
+      "adverb": "часто",
+      "comparative": "чаще",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s частый",
+      "examples": [
+        "??? чаще, ??? ??????."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-редкии",
+      "adjective": "редкий",
+      "adverb": "редко",
+      "comparative": "реже",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s редкий",
+      "examples": [
+        "??? реже, ??? ??????."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-большои",
+      "adjective": "большой",
+      "adverb": "много",
+      "comparative": "больше",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s большой",
+      "examples": [
+        "??? больше, ??? ??????."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-маленькии",
+      "adjective": "маленький",
+      "adverb": "мало",
+      "comparative": "меньше",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s маленький",
+      "examples": [
+        "??? меньше, ??? ??????."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-высокии",
+      "adjective": "высокий",
+      "adverb": "высоко",
+      "comparative": "выше",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s высокий",
+      "examples": [
+        "??? выше, ??? ??????."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-низкии",
+      "adjective": "низкий",
+      "adverb": "низко",
+      "comparative": "ниже",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s низкий",
+      "examples": [
+        "??? ниже, ??? ??????."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-короткии",
+      "adjective": "короткий",
+      "adverb": "коротко",
+      "comparative": "короче",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s короткий",
+      "examples": [
+        "??? короче, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-далeкии",
+      "adjective": "далёкий",
+      "adverb": "далеко",
+      "comparative": "дальше",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s далёкий",
+      "examples": [
+        "??? дальше, ??? ??????."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-близкии",
+      "adjective": "близкий",
+      "adverb": "близко",
+      "comparative": "ближе",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s близкий",
+      "examples": [
+        "??? ближе, ??? ??????."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-широкии",
+      "adjective": "широкий",
+      "adverb": "широко",
+      "comparative": "шире",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s широкий",
+      "examples": [
+        "??? шире, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-узкии",
+      "adjective": "узкий",
+      "adverb": "узко",
+      "comparative": "уже",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s узкий",
+      "examples": [
+        "??? уже, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-дорогои",
+      "adjective": "дорогой",
+      "adverb": "дорого",
+      "comparative": "дороже",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s дорогой",
+      "examples": [
+        "??? дороже, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-дешeвыи",
+      "adjective": "дешёвый",
+      "adverb": "дёшево",
+      "comparative": "дешевле",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s дешёвый",
+      "examples": [
+        "??? дешевле, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-жаркии",
+      "adjective": "жаркий",
+      "adverb": "жарко",
+      "comparative": "жарче",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s жаркий",
+      "examples": [
+        "??? жарче, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-лeгкии",
+      "adjective": "лёгкий",
+      "adverb": "легко",
+      "comparative": "легче",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s лёгкий",
+      "examples": [
+        "??? легче, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-чистыи",
+      "adjective": "чистый",
+      "adverb": "чисто",
+      "comparative": "чище",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s чистый",
+      "examples": [
+        "??? чище, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-громкии",
+      "adjective": "громкий",
+      "adverb": "громко",
+      "comparative": "громче",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s громкий",
+      "examples": [
+        "??? громче, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-тихии",
+      "adjective": "тихий",
+      "adverb": "тихо",
+      "comparative": "тише",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s тихий",
+      "examples": [
+        "??? тише, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-молодои",
+      "adjective": "молодой",
+      "comparative": "моложе",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s молодой",
+      "examples": [
+        "??? моложе, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-старыи",
+      "adjective": "старый",
+      "comparative": "старше",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s старый",
+      "examples": [
+        "??? старше, ??? ??????."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-толстыи",
+      "adjective": "толстый",
+      "comparative": "толще",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s толстый",
+      "examples": [
+        "??? толще, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-тонкии",
+      "adjective": "тонкий",
+      "comparative": "тоньше",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s тонкий",
+      "examples": [
+        "??? тоньше, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-рано",
+      "adverb": "рано",
+      "comparative": "раньше",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s рано",
+      "examples": [
+        "??? раньше, ??? ??????."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-поздно",
+      "adverb": "поздно",
+      "comparative": "позже",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s поздно",
+      "examples": [
+        "??? позже, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-простои",
+      "adjective": "простой",
+      "comparative": "проще",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s простой",
+      "examples": [
+        "??? проще, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-комфортныи",
+      "adjective": "комфортный",
+      "comparative": "комфортнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s комфортный",
+      "examples": [
+        "??? комфортнее, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-смелыи",
+      "adjective": "смелый",
+      "comparative": "смелее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s смелый",
+      "examples": [
+        "??? смелее, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-аккуратныи",
+      "adjective": "аккуратный",
+      "adverb": "аккуратно",
+      "comparative": "аккуратнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s аккуратный",
+      "examples": [
+        "??? аккуратнее, ??? ??????."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-раннии",
+      "adjective": "ранний",
+      "comparative": "раньше",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s ранний",
+      "examples": [
+        "??? раньше, ??? ??????."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-позднии",
+      "adjective": "поздний",
+      "comparative": "позднее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "m?s поздний",
+      "examples": [
+        "??? позднее, ??? ??????."
+      ],
+      "learningScore": 6
     }
   ]
 }

@@ -27,6 +27,26 @@
         <span class="game-card__arrow">→</span>
       </div>
 
+      <!-- Comparatives game -->
+      <div class="game-card game-card--comparative" @click="$router.push('/comparatives')">
+        <div class="game-card__icon">📈</div>
+        <div class="game-card__body">
+          <h2 class="game-card__title">Comparativos</h2>
+          <p class="game-card__desc">Practica лучше, дороже, выше y frases con чем</p>
+        </div>
+        <span class="game-card__arrow">→</span>
+      </div>
+
+      <!-- Campaign mode -->
+      <div class="game-card game-card--campaign" @click="$router.push('/campaigns')">
+        <div class="game-card__icon">🗺️</div>
+        <div class="game-card__body">
+          <h2 class="game-card__title">Campaign Mode</h2>
+          <p class="game-card__desc">Aprende por aventuras temáticas y situaciones reales</p>
+        </div>
+        <span class="game-card__arrow">→</span>
+      </div>
+
     </div>
   </div>
 </template>
@@ -84,6 +104,8 @@ const { t } = useI18n()
 }
 .game-card:hover { border-color: #6366f1; transform: translateY(-1px); }
 .game-card--aspect:hover { border-color: #a855f7; }
+.game-card--comparative:hover { border-color: #22d3ee; }
+.game-card--campaign:hover { border-color: #10b981; }
 
 .game-card__icon { font-size: 2rem; flex-shrink: 0; }
 

@@ -36,6 +36,31 @@ const routes = [
     name: 'AspectResults',
     component: () => import('../views/AspectResultsView.vue'),
   },
+  {
+    path: '/comparatives',
+    name: 'ComparativeHome',
+    component: () => import('../views/ComparativeHomeView.vue'),
+  },
+  {
+    path: '/comparatives/game',
+    name: 'ComparativeGame',
+    component: () => import('../views/ComparativeGameView.vue'),
+  },
+  {
+    path: '/comparatives/results',
+    name: 'ComparativeResults',
+    component: () => import('../views/ComparativeResultsView.vue'),
+  },
+  {
+    path: '/campaigns',
+    name: 'CampaignMap',
+    component: () => import('../views/CampaignMapView.vue'),
+  },
+  {
+    path: '/campaigns/:id',
+    name: 'CampaignDetail',
+    component: () => import('../views/CampaignDetailView.vue'),
+  },
 ];
 
 const router = createRouter({

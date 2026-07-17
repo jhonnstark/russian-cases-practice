@@ -1,0 +1,205 @@
+{
+  "campaigns": [
+    {
+      "id": "travel",
+      "emoji": "✈",
+      "title": "Travel",
+      "subtitle": "Planning a vacation",
+      "theme": "Convince your partner to choose your destination.",
+      "status": "available",
+      "reward": "Travel Badge",
+      "unlock": "nature",
+      "vocabulary": [
+        "пляж",
+        "отель",
+        "горы",
+        "озеро",
+        "самолёт",
+        "поезд",
+        "отпуск",
+        "билет",
+        "курорт",
+        "национальный парк",
+        "Сочи",
+        "Кемер",
+        "Альпы"
+      ],
+      "grammar": [
+        "genitive",
+        "accusative",
+        "prepositional",
+        "comparatives",
+        "verb_aspect",
+        "conversation"
+      ],
+      "roles": [
+        "Tourist",
+        "Guide",
+        "Friend",
+        "Hotel Receptionist",
+        "Taxi Driver",
+        "Restaurant Waiter"
+      ],
+      "partnerPersonalities": [
+        {
+          "id": "friendly",
+          "label": "Friendly",
+          "reactions": ["Да.", "Но...", "Maybe.", "Хорошая идея."]
+        },
+        {
+          "id": "stubborn",
+          "label": "Stubborn",
+          "reactions": ["Нет.", "Мне не нравится.", "Convince me."]
+        },
+        {
+          "id": "budget",
+          "label": "Budget Traveler",
+          "reactions": ["Это дорого.", "А где дешевле?", "Мне нужен бюджетный вариант."]
+        },
+        {
+          "id": "adventurous",
+          "label": "Adventurous",
+          "reactions": ["Хочу что-то интересное.", "А там есть горы?", "Давайте активный отдых."]
+        }
+      ],
+      "conversationCards": [
+        "Я согласен.",
+        "Да, но...",
+        "Я думаю, что...",
+        "Мне кажется...",
+        "Я предпочитаю...",
+        "Тогда лучше...",
+        "А если...?",
+        "Может быть...",
+        "Для меня это важно.",
+        "Для меня это не очень важно.",
+        "Давайте...",
+        "Мне больше нравится..."
+      ],
+      "lessons": [
+        {
+          "id": "travel-vocabulary",
+          "number": 1,
+          "type": "vocabulary",
+          "title": "Vocabulary",
+          "goal": "Learn 20 travel words.",
+          "items": ["пляж", "отель", "горы", "озеро", "самолёт", "поезд", "отпуск", "билет"],
+          "objective": "Recognize travel words before grammar practice."
+        },
+        {
+          "id": "travel-cases",
+          "number": 2,
+          "type": "cases",
+          "title": "Cases",
+          "goal": "Practice endings inside travel contexts.",
+          "cases": ["genitive", "accusative", "prepositional"],
+          "examples": ["из Москвы", "до отеля", "без билета", "около моря"],
+          "route": "/cases"
+        },
+        {
+          "id": "travel-aspect",
+          "number": 3,
+          "type": "aspect",
+          "title": "Verb Aspect",
+          "goal": "Practice travel motion and completed actions.",
+          "verbs": ["ехать", "ездить", "поехать"],
+          "route": "/aspect"
+        },
+        {
+          "id": "travel-comparatives",
+          "number": 4,
+          "type": "comparatives",
+          "title": "Comparatives",
+          "goal": "Compare destinations naturally.",
+          "items": ["дороже", "дешевле", "лучше", "хуже", "теплее", "выше"],
+          "route": "/comparatives"
+        },
+        {
+          "id": "travel-conversation",
+          "number": 5,
+          "type": "conversation",
+          "title": "Conversation",
+          "goal": "Choose natural responses in a travel discussion.",
+          "dialogue": [
+            {
+              "partner": "Мне нравится Сочи.",
+              "options": ["Я согласен.", "Да, но...", "Я предпочитаю Кемер.", "А если поехать в Альпы?"]
+            }
+          ]
+        },
+        {
+          "id": "travel-role-play",
+          "number": 6,
+          "type": "role-play",
+          "title": "Role Play",
+          "goal": "Convince your partner.",
+          "roles": ["Tourist", "Friend"],
+          "requirements": ["2 comparisons", "1 partial agreement", "1 compromise"]
+        },
+        {
+          "id": "travel-mini-story",
+          "number": 7,
+          "type": "mini-story",
+          "title": "Mini Story",
+          "goal": "Complete a short travel story.",
+          "story": [
+            "Я хочу поехать в {blank}.",
+            "Без {blank} путешествие невозможно.",
+            "Мне больше нравится спокойный отдых."
+          ]
+        },
+        {
+          "id": "travel-boss",
+          "number": 8,
+          "type": "boss",
+          "title": "Boss Battle",
+          "goal": "Convince your partner to visit your city.",
+          "requirements": [
+            "2 comparisons",
+            "2 Russian cases",
+            "1 verb aspect pair",
+            "1 compromise",
+            "1 partial agreement"
+          ],
+          "example": "Да, но в Байкале природа красивее. Тогда лучше поехать летом."
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "emoji": "🏞",
+      "title": "Nature",
+      "subtitle": "Parks, lakes, mountains",
+      "status": "locked",
+      "unlockRequirement": "Complete Travel"
+    },
+    {
+      "id": "restaurants",
+      "emoji": "🍽",
+      "title": "Restaurants",
+      "subtitle": "Order food and compare places",
+      "status": "planned"
+    },
+    {
+      "id": "shopping",
+      "emoji": "🛍",
+      "title": "Shopping",
+      "subtitle": "Prices, preferences, purchases",
+      "status": "planned"
+    },
+    {
+      "id": "culture",
+      "emoji": "🏛",
+      "title": "Culture",
+      "subtitle": "Museums, theatre, holidays",
+      "status": "planned"
+    },
+    {
+      "id": "transport",
+      "emoji": "🚇",
+      "title": "Transport",
+      "subtitle": "Tickets, routes, directions",
+      "status": "planned"
+    }
+  ]
+}
