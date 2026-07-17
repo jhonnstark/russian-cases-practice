@@ -167,6 +167,14 @@
     {
       "imperfective": "разговаривать",
       "perfective": "поговорить"
+    },
+    {
+      "imperfective": "любить",
+      "perfective": "полюбить"
+    },
+    {
+      "imperfective": "пробовать",
+      "perfective": "попробовать"
     }
   ]
 }
