@@ -1,0 +1,9 @@
+﻿{
+  "achievements": [
+    { "id": "tea-lover", "title": "Tea Lover", "trigger": "complete_choice_card_with_tea", "campaigns": ["food", "russian-food"] },
+    { "id": "restaurant-expert", "title": "Restaurant Expert", "trigger": "complete_restaurant_story", "campaigns": ["food"] },
+    { "id": "case-master", "title": "Case Master", "trigger": "complete_case_practice", "campaigns": ["food", "travel", "russian-food"] },
+    { "id": "grammar-hero", "title": "Grammar Hero", "trigger": "complete_boss_dialogue", "campaigns": ["making-choices", "travel"] },
+    { "id": "russian-food-explorer", "title": "Russian Food Explorer", "trigger": "complete_russian_food_campaign", "campaigns": ["russian-food"] }
+  ]
+}

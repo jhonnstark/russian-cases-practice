@@ -147,6 +147,26 @@
     {
       "imperfective": "уставать",
       "perfective": "устать"
+    },
+    {
+      "imperfective": "советоваться",
+      "perfective": "посоветоваться"
+    },
+    {
+      "imperfective": "выбирать",
+      "perfective": "выбрать"
+    },
+    {
+      "imperfective": "проводить",
+      "perfective": "провести"
+    },
+    {
+      "imperfective": "встречаться",
+      "perfective": "встретиться"
+    },
+    {
+      "imperfective": "разговаривать",
+      "perfective": "поговорить"
     }
   ]
 }

@@ -60,7 +60,26 @@
         "кефир",
         "квас",
         "морс",
-        "пиво"
+        "пиво",
+        "борщ",
+        "блины",
+        "пельмени",
+        "винегрет",
+        "селёдка под шубой",
+        "солёные огурцы",
+        "лосось",
+        "грибы",
+        "чай",
+        "лимон",
+        "варенье",
+        "овсянка",
+        "кукуруза",
+        "креветки",
+        "овощи",
+        "русская кухня",
+        "стереотип",
+        "здоровая еда",
+        "фастфуд"
       ],
       "grammar": [
         "accusative",
@@ -188,6 +207,26 @@
             "1 polite restaurant phrase"
           ]
         }
+      ],
+      "commonPhrases": [
+        "чай с лимоном",
+        "чай с мёдом",
+        "чай с вареньем",
+        "рис с овощами",
+        "паста с морепродуктами",
+        "паста с курицей",
+        "советоваться с друзьями",
+        "проводить время с семьёй",
+        "встречаться с родственниками",
+        "разговаривать с людьми"
+      ],
+      "verbs": [
+        "советоваться",
+        "заказывать",
+        "выбирать",
+        "проводить",
+        "встречаться",
+        "разговаривать"
       ]
     },
     {
@@ -409,6 +448,14 @@
             "1 partial agreement"
           ]
         }
+      ],
+      "verbs": [
+        "советоваться",
+        "заказывать",
+        "выбирать",
+        "проводить",
+        "встречаться",
+        "разговаривать"
       ]
     },
     {
@@ -514,6 +561,26 @@
             "1 compromise"
           ]
         }
+      ],
+      "commonPhrases": [
+        "чай с лимоном",
+        "чай с мёдом",
+        "чай с вареньем",
+        "рис с овощами",
+        "паста с морепродуктами",
+        "паста с курицей",
+        "советоваться с друзьями",
+        "проводить время с семьёй",
+        "встречаться с родственниками",
+        "разговаривать с людьми"
+      ],
+      "verbs": [
+        "советоваться",
+        "заказывать",
+        "выбирать",
+        "проводить",
+        "встречаться",
+        "разговаривать"
       ]
     },
     {
@@ -535,8 +602,9 @@
       "id": "culture",
       "emoji": "🏛️",
       "title": "Culture",
-      "subtitle": "Museums, theatre, holidays",
-      "status": "planned"
+      "subtitle": "Russian food, holidays, literature and arts",
+      "status": "planned",
+      "unlock": "russian-food"
     },
     {
       "id": "transport",
@@ -544,6 +612,373 @@
       "title": "Transport",
       "subtitle": "Tickets, routes, directions",
       "status": "planned"
+    },
+    {
+      "id": "russian-food",
+      "emoji": "🥟",
+      "title": "Russian Food",
+      "subtitle": "Русская кухня",
+      "theme": "Explore Russian cuisine and explain what you like.",
+      "status": "available",
+      "reward": "Russian Food Explorer",
+      "unlock": "russian-holidays",
+      "topics": [
+        "russian cuisine",
+        "food culture",
+        "restaurant"
+      ],
+      "cases": [
+        "accusative",
+        "instrumental",
+        "genitive"
+      ],
+      "comparatives": true,
+      "conversation": true,
+      "roleplay": true,
+      "bossChallenge": "Recommend a Russian dish and explain why.",
+      "vocabulary": [
+        "русская кухня",
+        "борщ",
+        "щи",
+        "пельмени",
+        "блины",
+        "каша",
+        "пирожок",
+        "квас",
+        "морс",
+        "сметана",
+        "варенье",
+        "винегрет",
+        "селёдка под шубой",
+        "солёные огурцы",
+        "лосось",
+        "грибы",
+        "лук",
+        "свёкла",
+        "чай",
+        "лимон",
+        "мёд",
+        "овсянка",
+        "кукуруза",
+        "морепродукты",
+        "курица",
+        "креветки",
+        "овощи",
+        "стереотип",
+        "здоровая еда",
+        "фастфуд"
+      ],
+      "grammar": [
+        "accusative",
+        "instrumental",
+        "genitive",
+        "comparatives",
+        "conversation"
+      ],
+      "roles": [
+        "Friend",
+        "Restaurant Waiter",
+        "Tourist",
+        "Host"
+      ],
+      "conversationCards": [
+        "Я люблю русскую кухню.",
+        "Мне нравится борщ.",
+        "Я предпочитаю пельмени.",
+        "Блины вкуснее.",
+        "Попробуйте это блюдо.",
+        "Русская кухня вкусная.",
+        "Здоровая еда лучше, чем фастфуд.",
+        "Это стереотип?"
+      ],
+      "lessons": [
+        {
+          "id": "russian-food-vocabulary",
+          "number": 1,
+          "type": "vocabulary",
+          "title": "Русская кухня",
+          "goal": "Learn core Russian cuisine words.",
+          "items": [
+            "борщ",
+            "щи",
+            "пельмени",
+            "блины",
+            "каша",
+            "квас",
+            "винегрет",
+            "селёдка под шубой",
+            "солёные огурцы",
+            "лосось",
+            "грибы",
+            "лук",
+            "свёкла",
+            "чай",
+            "лимон",
+            "мёд",
+            "варенье",
+            "овсянка",
+            "кукуруза",
+            "морепродукты",
+            "курица",
+            "креветки",
+            "овощи"
+          ]
+        },
+        {
+          "id": "russian-food-opinion",
+          "number": 2,
+          "type": "opinion",
+          "title": "Food Opinion",
+          "goal": "Say which Russian dish you prefer and why.",
+          "requirements": [
+            "1 preference",
+            "1 reason",
+            "1 comparison"
+          ]
+        },
+        {
+          "id": "russian-food-instrumental",
+          "number": 3,
+          "type": "instrumental",
+          "title": "With What?",
+          "goal": "Practice food combinations with с + instrumental.",
+          "examples": [
+            "Блины со сметаной.",
+            "Чай с вареньем.",
+            "Пельмени с маслом."
+          ]
+        },
+        {
+          "id": "russian-food-boss",
+          "number": 4,
+          "type": "boss",
+          "title": "Recommend a Dish",
+          "goal": "Recommend a Russian dish to a friend.",
+          "requirements": [
+            "1 food word",
+            "1 comparison",
+            "1 reason",
+            "1 polite phrase"
+          ]
+        }
+      ],
+      "commonPhrases": [
+        "чай с лимоном",
+        "чай с мёдом",
+        "чай с вареньем",
+        "рис с овощами",
+        "паста с морепродуктами",
+        "паста с курицей",
+        "советоваться с друзьями",
+        "проводить время с семьёй",
+        "встречаться с родственниками",
+        "разговаривать с людьми"
+      ],
+      "verbs": [
+        "советоваться",
+        "заказывать",
+        "выбирать",
+        "проводить",
+        "встречаться",
+        "разговаривать"
+      ]
+    },
+    {
+      "id": "russian-holidays",
+      "emoji": "🎄",
+      "title": "Russian Holidays",
+      "subtitle": "New Year, traditions, celebrations",
+      "theme": "Plan and describe a Russian holiday celebration.",
+      "status": "planned",
+      "reward": "Holiday Storyteller",
+      "unlock": "russian-literature",
+      "topics": [
+        "holidays",
+        "traditions",
+        "family"
+      ],
+      "cases": [
+        "accusative",
+        "prepositional",
+        "instrumental"
+      ],
+      "conversation": true,
+      "bossChallenge": "Invite a friend to celebrate New Year in Russian.",
+      "vocabulary": [
+        "Новый год",
+        "праздник",
+        "ёлка",
+        "подарок",
+        "семья",
+        "традиция",
+        "стол",
+        "гости",
+        "стереотип"
+      ]
+    },
+    {
+      "id": "russian-literature",
+      "emoji": "📚",
+      "title": "Russian Literature",
+      "subtitle": "Books, authors, stories",
+      "theme": "Talk about books, writers and favorite stories.",
+      "status": "planned",
+      "reward": "Literature Reader",
+      "unlock": "russian-cities",
+      "topics": [
+        "literature",
+        "books",
+        "authors"
+      ],
+      "cases": [
+        "accusative",
+        "prepositional",
+        "genitive"
+      ],
+      "comparatives": true,
+      "conversation": true,
+      "bossChallenge": "Explain which book you prefer and why.",
+      "vocabulary": [
+        "книга",
+        "рассказ",
+        "роман",
+        "писатель",
+        "поэт",
+        "герой",
+        "сюжет",
+        "литература"
+      ]
+    },
+    {
+      "id": "russian-cities",
+      "emoji": "🏙️",
+      "title": "Russian Cities",
+      "subtitle": "Moscow, Petersburg, regions",
+      "theme": "Compare Russian cities and plan a visit.",
+      "status": "planned",
+      "reward": "City Guide",
+      "unlock": "russian-space-program",
+      "topics": [
+        "cities",
+        "travel",
+        "culture"
+      ],
+      "cases": [
+        "prepositional",
+        "genitive",
+        "accusative"
+      ],
+      "comparatives": true,
+      "persuasion": true,
+      "bossChallenge": "Convince your partner to visit one Russian city.",
+      "vocabulary": [
+        "Москва",
+        "Петербург",
+        "Казань",
+        "город",
+        "центр",
+        "музей",
+        "река",
+        "площадь"
+      ]
+    },
+    {
+      "id": "russian-space-program",
+      "emoji": "🚀",
+      "title": "Russian Space Program",
+      "subtitle": "Space, science, history",
+      "theme": "Learn Russian through space exploration.",
+      "status": "planned",
+      "reward": "Space Explorer",
+      "unlock": "russian-music",
+      "topics": [
+        "space",
+        "science",
+        "history"
+      ],
+      "cases": [
+        "prepositional",
+        "instrumental",
+        "genitive"
+      ],
+      "conversation": true,
+      "bossChallenge": "Tell a short story about space in Russian.",
+      "vocabulary": [
+        "космос",
+        "ракета",
+        "космонавт",
+        "станция",
+        "планета",
+        "полёт",
+        "наука",
+        "история"
+      ]
+    },
+    {
+      "id": "russian-music",
+      "emoji": "🎵",
+      "title": "Russian Music",
+      "subtitle": "Songs, concerts, instruments",
+      "theme": "Discuss music tastes and concerts.",
+      "status": "planned",
+      "reward": "Music Listener",
+      "unlock": "russian-cinema",
+      "topics": [
+        "music",
+        "culture",
+        "preferences"
+      ],
+      "cases": [
+        "accusative",
+        "instrumental",
+        "prepositional"
+      ],
+      "comparatives": true,
+      "conversation": true,
+      "bossChallenge": "Recommend a song or concert in Russian.",
+      "vocabulary": [
+        "музыка",
+        "песня",
+        "концерт",
+        "голос",
+        "группа",
+        "гитара",
+        "пианино",
+        "слушать"
+      ]
+    },
+    {
+      "id": "russian-cinema",
+      "emoji": "🎬",
+      "title": "Russian Cinema",
+      "subtitle": "Films, actors, stories",
+      "theme": "Talk about films and defend your opinion.",
+      "status": "planned",
+      "reward": "Cinema Critic",
+      "topics": [
+        "cinema",
+        "stories",
+        "opinions"
+      ],
+      "cases": [
+        "accusative",
+        "prepositional",
+        "genitive"
+      ],
+      "comparatives": true,
+      "conversation": true,
+      "bossChallenge": "Debate which film is better.",
+      "vocabulary": [
+        "фильм",
+        "кино",
+        "актёр",
+        "актриса",
+        "режиссёр",
+        "сцена",
+        "история",
+        "комедия",
+        "стереотип"
+      ]
     }
   ]
 }

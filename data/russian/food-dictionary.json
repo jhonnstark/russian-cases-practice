@@ -647,6 +647,302 @@
         "dessert",
         "instrumental"
       ]
+    },
+    {
+      "nominative": "борщ",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "borsch",
+      "level": "A1",
+      "cases": {
+        "genitive": "борща",
+        "accusative": "борщ",
+        "prepositional": "борще",
+        "dative": "борщу",
+        "instrumental": "борщом"
+      },
+      "tags": [
+        "food",
+        "russian-food",
+        "soup",
+        "restaurant"
+      ]
+    },
+    {
+      "nominative": "блины",
+      "gender": "plural",
+      "animate": false,
+      "meaning_es": "blinis / crepas rusas",
+      "level": "A1",
+      "cases": {
+        "genitive": "блинов",
+        "accusative": "блины",
+        "prepositional": "блинах",
+        "dative": "блинам",
+        "instrumental": "блинами"
+      },
+      "tags": [
+        "food",
+        "russian-food",
+        "dessert",
+        "breakfast"
+      ]
+    },
+    {
+      "nominative": "пельмени",
+      "gender": "plural",
+      "animate": false,
+      "meaning_es": "pelmeni",
+      "level": "A1",
+      "cases": {
+        "genitive": "пельменей",
+        "accusative": "пельмени",
+        "prepositional": "пельменях",
+        "dative": "пельменям",
+        "instrumental": "пельменями"
+      },
+      "tags": [
+        "food",
+        "russian-food",
+        "meat",
+        "restaurant"
+      ]
+    },
+    {
+      "nominative": "винегрет",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "ensalada vinagreta rusa",
+      "level": "A2",
+      "cases": {
+        "genitive": "винегрета",
+        "accusative": "винегрет",
+        "prepositional": "винегрете",
+        "dative": "винегрету",
+        "instrumental": "винегретом"
+      },
+      "tags": [
+        "food",
+        "russian-food",
+        "vegetable",
+        "salad"
+      ]
+    },
+    {
+      "nominative": "селёдка под шубой",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "arenque bajo abrigo",
+      "level": "B1",
+      "cases": {
+        "genitive": "селёдки под шубой",
+        "accusative": "селёдку под шубой",
+        "prepositional": "селёдке под шубой",
+        "dative": "селёдке под шубой",
+        "instrumental": "селёдкой под шубой"
+      },
+      "tags": [
+        "food",
+        "russian-food",
+        "fish",
+        "holiday"
+      ]
+    },
+    {
+      "nominative": "солёные огурцы",
+      "gender": "plural",
+      "animate": false,
+      "meaning_es": "pepinos encurtidos",
+      "level": "A2",
+      "cases": {
+        "genitive": "солёных огурцов",
+        "accusative": "солёные огурцы",
+        "prepositional": "солёных огурцах",
+        "dative": "солёным огурцам",
+        "instrumental": "солёными огурцами"
+      },
+      "tags": [
+        "food",
+        "russian-food",
+        "vegetable",
+        "snack"
+      ]
+    },
+    {
+      "nominative": "лосось",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "salmón",
+      "level": "A2",
+      "cases": {
+        "genitive": "лосося",
+        "accusative": "лосось",
+        "prepositional": "лососе",
+        "dative": "лососю",
+        "instrumental": "лососем"
+      },
+      "tags": [
+        "food",
+        "fish",
+        "seafood",
+        "restaurant"
+      ]
+    },
+    {
+      "nominative": "грибы",
+      "gender": "plural",
+      "animate": false,
+      "meaning_es": "hongos / setas",
+      "level": "A1",
+      "cases": {
+        "genitive": "грибов",
+        "accusative": "грибы",
+        "prepositional": "грибах",
+        "dative": "грибам",
+        "instrumental": "грибами"
+      },
+      "tags": [
+        "food",
+        "vegetable",
+        "cooking",
+        "russian-food"
+      ]
+    },
+    {
+      "nominative": "овсянка",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "avena",
+      "level": "A2",
+      "cases": {
+        "genitive": "овсянки",
+        "accusative": "овсянку",
+        "prepositional": "овсянке",
+        "dative": "овсянке",
+        "instrumental": "овсянкой"
+      },
+      "tags": [
+        "food",
+        "breakfast",
+        "russian-food"
+      ]
+    },
+    {
+      "nominative": "кукуруза",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "maíz",
+      "level": "A2",
+      "cases": {
+        "genitive": "кукурузы",
+        "accusative": "кукурузу",
+        "prepositional": "кукурузе",
+        "dative": "кукурузе",
+        "instrumental": "кукурузой"
+      },
+      "tags": [
+        "food",
+        "vegetable",
+        "shopping"
+      ]
+    },
+    {
+      "nominative": "креветки",
+      "gender": "plural",
+      "animate": false,
+      "meaning_es": "camarones / gambas",
+      "level": "A2",
+      "cases": {
+        "genitive": "креветок",
+        "accusative": "креветки",
+        "prepositional": "креветках",
+        "dative": "креветкам",
+        "instrumental": "креветками"
+      },
+      "tags": [
+        "food",
+        "seafood",
+        "restaurant"
+      ]
+    },
+    {
+      "nominative": "овощи",
+      "gender": "plural",
+      "animate": false,
+      "meaning_es": "verduras",
+      "level": "A1",
+      "cases": {
+        "genitive": "овощей",
+        "accusative": "овощи",
+        "prepositional": "овощах",
+        "dative": "овощам",
+        "instrumental": "овощами"
+      },
+      "tags": [
+        "food",
+        "vegetable",
+        "shopping",
+        "cooking"
+      ]
+    },
+    {
+      "nominative": "русская кухня",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "cocina rusa",
+      "level": "A2",
+      "cases": {
+        "genitive": "русской кухни",
+        "accusative": "русскую кухню",
+        "prepositional": "русской кухне",
+        "dative": "русской кухне",
+        "instrumental": "русской кухней"
+      },
+      "tags": [
+        "culture",
+        "food",
+        "russian-food"
+      ]
+    },
+    {
+      "nominative": "здоровая еда",
+      "gender": "feminine",
+      "animate": false,
+      "meaning_es": "comida saludable",
+      "level": "A2",
+      "cases": {
+        "genitive": "здоровой еды",
+        "accusative": "здоровую еду",
+        "prepositional": "здоровой еде",
+        "dative": "здоровой еде",
+        "instrumental": "здоровой едой"
+      },
+      "tags": [
+        "culture",
+        "food",
+        "diet",
+        "healthy-food"
+      ]
+    },
+    {
+      "nominative": "фастфуд",
+      "gender": "masculine",
+      "animate": false,
+      "meaning_es": "comida rápida",
+      "level": "A2",
+      "cases": {
+        "genitive": "фастфуда",
+        "accusative": "фастфуд",
+        "prepositional": "фастфуде",
+        "dative": "фастфуду",
+        "instrumental": "фастфудом"
+      },
+      "tags": [
+        "culture",
+        "food",
+        "fast-food",
+        "diet"
+      ]
     }
   ]
 }

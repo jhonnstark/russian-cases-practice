@@ -5,7 +5,9 @@
       "perfective": "взять",
       "meaning_es": "tomar / agarrar",
       "level": "A2",
-      "tags": ["general"],
+      "tags": [
+        "general"
+      ],
       "examples": {
         "imperfective": "Я беру книгу каждый день.",
         "perfective": "Я взял книгу со стола."
@@ -16,7 +18,9 @@
       "perfective": "включить",
       "meaning_es": "encender / incluir",
       "level": "A2",
-      "tags": ["daily"],
+      "tags": [
+        "daily"
+      ],
       "examples": {
         "imperfective": "Он каждый вечер включает телевизор.",
         "perfective": "Он включил телевизор и лёг на диван."
@@ -27,7 +31,9 @@
       "perfective": "встретить",
       "meaning_es": "encontrar / recibir",
       "level": "A2",
-      "tags": ["social"],
+      "tags": [
+        "social"
+      ],
       "examples": {
         "imperfective": "Я часто встречаю его в парке.",
         "perfective": "Я встретил друга на вокзале."
@@ -38,7 +44,10 @@
       "perfective": "встретиться",
       "meaning_es": "encontrarse / quedar (con alguien)",
       "level": "A2",
-      "tags": ["social"],
+      "tags": [
+        "social",
+        "conversation"
+      ],
       "examples": {
         "imperfective": "Мы встречаемся каждую пятницу.",
         "perfective": "Мы наконец встретились после долгой разлуки."
@@ -49,7 +58,10 @@
       "perfective": "выбрать",
       "meaning_es": "elegir / escoger",
       "level": "A2",
-      "tags": ["general"],
+      "tags": [
+        "general",
+        "conversation"
+      ],
       "examples": {
         "imperfective": "Она долго выбирала платье.",
         "perfective": "Она выбрала синее платье."
@@ -60,7 +72,9 @@
       "perfective": "выиграть",
       "meaning_es": "ganar",
       "level": "B1",
-      "tags": ["sport"],
+      "tags": [
+        "sport"
+      ],
       "examples": {
         "imperfective": "Эта команда часто выигрывает.",
         "perfective": "Наша команда выиграла матч."
@@ -71,7 +85,9 @@
       "perfective": "сказать",
       "meaning_es": "hablar / decir",
       "level": "A1",
-      "tags": ["communication"],
+      "tags": [
+        "communication"
+      ],
       "examples": {
         "imperfective": "Он говорит по-русски каждый день.",
         "perfective": "Он сказал правду."
@@ -82,7 +98,9 @@
       "perfective": "приготовить",
       "meaning_es": "preparar / cocinar",
       "level": "A2",
-      "tags": ["food"],
+      "tags": [
+        "food"
+      ],
       "examples": {
         "imperfective": "Мама готовит ужин каждый вечер.",
         "perfective": "Мама приготовила вкусный суп."
@@ -93,7 +111,10 @@
       "perfective": "погулять",
       "meaning_es": "pasear",
       "level": "A1",
-      "tags": ["daily", "leisure"],
+      "tags": [
+        "daily",
+        "leisure"
+      ],
       "examples": {
         "imperfective": "Мы гуляем в парке каждое утро.",
         "perfective": "Мы погуляли час и вернулись домой."
@@ -104,7 +125,9 @@
       "perfective": "дать",
       "meaning_es": "dar",
       "level": "A2",
-      "tags": ["general"],
+      "tags": [
+        "general"
+      ],
       "examples": {
         "imperfective": "Учитель часто даёт домашнее задание.",
         "perfective": "Он дал мне свой номер телефона."
@@ -115,7 +138,9 @@
       "perfective": "сделать",
       "meaning_es": "hacer",
       "level": "A1",
-      "tags": ["general"],
+      "tags": [
+        "general"
+      ],
       "examples": {
         "imperfective": "Я делаю домашнее задание каждый день.",
         "perfective": "Я наконец сделал всё задание."
@@ -126,7 +151,9 @@
       "perfective": "подумать",
       "meaning_es": "pensar",
       "level": "A2",
-      "tags": ["general"],
+      "tags": [
+        "general"
+      ],
       "examples": {
         "imperfective": "Он долго думал о проблеме.",
         "perfective": "Подумай и ответь."
@@ -137,7 +164,9 @@
       "perfective": "съесть",
       "meaning_es": "comer",
       "level": "A1",
-      "tags": ["food"],
+      "tags": [
+        "food"
+      ],
       "examples": {
         "imperfective": "Я ем суп каждый день.",
         "perfective": "Я съел весь торт."
@@ -148,7 +177,9 @@
       "perfective": "пожить",
       "meaning_es": "vivir",
       "level": "A1",
-      "tags": ["daily"],
+      "tags": [
+        "daily"
+      ],
       "examples": {
         "imperfective": "Они живут в Москве.",
         "perfective": "Я пожил в деревне целое лето."
@@ -159,7 +190,11 @@
       "perfective": "заказать",
       "meaning_es": "pedir / ordenar",
       "level": "A2",
-      "tags": ["food", "shopping"],
+      "tags": [
+        "food",
+        "shopping",
+        "conversation"
+      ],
       "examples": {
         "imperfective": "Мы иногда заказываем пиццу.",
         "perfective": "Мы заказали столик в ресторане."
@@ -170,7 +205,10 @@
       "perfective": "закончить",
       "meaning_es": "terminar / acabar",
       "level": "A2",
-      "tags": ["study", "work"],
+      "tags": [
+        "study",
+        "work"
+      ],
       "examples": {
         "imperfective": "Она всегда заканчивает работу поздно.",
         "perfective": "Она закончила проект вовремя."
@@ -181,7 +219,9 @@
       "perfective": "забыть",
       "meaning_es": "olvidar",
       "level": "A2",
-      "tags": ["general"],
+      "tags": [
+        "general"
+      ],
       "examples": {
         "imperfective": "Я часто забываю ключи.",
         "perfective": "Я забыл телефон дома."
@@ -192,7 +232,9 @@
       "perfective": "заработать",
       "meaning_es": "ganar (dinero)",
       "level": "B1",
-      "tags": ["work"],
+      "tags": [
+        "work"
+      ],
       "examples": {
         "imperfective": "Он зарабатывает хорошо.",
         "perfective": "Он заработал деньги на отпуск."
@@ -203,7 +245,9 @@
       "perfective": "позвонить",
       "meaning_es": "llamar (por teléfono)",
       "level": "A2",
-      "tags": ["communication"],
+      "tags": [
+        "communication"
+      ],
       "examples": {
         "imperfective": "Она звонит маме каждое воскресенье.",
         "perfective": "Я позвонил врачу и записался."
@@ -214,7 +258,9 @@
       "perfective": "найти",
       "meaning_es": "buscar / encontrar",
       "level": "A2",
-      "tags": ["general"],
+      "tags": [
+        "general"
+      ],
       "examples": {
         "imperfective": "Я долго искал ключи.",
         "perfective": "Я наконец нашёл ключи."
@@ -225,7 +271,9 @@
       "perfective": "поменять",
       "meaning_es": "cambiar",
       "level": "A2",
-      "tags": ["general"],
+      "tags": [
+        "general"
+      ],
       "examples": {
         "imperfective": "Он часто меняет работу.",
         "perfective": "Он поменял телефон на новый."
@@ -236,7 +284,9 @@
       "perfective": "найти",
       "meaning_es": "encontrar / hallar",
       "level": "A2",
-      "tags": ["general"],
+      "tags": [
+        "general"
+      ],
       "examples": {
         "imperfective": "Она находит ошибки в текстах.",
         "perfective": "Она нашла хорошую работу."
@@ -247,7 +297,10 @@
       "perfective": "написать",
       "meaning_es": "escribir",
       "level": "A1",
-      "tags": ["communication", "study"],
+      "tags": [
+        "communication",
+        "study"
+      ],
       "examples": {
         "imperfective": "Я пишу письма каждую неделю.",
         "perfective": "Я написал письмо и отправил его."
@@ -258,7 +311,9 @@
       "perfective": "получить",
       "meaning_es": "recibir",
       "level": "A2",
-      "tags": ["communication"],
+      "tags": [
+        "communication"
+      ],
       "examples": {
         "imperfective": "Она часто получает письма от друзей.",
         "perfective": "Она получила диплом в июне."
@@ -269,7 +324,9 @@
       "perfective": "купить",
       "meaning_es": "comprar",
       "level": "A2",
-      "tags": ["shopping"],
+      "tags": [
+        "shopping"
+      ],
       "examples": {
         "imperfective": "Мы покупаем продукты каждую субботу.",
         "perfective": "Мы купили новый холодильник."
@@ -280,7 +337,9 @@
       "perfective": "помочь",
       "meaning_es": "ayudar",
       "level": "A2",
-      "tags": ["social"],
+      "tags": [
+        "social"
+      ],
       "examples": {
         "imperfective": "Он всегда помогает коллегам.",
         "perfective": "Он помог мне с переездом."
@@ -291,7 +350,9 @@
       "perfective": "ответить",
       "meaning_es": "responder / contestar",
       "level": "A2",
-      "tags": ["communication"],
+      "tags": [
+        "communication"
+      ],
       "examples": {
         "imperfective": "Студенты отвечают на вопросы.",
         "perfective": "Он ответил на все вопросы правильно."
@@ -302,7 +363,9 @@
       "perfective": "открыть",
       "meaning_es": "abrir",
       "level": "A1",
-      "tags": ["daily"],
+      "tags": [
+        "daily"
+      ],
       "examples": {
         "imperfective": "Магазин открывает двери в 9 утра.",
         "perfective": "Она открыла окно, потому что было жарко."
@@ -313,7 +376,10 @@
       "perfective": "продать",
       "meaning_es": "vender",
       "level": "A2",
-      "tags": ["shopping", "work"],
+      "tags": [
+        "shopping",
+        "work"
+      ],
       "examples": {
         "imperfective": "Они продают свежие фрукты.",
         "perfective": "Они продали машину за неделю."
@@ -324,7 +390,9 @@
       "perfective": "поработать",
       "meaning_es": "trabajar",
       "level": "A1",
-      "tags": ["work"],
+      "tags": [
+        "work"
+      ],
       "examples": {
         "imperfective": "Она работает в больнице.",
         "perfective": "Давай поработаем ещё час."
@@ -335,7 +403,9 @@
       "perfective": "рассказать",
       "meaning_es": "contar / narrar",
       "level": "A2",
-      "tags": ["communication"],
+      "tags": [
+        "communication"
+      ],
       "examples": {
         "imperfective": "Дедушка часто рассказывает истории.",
         "perfective": "Он рассказал нам всё о своём путешествии."
@@ -346,7 +416,10 @@
       "perfective": "решить",
       "meaning_es": "resolver / decidir",
       "level": "A2",
-      "tags": ["study", "work"],
+      "tags": [
+        "study",
+        "work"
+      ],
       "examples": {
         "imperfective": "Мы долго решали эту задачу.",
         "perfective": "Мы наконец решили проблему."
@@ -357,7 +430,9 @@
       "perfective": "сдать",
       "meaning_es": "entregar / rendir (examen)",
       "level": "B1",
-      "tags": ["study"],
+      "tags": [
+        "study"
+      ],
       "examples": {
         "imperfective": "Он каждый год сдаёт экзамены.",
         "perfective": "Он успешно сдал экзамен."
@@ -368,7 +443,9 @@
       "perfective": "посмотреть",
       "meaning_es": "ver / mirar",
       "level": "A1",
-      "tags": ["leisure"],
+      "tags": [
+        "leisure"
+      ],
       "examples": {
         "imperfective": "Она каждый вечер смотрит сериалы.",
         "perfective": "Она посмотрела фильм до конца."
@@ -379,7 +456,9 @@
       "perfective": "поспать",
       "meaning_es": "dormir",
       "level": "A1",
-      "tags": ["daily"],
+      "tags": [
+        "daily"
+      ],
       "examples": {
         "imperfective": "Кот спит весь день.",
         "perfective": "Я поспал час и почувствовал себя лучше."
@@ -390,7 +469,9 @@
       "perfective": "спросить",
       "meaning_es": "preguntar",
       "level": "A2",
-      "tags": ["communication"],
+      "tags": [
+        "communication"
+      ],
       "examples": {
         "imperfective": "Дети часто спрашивают «почему?».",
         "perfective": "Она спросила, где находится аптека."
@@ -401,7 +482,9 @@
       "perfective": "стать",
       "meaning_es": "convertirse en / llegar a ser",
       "level": "B1",
-      "tags": ["general"],
+      "tags": [
+        "general"
+      ],
       "examples": {
         "imperfective": "Он постепенно становился лучшим студентом.",
         "perfective": "Она стала врачом."
@@ -412,7 +495,9 @@
       "perfective": "построить",
       "meaning_es": "construir",
       "level": "B1",
-      "tags": ["work"],
+      "tags": [
+        "work"
+      ],
       "examples": {
         "imperfective": "Они строят новый дом.",
         "perfective": "Они построили дом за год."
@@ -423,7 +508,10 @@
       "perfective": "потратить",
       "meaning_es": "gastar",
       "level": "A2",
-      "tags": ["shopping", "work"],
+      "tags": [
+        "shopping",
+        "work"
+      ],
       "examples": {
         "imperfective": "Она много тратит на одежду.",
         "perfective": "Он потратил все деньги за неделю."
@@ -434,7 +522,10 @@
       "perfective": "узнать",
       "meaning_es": "averiguar / reconocer / enterarse",
       "level": "A2",
-      "tags": ["communication", "study"],
+      "tags": [
+        "communication",
+        "study"
+      ],
       "examples": {
         "imperfective": "Я узнаю новые слова каждый день.",
         "perfective": "Я узнал результаты экзамена."
@@ -445,7 +536,9 @@
       "perfective": "помереть",
       "meaning_es": "morir",
       "level": "B1",
-      "tags": ["general"],
+      "tags": [
+        "general"
+      ],
       "examples": {
         "imperfective": "В романе главный герой долго умирает.",
         "perfective": "Он помер от старости."
@@ -456,7 +549,9 @@
       "perfective": "выучить",
       "meaning_es": "aprender / estudiar",
       "level": "A2",
-      "tags": ["study"],
+      "tags": [
+        "study"
+      ],
       "examples": {
         "imperfective": "Я учу русский каждый день.",
         "perfective": "Я выучил все слова к уроку."
@@ -467,7 +562,10 @@
       "perfective": "прочитать",
       "meaning_es": "leer",
       "level": "A1",
-      "tags": ["study", "leisure"],
+      "tags": [
+        "study",
+        "leisure"
+      ],
       "examples": {
         "imperfective": "Я читаю книгу каждый вечер.",
         "perfective": "Я прочитал книгу за два дня."
@@ -478,7 +576,9 @@
       "perfective": "убрать",
       "meaning_es": "limpiar / recoger",
       "level": "A2",
-      "tags": ["daily"],
+      "tags": [
+        "daily"
+      ],
       "examples": {
         "imperfective": "Она убирает квартиру каждую субботу.",
         "perfective": "Она убрала комнату перед приходом гостей."
@@ -489,7 +589,9 @@
       "perfective": "встать",
       "meaning_es": "levantarse",
       "level": "A2",
-      "tags": ["daily"],
+      "tags": [
+        "daily"
+      ],
       "examples": {
         "imperfective": "Я встаю в 7 часов каждый день.",
         "perfective": "Я встал и пошёл на кухню."
@@ -500,7 +602,9 @@
       "perfective": "показать",
       "meaning_es": "mostrar / enseñar",
       "level": "A2",
-      "tags": ["communication"],
+      "tags": [
+        "communication"
+      ],
       "examples": {
         "imperfective": "Гид показывает достопримечательности туристам.",
         "perfective": "Он показал мне дорогу к вокзалу."
@@ -511,7 +615,9 @@
       "perfective": "заплатить",
       "meaning_es": "pagar",
       "level": "A2",
-      "tags": ["shopping"],
+      "tags": [
+        "shopping"
+      ],
       "examples": {
         "imperfective": "Обычно я плачу картой.",
         "perfective": "Я заплатил за кофе и ушёл."
@@ -522,7 +628,9 @@
       "perfective": "устать",
       "meaning_es": "cansarse",
       "level": "A2",
-      "tags": ["feelings"],
+      "tags": [
+        "feelings"
+      ],
       "examples": {
         "imperfective": "Я устаю после долгого рабочего дня.",
         "perfective": "Я так устал, что сразу заснул."
@@ -533,7 +641,9 @@
       "perfective": "проснуться",
       "meaning_es": "despertarse",
       "level": "A2",
-      "tags": ["daily"],
+      "tags": [
+        "daily"
+      ],
       "examples": {
         "imperfective": "Я обычно просыпаюсь в 7 утра.",
         "perfective": "Я проснулся поздно и опоздал."
@@ -544,10 +654,61 @@
       "perfective": "прыгнуть",
       "meaning_es": "saltar",
       "level": "A2",
-      "tags": ["movement", "sport"],
+      "tags": [
+        "movement",
+        "sport"
+      ],
       "examples": {
         "imperfective": "Дети прыгают во дворе каждый день.",
         "perfective": "Он прыгнул в воду с мостика."
+      }
+    },
+    {
+      "imperfective": "советоваться",
+      "perfective": "посоветоваться",
+      "meaning_es": "consultar / pedir consejo",
+      "level": "A2",
+      "tags": [
+        "communication",
+        "social",
+        "instrumental",
+        "conversation"
+      ],
+      "examples": {
+        "imperfective": "Мы часто советуемся с друзьями.",
+        "perfective": "Мы посоветовались с друзьями и выбрали ресторан."
+      }
+    },
+    {
+      "imperfective": "проводить",
+      "perfective": "провести",
+      "meaning_es": "pasar / dedicar tiempo",
+      "level": "A2",
+      "tags": [
+        "daily",
+        "social",
+        "time",
+        "conversation"
+      ],
+      "examples": {
+        "imperfective": "Мы часто проводим время с семьёй.",
+        "perfective": "Мы провели вечер с семьёй."
+      }
+    },
+    {
+      "imperfective": "разговаривать",
+      "perfective": "поговорить",
+      "meaning_es": "conversar / hablar",
+      "level": "A2",
+      "tags": [
+        "communication",
+        "social",
+        "instrumental",
+        "conversation"
+      ],
+      "examples": {
+        "imperfective": "Я часто разговариваю с людьми по-русски.",
+        "perfective": "Я поговорил с официантом."
       }
     }
   ],
@@ -648,6 +809,30 @@
         "verbKey": "прыгать",
         "form": "прыгают",
         "contrastForm": "прыгнут"
+      },
+      {
+        "template": "Мы часто ___ с друзьями перед поездкой.",
+        "hint_es": "часто... → hábito → НСВ",
+        "clue": "часто",
+        "verbKey": "советоваться",
+        "form": "советуемся",
+        "contrastForm": "посоветуемся"
+      },
+      {
+        "template": "Обычно мы ___ время с семьёй в воскресенье.",
+        "hint_es": "обычно... → hábito → НСВ",
+        "clue": "обычно",
+        "verbKey": "проводить",
+        "form": "проводим",
+        "contrastForm": "проведём"
+      },
+      {
+        "template": "Каждый день я ___ с людьми по-русски.",
+        "hint_es": "каждый день... → acción repetida → НСВ",
+        "clue": "каждый день",
+        "verbKey": "разговаривать",
+        "form": "разговариваю",
+        "contrastForm": "поговорю"
       }
     ],
     "perfective": [
@@ -746,6 +931,30 @@
         "verbKey": "прыгнуть",
         "form": "прыгнул",
         "contrastForm": "прыгал"
+      },
+      {
+        "template": "Мы ___ с друзьями и выбрали кафе.",
+        "hint_es": "acción completada + resultado → СВ",
+        "clue": "result",
+        "verbKey": "посоветоваться",
+        "form": "посоветовались",
+        "contrastForm": "советовались"
+      },
+      {
+        "template": "Вчера мы ___ вечер с семьёй.",
+        "hint_es": "ayer como evento completo → СВ",
+        "clue": "вчера",
+        "verbKey": "провести",
+        "form": "провели",
+        "contrastForm": "проводили"
+      },
+      {
+        "template": "Я ___ с официантом и заказал ужин.",
+        "hint_es": "acción completada + continuación → СВ",
+        "clue": "result",
+        "verbKey": "поговорить",
+        "form": "поговорил",
+        "contrastForm": "разговаривал"
       }
     ]
   }
