@@ -1,0 +1,40 @@
+{
+  "association_challenges": [
+    {
+      "id": "borsch-association",
+      "prompt": "борщ",
+      "correct": "сметана",
+      "options": [
+        "сметана",
+        "кетчуп",
+        "майонез",
+        "банан"
+      ],
+      "explanation": "Борщ обычно едят со сметаной."
+    },
+    {
+      "id": "tea-association",
+      "prompt": "чай",
+      "correct": "лимон",
+      "options": [
+        "лимон",
+        "мясо",
+        "рыба",
+        "лук"
+      ],
+      "explanation": "Чай часто пьют с лимоном."
+    },
+    {
+      "id": "pie-association",
+      "prompt": "пирог",
+      "correct": "фрукты",
+      "options": [
+        "фрукты",
+        "суп",
+        "молоко",
+        "сметана"
+      ],
+      "explanation": "Сладкий пирог может быть с фруктами."
+    }
+  ]
+}
