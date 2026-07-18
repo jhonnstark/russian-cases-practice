@@ -862,14 +862,6 @@
     "овощ",
     "еда",
     "свежие продукты",
-    "????",
-    "??????",
-    "???",
-    "?????",
-    "????????????",
-    "?????????",
-    "????????",
-    "???????",
     "борщ",
     "блины",
     "пельмени",
@@ -1636,7 +1628,57 @@
     "Я люблю сладкое.",
     "Я хочу попробовать что-то русское.",
     "Сочи лучше, чем Кемер.",
-    "Кемер дешевле, чем Сочи."
+    "Кемер дешевле, чем Сочи.",
+    "Куда вы хотите поехать?",
+    "Что вам больше нравится?",
+    "Давайте выберем...",
+    "Role Play Mode",
+    "Мне больше нравится {choice}.",
+    "Я предпочитаю {choice}.",
+    "Я хочу поехать в {choice}.",
+    "Для меня лучше {choice}.",
+    "Почему?",
+    "Что там можно делать?",
+    "Это спокойный или активный отдых?",
+    "Я хочу поехать в отпуск.",
+    "Я люблю отдыхать на пляже.",
+    "Мне нравятся горы.",
+    "В этом регионе красивое озеро.",
+    "Это известный курорт.",
+    "Мы хотим посетить национальный парк.",
+    "Travel Vocabulary",
+    "Я выбираю...",
+    "но иногда...",
+    "Ты согласен?",
+    "Почему так?",
+    "Я думаю...",
+    "Making Choices",
+    "Интересно.",
+    "Я не согласен.",
+    "Моё мнение...",
+    "Я хочу сказать...",
+    "Я думаю иначе...",
+    "Debate Mode",
+    "Я люблю чай с мёдом.",
+    "Интересно. Но чай с вареньем тоже вкусный. Ты согласен?",
+    "Я пью чай с лимоном.",
+    "Я ем хлеб с маслом.",
+    "Я люблю кофе с молоком.",
+    "Я готовлю картофель с мясом.",
+    "Instrumental Builder",
+    "Я пью {drink} с {instrumental}.",
+    "Я сегодня как лимон.",
+    "Сегодня я как помидор.",
+    "Выберите фрукт и напишите настроение.",
+    "Какое у вас настроение?",
+    "Мне, пожалуйста...",
+    "Сколько стоит?",
+    "Я хочу купить...",
+    "У вас есть...?",
+    "Shopping Conversation",
+    "Я хочу заказать...",
+    "Я рекомендую борщ.",
+    "Restaurant Conversation"
   ],
   "grammar_patterns": [
     "У меня нет {noun}",
@@ -2347,75 +2389,103 @@
     ]
   },
   "fruit": [
-    "??????",
-    "????????",
-    "????",
-    "?????",
+    "яблоко",
+    "виноград",
+    "киви",
+    "апельсин",
+    "арбуз",
+    "лимон",
     "фрукты"
   ],
   "vegetables": [
-    "?????????",
-    "???????",
-    "????",
-    "??????",
-    "???",
-    "?????",
-    "картошка"
+    "картофель",
+    "картошка",
+    "помидор",
+    "огурец",
+    "лук",
+    "морковь",
+    "капуста",
+    "свёкла",
+    "редис",
+    "грибы",
+    "овощи"
   ],
   "drink": [
-    "??????",
-    "?????",
-    "????",
-    "???",
+    "молоко",
+    "кефир",
+    "квас",
+    "морс",
+    "пиво",
+    "чай",
+    "кофе",
     "вино"
   ],
   "dessert": [
-    "???",
-    "???????",
-    "????",
-    "?????????",
-    "пирог"
+    "торт",
+    "мороженое",
+    "шоколад",
+    "пирожок",
+    "пирог",
+    "блины",
+    "варенье",
+    "мёд"
   ],
   "meat": [
-    "????",
-    "??????"
+    "мясо",
+    "курица",
+    "холодец"
   ],
   "fish": [
-    "????"
+    "рыба",
+    "лосось",
+    "селёдка",
+    "тунец"
   ],
   "seafood": [
-    "????????????",
+    "морепродукты",
+    "креветки",
     "икра"
   ],
   "restaurant": [
-    "????????",
-    "????",
-    "?????",
+    "ресторан",
+    "кафе",
+    "меню",
+    "счёт",
+    "заказ",
+    "официант",
     "майонез",
-    "соус"
+    "соус",
+    "блюдо"
   ],
   "shopping": [
-    "???????",
-    "????????",
-    "??????",
-    "????",
+    "магазин",
+    "рынок",
+    "касса",
+    "чек",
     "билет",
-    "продукты"
+    "продукты",
+    "цена",
+    "сколько стоит"
   ],
   "cooking": [
-    "????????",
-    "????",
-    "??????????",
-    "???????",
-    "???",
-    "??????"
+    "готовить",
+    "варить",
+    "жарить",
+    "запекать",
+    "подавать",
+    "есть",
+    "рецепт",
+    "ингредиенты"
   ],
   "diet": [
-    "?????",
-    "????????",
-    "???????? ???",
-    "??????",
-    "фрукты"
+    "диета",
+    "здоровая еда",
+    "фастфуд",
+    "полезный",
+    "жирный",
+    "фрукты",
+    "овощи",
+    "без мяса"
   ],
   "russian-food": [
     "борщ",
@@ -7276,6 +7346,1243 @@
         "budget-not-fatty negative",
         "healthy food choices"
       ]
+    }
+  ],
+  "conversation_phrases": [
+    {
+      "mode": "role-play",
+      "title": "Role Play Mode",
+      "roles": [
+        "teacher",
+        "tourist",
+        "student",
+        "friend",
+        "coworker",
+        "waiter"
+      ],
+      "turns": [
+        {
+          "speaker": "Студент А",
+          "prompts": [
+            "Спросите, куда ваш партнёр хочет поехать в отпуск.",
+            "Спросите, что ему больше нравится: море, горы или город.",
+            "Предложите выбрать место для отдыха."
+          ]
+        },
+        {
+          "speaker": "Студент Б",
+          "prompts": [
+            "Ответьте, куда вы хотите поехать.",
+            "Объясните, почему вам нравится это место.",
+            "Согласитесь или предложите другой вариант."
+          ]
+        }
+      ],
+      "useful_phrases": [
+        "Куда вы хотите поехать?",
+        "Что вам больше нравится?",
+        "Мне больше нравится...",
+        "Я хочу поехать...",
+        "Давайте выберем...",
+        "Я согласен, но...",
+        "А если...?"
+      ]
+    },
+    {
+      "mode": "opinion-game",
+      "title": "Что вам больше нравится?",
+      "question": "Что вам больше нравится?",
+      "choices": [
+        "Сочи",
+        "Кемер",
+        "Альпы"
+      ],
+      "answer_patterns": [
+        "Мне больше нравится {choice}.",
+        "Я предпочитаю {choice}.",
+        "Я хочу поехать в {choice}.",
+        "Для меня лучше {choice}."
+      ],
+      "follow_up_prompts": [
+        "Почему?",
+        "Что там можно делать?",
+        "Это спокойный или активный отдых?"
+      ]
+    },
+    {
+      "mode": "topic-vocabulary",
+      "topic": "travel",
+      "title": "Travel Vocabulary",
+      "words": [
+        "отдых",
+        "отпуск",
+        "курорт",
+        "пляж",
+        "горы",
+        "регион",
+        "национальный парк",
+        "озеро",
+        "город"
+      ],
+      "useful_phrases": [
+        "Я хочу спокойный отдых.",
+        "Я хочу поехать в отпуск.",
+        "Я люблю отдыхать на пляже.",
+        "Мне нравятся горы.",
+        "В этом регионе красивое озеро.",
+        "Это известный курорт.",
+        "Мы хотим посетить национальный парк."
+      ]
+    },
+    {
+      "mode": "making-choices",
+      "title": "Making Choices",
+      "objective": "Choose between two options and defend your opinion.",
+      "requirements": [
+        "2 complete sentences",
+        "1 comparison",
+        "1 conjunction"
+      ],
+      "useful_phrases": [
+        "Я выбираю...",
+        "потому что...",
+        "но иногда...",
+        "Я предпочитаю...",
+        "Ты согласен?",
+        "Почему так?",
+        "Давайте выберем...",
+        "Я думаю..."
+      ]
+    },
+    {
+      "mode": "debate",
+      "title": "Debate Mode",
+      "example": {
+        "player": "Я люблю чай с мёдом.",
+        "partner": "Интересно. Но чай с вареньем тоже вкусный. Ты согласен?"
+      },
+      "useful_phrases": [
+        "Интересно.",
+        "Я согласен, но...",
+        "Я не согласен.",
+        "Моё мнение...",
+        "Я хочу сказать...",
+        "Я думаю иначе..."
+      ]
+    },
+    {
+      "mode": "instrumental-builder",
+      "title": "Instrumental Builder",
+      "pattern": "Я пью {drink} с {instrumental}.",
+      "examples": [
+        "Я пью чай с лимоном.",
+        "Я ем хлеб с маслом.",
+        "Я люблю кофе с молоком.",
+        "Я готовлю картофель с мясом."
+      ]
+    },
+    {
+      "mode": "mood-game",
+      "title": "Какое у вас настроение?",
+      "prompt": "Выберите фрукт и напишите настроение.",
+      "examples": [
+        "Я сегодня как лимон.",
+        "Сегодня я как помидор."
+      ]
+    },
+    {
+      "mode": "shopping-conversation",
+      "title": "Shopping Conversation",
+      "useful_phrases": [
+        "Мне, пожалуйста...",
+        "Сколько стоит?",
+        "Я хочу купить...",
+        "У вас есть...?",
+        "Спасибо."
+      ]
+    },
+    {
+      "mode": "restaurant-conversation",
+      "title": "Restaurant Conversation",
+      "roles": [
+        "Cliente",
+        "Mesero"
+      ],
+      "flow": [
+        "Ordenar",
+        "Pagar",
+        "Invitar"
+      ],
+      "useful_phrases": [
+        "Мне, пожалуйста...",
+        "Я хочу заказать...",
+        "Счёт, пожалуйста.",
+        "Я рекомендую борщ."
+      ]
+    },
+    "Я рекомендую попробовать...",
+    "Вам стоит попробовать...",
+    "Тебе стоит попробовать...",
+    "Это одно из самых популярных блюд...",
+    "Его готовят из...",
+    "Его обычно едят с...",
+    "Оно сладкое.",
+    "Оно солёное.",
+    "Оно кислое.",
+    "Оно острое.",
+    "Оно очень вкусное.",
+    "Оно сытное.",
+    "Оно горькое.",
+    "Его часто едят зимой.",
+    "Его часто едят летом.",
+    "Его часто едят весной.",
+    "Его часто едят осенью.",
+    "Многие люди любят это блюдо, потому что...",
+    "Мне нравится это блюдо, потому что...",
+    "Если вы любите ..., попробуйте...",
+    "Кроме того...",
+    "Например...",
+    "Я рекомендую попробовать борщ.",
+    "Его готовят из свёклы, капусты и моркови.",
+    "Его обычно едят со сметаной.",
+    "Я рекомендую попробовать пельмени.",
+    "Их готовят из мяса и теста.",
+    "Их обычно едят со сметаной.",
+    "Я рекомендую попробовать блины.",
+    "Их готовят из муки, молока и яиц.",
+    "Их обычно едят со сметаной или с вареньем.",
+    "Я рекомендую попробовать селёдку под шубой.",
+    "Её готовят из рыбы, картошки и свёклы.",
+    "Её часто едят зимой.",
+    "Я рекомендую попробовать винегрет.",
+    "Его готовят из картошки, свёклы и моркови.",
+    "Это хорошее блюдо без мяса.",
+    "Я рекомендую попробовать холодец.",
+    "Его готовят из мяса."
+  ],
+  "comparatives": [
+    {
+      "id": "cmp-хорошии",
+      "adjective": "хороший",
+      "adverb": "хорошо",
+      "comparative": "лучше",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más хороший",
+      "examples": [
+        "Это лучше, чем раньше."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-плохои",
+      "adjective": "плохой",
+      "adverb": "плохо",
+      "comparative": "хуже",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más плохой",
+      "examples": [
+        "Это хуже, чем раньше."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-умныи",
+      "adjective": "умный",
+      "comparative": "умнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más умный",
+      "examples": [
+        "Это умнее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-активныи",
+      "adjective": "активный",
+      "comparative": "активнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más активный",
+      "examples": [
+        "Это активнее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-интересныи",
+      "adjective": "интересный",
+      "comparative": "интереснее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más интересный",
+      "examples": [
+        "Это интереснее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-трудныи",
+      "adjective": "трудный",
+      "comparative": "труднее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más трудный",
+      "examples": [
+        "Это труднее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-приятныи",
+      "adjective": "приятный",
+      "comparative": "приятнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más приятный",
+      "examples": [
+        "Это приятнее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-вкусныи",
+      "adjective": "вкусный",
+      "comparative": "вкуснее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality",
+        "food"
+      ],
+      "meaning_es": "más вкусный",
+      "examples": [
+        "Это вкуснее, чем раньше."
+      ],
+      "learningScore": 6,
+      "adverb": "вкусно"
+    },
+    {
+      "id": "cmp-важныи",
+      "adjective": "важный",
+      "comparative": "важнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más важный",
+      "examples": [
+        "Это важнее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-популярныи",
+      "adjective": "популярный",
+      "comparative": "популярнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más популярный",
+      "examples": [
+        "Это популярнее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-прекрасныи",
+      "adjective": "прекрасный",
+      "comparative": "прекраснее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más прекрасный",
+      "examples": [
+        "Это прекраснее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-известныи",
+      "adjective": "известный",
+      "comparative": "известнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más известный",
+      "examples": [
+        "Это известнее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-красныи",
+      "adjective": "красный",
+      "comparative": "краснее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más красный",
+      "examples": [
+        "Это краснее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-новыи",
+      "adjective": "новый",
+      "comparative": "новее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más новый",
+      "examples": [
+        "Это новее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-счастливыи",
+      "adjective": "счастливый",
+      "comparative": "счастливее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más счастливый",
+      "examples": [
+        "Это счастливее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-свободныи",
+      "adjective": "свободный",
+      "comparative": "свободнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más свободный",
+      "examples": [
+        "Это свободнее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-светлыи",
+      "adjective": "светлый",
+      "comparative": "светлее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más светлый",
+      "examples": [
+        "Это светлее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-ужасныи",
+      "adjective": "ужасный",
+      "comparative": "ужаснее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más ужасный",
+      "examples": [
+        "Это ужаснее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-красивыи",
+      "adjective": "красивый",
+      "comparative": "красивее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality",
+        "culture"
+      ],
+      "meaning_es": "más красивый",
+      "examples": [
+        "Это красивее, чем раньше."
+      ],
+      "learningScore": 6,
+      "adverb": "красиво"
+    },
+    {
+      "id": "cmp-свежии",
+      "adjective": "свежий",
+      "comparative": "свежее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más свежий",
+      "examples": [
+        "Это свежее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-культурныи",
+      "adjective": "культурный",
+      "comparative": "культурнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más культурный",
+      "examples": [
+        "Это культурнее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-безопасныи",
+      "adjective": "безопасный",
+      "comparative": "безопаснее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más безопасный",
+      "examples": [
+        "Это безопаснее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-спокоиныи",
+      "adjective": "спокойный",
+      "comparative": "спокойнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más спокойный",
+      "examples": [
+        "Это спокойнее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-динамичныи",
+      "adjective": "динамичный",
+      "comparative": "динамичнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más динамичный",
+      "examples": [
+        "Это динамичнее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-шумныи",
+      "adjective": "шумный",
+      "comparative": "шумнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más шумный",
+      "examples": [
+        "Это шумнее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-роднои",
+      "adjective": "родной",
+      "comparative": "роднее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más родной",
+      "examples": [
+        "Это роднее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-добрыи",
+      "adjective": "добрый",
+      "comparative": "добрее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más добрый",
+      "examples": [
+        "Это добрее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-мягкии",
+      "adjective": "мягкий",
+      "comparative": "мягче",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más мягкий",
+      "examples": [
+        "Это мягче, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-чeрныи",
+      "adjective": "чёрный",
+      "comparative": "чёрнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más чёрный",
+      "examples": [
+        "Это чёрнее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-сильныи",
+      "adjective": "сильный",
+      "comparative": "сильнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más сильный",
+      "examples": [
+        "Это сильнее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-быстрыи",
+      "adjective": "быстрый",
+      "comparative": "быстрее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más быстрый",
+      "examples": [
+        "Это быстрее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-тeплыи",
+      "adjective": "тёплый",
+      "comparative": "теплее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más тёплый",
+      "examples": [
+        "Это теплее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-частыи",
+      "adjective": "частый",
+      "adverb": "часто",
+      "comparative": "чаще",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más частый",
+      "examples": [
+        "Это чаще, чем раньше."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-редкии",
+      "adjective": "редкий",
+      "adverb": "редко",
+      "comparative": "реже",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más редкий",
+      "examples": [
+        "Это реже, чем раньше."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-большои",
+      "adjective": "большой",
+      "adverb": "много",
+      "comparative": "больше",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más большой",
+      "examples": [
+        "Это больше, чем раньше."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-маленькии",
+      "adjective": "маленький",
+      "adverb": "мало",
+      "comparative": "меньше",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más маленький",
+      "examples": [
+        "Это меньше, чем раньше."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-высокии",
+      "adjective": "высокий",
+      "adverb": "высоко",
+      "comparative": "выше",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más высокий",
+      "examples": [
+        "Это выше, чем раньше."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-низкии",
+      "adjective": "низкий",
+      "adverb": "низко",
+      "comparative": "ниже",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más низкий",
+      "examples": [
+        "Это ниже, чем раньше."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-короткии",
+      "adjective": "короткий",
+      "adverb": "коротко",
+      "comparative": "короче",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más короткий",
+      "examples": [
+        "Это короче, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-далeкии",
+      "adjective": "далёкий",
+      "adverb": "далеко",
+      "comparative": "дальше",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más далёкий",
+      "examples": [
+        "Это дальше, чем раньше."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-близкии",
+      "adjective": "близкий",
+      "adverb": "близко",
+      "comparative": "ближе",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más близкий",
+      "examples": [
+        "Это ближе, чем раньше."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-широкии",
+      "adjective": "широкий",
+      "adverb": "широко",
+      "comparative": "шире",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más широкий",
+      "examples": [
+        "Это шире, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-узкии",
+      "adjective": "узкий",
+      "adverb": "узко",
+      "comparative": "уже",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más узкий",
+      "examples": [
+        "Это уже, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-дорогои",
+      "adjective": "дорогой",
+      "adverb": "дорого",
+      "comparative": "дороже",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más дорогой",
+      "examples": [
+        "Это дороже, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-дешeвыи",
+      "adjective": "дешёвый",
+      "adverb": "дёшево",
+      "comparative": "дешевле",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más дешёвый",
+      "examples": [
+        "Это дешевле, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-жаркии",
+      "adjective": "жаркий",
+      "adverb": "жарко",
+      "comparative": "жарче",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más жаркий",
+      "examples": [
+        "Это жарче, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-лeгкии",
+      "adjective": "лёгкий",
+      "adverb": "легко",
+      "comparative": "легче",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más лёгкий",
+      "examples": [
+        "Это легче, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-чистыи",
+      "adjective": "чистый",
+      "adverb": "чисто",
+      "comparative": "чище",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más чистый",
+      "examples": [
+        "Это чище, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-громкии",
+      "adjective": "громкий",
+      "adverb": "громко",
+      "comparative": "громче",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más громкий",
+      "examples": [
+        "Это громче, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-тихии",
+      "adjective": "тихий",
+      "adverb": "тихо",
+      "comparative": "тише",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más тихий",
+      "examples": [
+        "Это тише, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-молодои",
+      "adjective": "молодой",
+      "comparative": "моложе",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más молодой",
+      "examples": [
+        "Это моложе, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-старыи",
+      "adjective": "старый",
+      "comparative": "старше",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más старый",
+      "examples": [
+        "Это старше, чем раньше."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-толстыи",
+      "adjective": "толстый",
+      "comparative": "толще",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más толстый",
+      "examples": [
+        "Это толще, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-тонкии",
+      "adjective": "тонкий",
+      "comparative": "тоньше",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más тонкий",
+      "examples": [
+        "Это тоньше, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-рано",
+      "adverb": "рано",
+      "comparative": "раньше",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más рано",
+      "examples": [
+        "Это раньше, чем раньше."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-поздно",
+      "adverb": "поздно",
+      "comparative": "позже",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más поздно",
+      "examples": [
+        "Это позже, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-простои",
+      "adjective": "простой",
+      "comparative": "проще",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más простой",
+      "examples": [
+        "Это проще, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-комфортныи",
+      "adjective": "комфортный",
+      "comparative": "комфортнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más комфортный",
+      "examples": [
+        "Это комфортнее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-смелыи",
+      "adjective": "смелый",
+      "comparative": "смелее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más смелый",
+      "examples": [
+        "Это смелее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-аккуратныи",
+      "adjective": "аккуратный",
+      "adverb": "аккуратно",
+      "comparative": "аккуратнее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más аккуратный",
+      "examples": [
+        "Это аккуратнее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-раннии",
+      "adjective": "ранний",
+      "comparative": "раньше",
+      "irregular": true,
+      "level": "A2",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más ранний",
+      "examples": [
+        "Это раньше, чем раньше."
+      ],
+      "learningScore": 10
+    },
+    {
+      "id": "cmp-позднии",
+      "adjective": "поздний",
+      "comparative": "позднее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "quality"
+      ],
+      "meaning_es": "más поздний",
+      "examples": [
+        "Это позднее, чем раньше."
+      ],
+      "learningScore": 6
+    },
+    {
+      "id": "cmp-жирный",
+      "adjective": "жирный",
+      "adverb": "жирно",
+      "comparative": "жирнее",
+      "irregular": false,
+      "level": "A2",
+      "tags": [
+        "food",
+        "quality"
+      ],
+      "meaning_es": "más жирный",
+      "examples": [
+        "Это жирнее, чем раньше."
+      ],
+      "learningScore": 5
+    },
+    {
+      "id": "cmp-горячий",
+      "adjective": "горячий",
+      "adverb": "горячо",
+      "comparative": "горячее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "food",
+        "temperature"
+      ],
+      "meaning_es": "más горячий",
+      "examples": [
+        "Это горячее, чем раньше."
+      ],
+      "learningScore": 5
+    },
+    {
+      "id": "cmp-голодный",
+      "adjective": "голодный",
+      "adverb": "голодно",
+      "comparative": "голоднее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "feeling",
+        "food"
+      ],
+      "meaning_es": "más голодный",
+      "examples": [
+        "Это голоднее, чем раньше."
+      ],
+      "learningScore": 5
+    },
+    {
+      "id": "cmp-сладкий",
+      "adjective": "сладкий",
+      "adverb": "сладко",
+      "comparative": "слаще",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "food",
+        "quality"
+      ],
+      "meaning_es": "más сладкий",
+      "examples": [
+        "Это слаще, чем раньше."
+      ],
+      "learningScore": 5
     }
   ]
 }
