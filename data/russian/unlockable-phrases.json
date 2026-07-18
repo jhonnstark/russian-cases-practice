@@ -1,0 +1,138 @@
+{
+  "unlockable_phrases": [
+    {
+      "id": "recommend-try",
+      "phrase": "Я рекомендую попробовать...",
+      "category": "recommendation",
+      "unlocksIn": "recommend-a-dish",
+      "unlockCondition": {
+        "type": "lesson_complete",
+        "lessonId": "recommend-vocabulary"
+      },
+      "canUseIn": [
+        "dialogue_builder",
+        "boss",
+        "tourist_cards",
+        "restaurant"
+      ],
+      "blocks": [
+        "Я рекомендую попробовать",
+        "{dish}"
+      ],
+      "examples": [
+        "Я рекомендую попробовать борщ.",
+        "Я рекомендую попробовать пельмени."
+      ]
+    },
+    {
+      "id": "worth-trying-polite",
+      "phrase": "Вам стоит попробовать...",
+      "category": "polite_advice",
+      "unlocksIn": "recommend-a-dish",
+      "unlockCondition": {
+        "type": "lesson_complete",
+        "lessonId": "recommend-tourist-cards"
+      },
+      "canUseIn": [
+        "dialogue_builder",
+        "tourist_cards",
+        "culture"
+      ],
+      "blocks": [
+        "Вам стоит попробовать",
+        "{dish}"
+      ],
+      "examples": [
+        "Вам стоит попробовать винегрет."
+      ]
+    },
+    {
+      "id": "because",
+      "phrase": "потому что...",
+      "category": "reason",
+      "unlocksIn": "recommend-a-dish",
+      "unlockCondition": {
+        "type": "lesson_complete",
+        "lessonId": "recommend-describe-food"
+      },
+      "canUseIn": [
+        "dialogue_builder",
+        "opinion",
+        "boss"
+      ],
+      "blocks": [
+        "потому что",
+        "{reason}"
+      ],
+      "examples": [
+        "потому что он очень вкусный."
+      ]
+    },
+    {
+      "id": "made-from",
+      "phrase": "Его готовят из...",
+      "category": "ingredients",
+      "unlocksIn": "recommend-a-dish",
+      "unlockCondition": {
+        "type": "lesson_complete",
+        "lessonId": "recommend-made-of"
+      },
+      "canUseIn": [
+        "dialogue_builder",
+        "recipe_builder",
+        "reading"
+      ],
+      "blocks": [
+        "Его готовят из",
+        "{ingredients}"
+      ],
+      "examples": [
+        "Его готовят из свёклы, капусты и моркови."
+      ]
+    },
+    {
+      "id": "usually-eaten-with",
+      "phrase": "Его обычно едят с...",
+      "category": "instrumental",
+      "unlocksIn": "recommend-a-dish",
+      "unlockCondition": {
+        "type": "lesson_complete",
+        "lessonId": "recommend-instrumental"
+      },
+      "canUseIn": [
+        "dialogue_builder",
+        "instrumental_choice",
+        "boss"
+      ],
+      "blocks": [
+        "Его обычно едят",
+        "{with_instrumental}"
+      ],
+      "examples": [
+        "Его обычно едят со сметаной."
+      ]
+    },
+    {
+      "id": "besides",
+      "phrase": "Кроме того...",
+      "category": "addition",
+      "unlocksIn": "compare",
+      "unlockCondition": {
+        "type": "lesson_complete",
+        "lessonId": "compare-travel"
+      },
+      "canUseIn": [
+        "dialogue_builder",
+        "persuasion",
+        "boss"
+      ],
+      "blocks": [
+        "Кроме того",
+        "{extra_reason}"
+      ],
+      "examples": [
+        "Кроме того, это недорого."
+      ]
+    }
+  ]
+}

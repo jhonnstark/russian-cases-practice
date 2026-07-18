@@ -1,0 +1,34 @@
+{
+  "culture_matching": [
+    {
+      "id": "national-food-match",
+      "title": "National Food",
+      "pairs": [
+        {
+          "country": "Россия",
+          "item": "борщ"
+        },
+        {
+          "country": "Россия",
+          "item": "пельмени"
+        },
+        {
+          "country": "Россия",
+          "item": "блины"
+        },
+        {
+          "country": "Мексика",
+          "item": "тако"
+        },
+        {
+          "country": "Япония",
+          "item": "суши"
+        }
+      ],
+      "distractors": [
+        "паста",
+        "гамбургер"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "missions": [
+    {
+      "id": "prepare-russian-dinner",
+      "title": "Prepare a Russian Dinner",
+      "theme": "Plan, buy, order, talk and pay using existing exercises.",
+      "campaignIds": [
+        "supermarket",
+        "russian-cuisine",
+        "recommend-a-dish"
+      ],
+      "objectives": [
+        {
+          "id": "buy-products",
+          "label": "купить продукты",
+          "type": "shopping_list",
+          "sourceCampaign": "supermarket",
+          "requiredItems": [
+            "свёкла",
+            "лук",
+            "морковь",
+            "сметана"
+          ]
+        },
+        {
+          "id": "choose-dish",
+          "label": "выбрать блюдо",
+          "type": "dish_builder",
+          "sourceCampaign": "russian-cuisine",
+          "requiredDish": "борщ"
+        },
+        {
+          "id": "order-drink",
+          "label": "заказать напиток",
+          "type": "restaurant_menu",
+          "sourceCampaign": "russian-cuisine",
+          "requiredCategory": "drink"
+        },
+        {
+          "id": "talk-waiter",
+          "label": "поговорить с официантом",
+          "type": "dialogue_builder",
+          "source": "dialogue-builders",
+          "requiredBuilderId": "recommend-borsch-dialogue"
+        },
+        {
+          "id": "pay",
+          "label": "оплатить",
+          "type": "payment",
+          "source": "restaurant-service-scenarios",
+          "requiredBlocks": [
+            "Счёт, пожалуйста.",
+            "Можно оплатить картой?"
+          ]
+        }
+      ],
+      "rewards": [
+        "Dinner Planner",
+        "Phrase: Я рекомендую попробовать...",
+        "Phrase: Счёт, пожалуйста."
+      ],
+      "finalBoss": {
+        "type": "mission_boss",
+        "requirements": [
+          "complete all objectives",
+          "use 2 unlocked phrases",
+          "use 1 instrumental phrase",
+          "use 1 genitive без phrase"
+        ]
+      }
+    },
+    {
+      "id": "convince-tourist-dinner",
+      "title": "Convince a Tourist at Dinner",
+      "theme": "Use role cards, semantic challenge and phrase cards to recommend a dish.",
+      "campaignIds": [
+        "recommend-a-dish",
+        "culture-compare"
+      ],
+      "objectives": [
+        {
+          "id": "draw-role",
+          "label": "получить роль туриста",
+          "type": "role_card",
+          "source": "role-cards"
+        },
+        {
+          "id": "unlock-recommend",
+          "label": "разблокировать фразу рекомендации",
+          "type": "phrase_unlock",
+          "phraseId": "recommend-try"
+        },
+        {
+          "id": "semantic-fit",
+          "label": "выбрать блюдо по смыслу",
+          "type": "semantic_challenge",
+          "source": "semantic-challenges"
+        },
+        {
+          "id": "build-dialogue",
+          "label": "собрать диалог",
+          "type": "dialogue_builder",
+          "source": "dialogue-builders"
+        }
+      ],
+      "rewards": [
+        "Tourist Persuader",
+        "Phrase: Кроме того..."
+      ],
+      "finalBoss": {
+        "type": "mission_boss",
+        "requirements": [
+          "match tourist dislikes",
+          "recommend a dish",
+          "give one reason",
+          "use unlocked phrase"
+        ]
+      }
+    }
+  ]
+}

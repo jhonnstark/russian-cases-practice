@@ -1,0 +1,70 @@
+{
+  "genitive_preposition_patterns": [
+    {
+      "id": "without-mayonnaise",
+      "phrase": "без майонеза",
+      "topic": "food",
+      "case": "genitive",
+      "preposition": "без",
+      "noun": {
+        "nominative": "майонез",
+        "genitive": "майонеза",
+        "gender": "masculine",
+        "animate": false
+      },
+      "pattern": "без {genitive}",
+      "prompts": {
+        "build": "без + майонез",
+        "answer": "без майонеза"
+      },
+      "examples": [
+        "Я хочу салат без майонеза.",
+        "Можно без майонеза?"
+      ]
+    },
+    {
+      "id": "without-butter",
+      "phrase": "без масла",
+      "topic": "food",
+      "case": "genitive",
+      "preposition": "без",
+      "noun": {
+        "nominative": "масло",
+        "genitive": "масла",
+        "gender": "neuter",
+        "animate": false
+      },
+      "pattern": "без {genitive}",
+      "prompts": {
+        "build": "без + масло",
+        "answer": "без масла"
+      },
+      "examples": [
+        "Я ем хлеб без масла.",
+        "Можно без масла?"
+      ]
+    },
+    {
+      "id": "without-meat",
+      "phrase": "без мяса",
+      "topic": "food",
+      "case": "genitive",
+      "preposition": "без",
+      "noun": {
+        "nominative": "мясо",
+        "genitive": "мяса",
+        "gender": "neuter",
+        "animate": false
+      },
+      "pattern": "без {genitive}",
+      "prompts": {
+        "build": "без + мясо",
+        "answer": "без мяса"
+      },
+      "examples": [
+        "Я хочу борщ без мяса.",
+        "Этот пирог без мяса."
+      ]
+    }
+  ]
+}

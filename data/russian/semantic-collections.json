@@ -1,0 +1,382 @@
+{
+  "semantic_collections": [
+    {
+      "id": "borsch",
+      "headword": "борщ",
+      "topic": "russian-cuisine",
+      "type": "dish_profile_graph",
+      "connectsTo": {
+        "ingredients": [
+          "свёкла",
+          "капуста",
+          "морковь",
+          "лук",
+          "мясо"
+        ],
+        "adjectives": [
+          "вкусный",
+          "сытный",
+          "кислый"
+        ],
+        "seasons": [
+          "зимой"
+        ],
+        "verbs": [
+          "варят",
+          "готовят",
+          "подают",
+          "едят"
+        ],
+        "withPhrases": [
+          "со сметаной"
+        ],
+        "recommendation": [
+          "Я рекомендую попробовать борщ.",
+          "Его готовят из свёклы, капусты и моркови.",
+          "Его обычно едят со сметаной."
+        ],
+        "tags": [
+          "soup",
+          "meat",
+          "vegetables",
+          "winter",
+          "filling",
+          "not_sweet",
+          "russian_food",
+          "popular",
+          "savory"
+        ],
+        "servedWith": [
+          "сметана"
+        ],
+        "season": [
+          "зима",
+          "осень"
+        ],
+        "taste": [
+          "вкусный",
+          "сытный"
+        ],
+        "phrases": [
+          "борщ со сметаной",
+          "борщ без мяса",
+          "Я люблю борщ.",
+          "Я рекомендую попробовать борщ."
+        ]
+      },
+      "profile": {
+        "id": "borsch",
+        "name": "борщ",
+        "ingredients": [
+          "свёкла",
+          "капуста",
+          "морковь",
+          "лук",
+          "мясо"
+        ],
+        "servedWith": [
+          "сметана"
+        ],
+        "season": [
+          "зима",
+          "осень"
+        ],
+        "taste": [
+          "вкусный",
+          "сытный"
+        ],
+        "tags": [
+          "soup",
+          "meat",
+          "popular",
+          "russian_food",
+          "savory"
+        ]
+      }
+    },
+    {
+      "id": "pie",
+      "headword": "пирог",
+      "topic": "food",
+      "type": "dish_graph",
+      "connectsTo": {
+        "fillings": [
+          "мясо",
+          "курица",
+          "рыба",
+          "грибы",
+          "фрукты"
+        ],
+        "adjectives": [
+          "сладкий",
+          "вкусный",
+          "горячий"
+        ],
+        "verbs": [
+          "готовить",
+          "есть",
+          "любить"
+        ],
+        "phrases": [
+          "пирог с мясом",
+          "пирог с курицей",
+          "пирог с рыбой",
+          "пирог с грибами",
+          "пирог с фруктами"
+        ],
+        "cases": {
+          "accusative": [
+            "Я готовлю пирог."
+          ],
+          "genitive": [
+            "без пирога",
+            "нет пирога"
+          ],
+          "instrumental": [
+            "пирог с мясом"
+          ],
+          "prepositional": [
+            "Мы говорим о пироге."
+          ]
+        }
+      }
+    },
+    {
+      "id": "pelmeni",
+      "headword": "пельмени",
+      "topic": "recommend-a-dish",
+      "type": "dish_recommendation_graph",
+      "connectsTo": {
+        "ingredients": [
+          "мясо",
+          "тесто",
+          "сметана",
+          "масло"
+        ],
+        "adjectives": [
+          "вкусный",
+          "сытный",
+          "солёный"
+        ],
+        "seasons": [
+          "зимой"
+        ],
+        "verbs": [
+          "варят",
+          "готовят",
+          "подают",
+          "едят"
+        ],
+        "withPhrases": [
+          "со сметаной",
+          "с маслом"
+        ],
+        "recommendation": [
+          "Я рекомендую попробовать пельмени.",
+          "Их готовят из мяса и теста.",
+          "Их обычно едят со сметаной."
+        ],
+        "tags": [
+          "meat",
+          "filling",
+          "winter",
+          "not_sweet",
+          "russian_food",
+          "popular",
+          "savory",
+          "expensive",
+          "fatty"
+        ]
+      }
+    },
+    {
+      "id": "bliny",
+      "headword": "блины",
+      "topic": "recommend-a-dish",
+      "type": "dish_recommendation_graph",
+      "connectsTo": {
+        "ingredients": [
+          "мука",
+          "молоко",
+          "яйцо",
+          "масло",
+          "сметана",
+          "варенье"
+        ],
+        "adjectives": [
+          "вкусный",
+          "сладкий",
+          "сытный"
+        ],
+        "seasons": [
+          "весной"
+        ],
+        "verbs": [
+          "жарят",
+          "готовят",
+          "подают",
+          "едят"
+        ],
+        "withPhrases": [
+          "со сметаной",
+          "с вареньем",
+          "с мёдом"
+        ],
+        "recommendation": [
+          "Я рекомендую попробовать блины.",
+          "Их готовят из муки, молока и яиц.",
+          "Их обычно едят со сметаной или с вареньем."
+        ],
+        "tags": [
+          "sweet",
+          "dessert",
+          "filling",
+          "spring",
+          "no_meat",
+          "russian_food",
+          "popular",
+          "cheap"
+        ]
+      }
+    },
+    {
+      "id": "herring-under-fur-coat",
+      "headword": "селёдка под шубой",
+      "topic": "recommend-a-dish",
+      "type": "dish_recommendation_graph",
+      "connectsTo": {
+        "ingredients": [
+          "рыба",
+          "картошка",
+          "свёкла",
+          "морковь",
+          "майонез"
+        ],
+        "adjectives": [
+          "солёный",
+          "сытный",
+          "вкусный"
+        ],
+        "seasons": [
+          "зимой"
+        ],
+        "verbs": [
+          "готовят",
+          "подают",
+          "едят"
+        ],
+        "withPhrases": [
+          "с майонезом"
+        ],
+        "recommendation": [
+          "Я рекомендую попробовать селёдку под шубой.",
+          "Её готовят из рыбы, картошки и свёклы.",
+          "Её часто едят зимой."
+        ],
+        "tags": [
+          "fish",
+          "mayonnaise",
+          "filling",
+          "winter",
+          "not_sweet",
+          "russian_food",
+          "popular",
+          "savory",
+          "expensive",
+          "fatty"
+        ]
+      }
+    },
+    {
+      "id": "vinegret",
+      "headword": "винегрет",
+      "topic": "recommend-a-dish",
+      "type": "dish_recommendation_graph",
+      "connectsTo": {
+        "ingredients": [
+          "картошка",
+          "свёкла",
+          "морковь",
+          "огурец",
+          "масло"
+        ],
+        "adjectives": [
+          "кислый",
+          "вкусный",
+          "лёгкий"
+        ],
+        "seasons": [
+          "осенью",
+          "зимой"
+        ],
+        "verbs": [
+          "готовят",
+          "подают",
+          "едят"
+        ],
+        "withPhrases": [
+          "с маслом"
+        ],
+        "recommendation": [
+          "Я рекомендую попробовать винегрет.",
+          "Его готовят из картошки, свёклы и моркови.",
+          "Это хорошее блюдо без мяса."
+        ],
+        "tags": [
+          "vegetables",
+          "no_meat",
+          "no_fish",
+          "cheap",
+          "not_fatty",
+          "not_sweet",
+          "russian_food",
+          "savory"
+        ]
+      }
+    },
+    {
+      "id": "kholodets",
+      "headword": "холодец",
+      "topic": "recommend-a-dish",
+      "type": "dish_recommendation_graph",
+      "connectsTo": {
+        "ingredients": [
+          "мясо",
+          "чеснок"
+        ],
+        "adjectives": [
+          "сытный",
+          "солёный",
+          "холодный"
+        ],
+        "seasons": [
+          "зимой"
+        ],
+        "verbs": [
+          "варят",
+          "готовят",
+          "подают",
+          "едят"
+        ],
+        "withPhrases": [
+          "с хреном"
+        ],
+        "recommendation": [
+          "Я рекомендую попробовать холодец.",
+          "Его готовят из мяса.",
+          "Его часто едят зимой."
+        ],
+        "tags": [
+          "meat",
+          "cold",
+          "filling",
+          "winter",
+          "not_sweet",
+          "russian_food",
+          "savory",
+          "fatty"
+        ]
+      }
+    }
+  ]
+}

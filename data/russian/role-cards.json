@@ -1,0 +1,96 @@
+{
+  "role_cards": [
+    {
+      "id": "budget-tourist",
+      "role": "Турист",
+      "title": "Budget Tourist",
+      "wants": [
+        "дешёвая еда",
+        "простое блюдо"
+      ],
+      "dislikes": [
+        "дорого"
+      ],
+      "likedTags": [
+        "cheap"
+      ],
+      "dislikedTags": [
+        "expensive"
+      ],
+      "starterLine": "Я хочу недорого поесть.",
+      "successCriteria": [
+        "recommend cheap dish",
+        "use one reason"
+      ]
+    },
+    {
+      "id": "vegetarian",
+      "role": "Вегетарианец",
+      "title": "Vegetarian",
+      "wants": [
+        "овощи",
+        "еда без мяса"
+      ],
+      "dislikes": [
+        "мясо"
+      ],
+      "likedTags": [
+        "vegetables",
+        "no_meat"
+      ],
+      "dislikedTags": [
+        "meat"
+      ],
+      "starterLine": "Я не ем мясо.",
+      "successCriteria": [
+        "recommend no-meat dish",
+        "use без + genitive"
+      ]
+    },
+    {
+      "id": "sweet-lover",
+      "role": "Любит сладкое",
+      "title": "Sweet Lover",
+      "wants": [
+        "сладкое",
+        "десерт",
+        "чай"
+      ],
+      "dislikes": [
+        "острое"
+      ],
+      "likedTags": [
+        "sweet",
+        "dessert"
+      ],
+      "dislikedTags": [
+        "savory"
+      ],
+      "starterLine": "Я люблю сладкое.",
+      "successCriteria": [
+        "recommend sweet dish",
+        "use taste adjective"
+      ]
+    },
+    {
+      "id": "culture-tourist",
+      "role": "Турист",
+      "title": "Culture Tourist",
+      "wants": [
+        "популярное блюдо",
+        "русская кухня"
+      ],
+      "dislikes": [],
+      "likedTags": [
+        "popular",
+        "russian_food"
+      ],
+      "dislikedTags": [],
+      "starterLine": "Я хочу попробовать что-то русское.",
+      "successCriteria": [
+        "recommend Russian dish",
+        "mention culture"
+      ]
+    }
+  ]
+}

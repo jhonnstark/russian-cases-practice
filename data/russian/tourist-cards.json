@@ -1,0 +1,81 @@
+{
+  "tourist_cards": [
+    {
+      "id": "fish-and-vegetables",
+      "title": "Турист 1",
+      "likes": [
+        "рыба",
+        "овощи"
+      ],
+      "dislikes": [
+        "мясо"
+      ],
+      "likedTags": [
+        "fish",
+        "vegetables"
+      ],
+      "dislikedTags": [
+        "meat"
+      ],
+      "bestRecommendations": [
+        "винегрет",
+        "селёдка под шубой"
+      ],
+      "feedback": {
+        "success": "Muy buena recomendación.",
+        "fail": "Este turista no come carne."
+      }
+    },
+    {
+      "id": "spicy-soup-not-sweet",
+      "title": "Турист 2",
+      "likes": [
+        "суп",
+        "несладкое"
+      ],
+      "dislikes": [
+        "сладкое"
+      ],
+      "likedTags": [
+        "soup",
+        "savory"
+      ],
+      "dislikedTags": [
+        "sweet"
+      ],
+      "bestRecommendations": [
+        "борщ"
+      ],
+      "feedback": {
+        "success": "Хорошо: sopa y no dulce.",
+        "fail": "Este turista quiere sopa salada/no dulce."
+      }
+    },
+    {
+      "id": "budget-not-fatty",
+      "title": "Турист 3",
+      "likes": [
+        "дёшево",
+        "овощи"
+      ],
+      "dislikes": [
+        "жирное"
+      ],
+      "likedTags": [
+        "cheap",
+        "vegetables"
+      ],
+      "dislikedTags": [
+        "fatty",
+        "mayonnaise"
+      ],
+      "bestRecommendations": [
+        "винегрет"
+      ],
+      "feedback": {
+        "success": "Perfecto: barato, vegetal y no pesado.",
+        "fail": "Busca algo barato y no graso."
+      }
+    }
+  ]
+}

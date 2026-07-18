@@ -1,0 +1,77 @@
+{
+  "dish_builders": [
+    {
+      "id": "borsch-builder",
+      "type": "build_the_dish",
+      "title": "Build the Dish",
+      "base": "борщ",
+      "prompt": "Соберите блюдо.",
+      "options": [
+        "сметана",
+        "лимон",
+        "сыр",
+        "рис"
+      ],
+      "correct": {
+        "ingredient": "сметана",
+        "connector": "со",
+        "form": "сметаной",
+        "answer": "борщ со сметаной"
+      },
+      "case": "instrumental",
+      "distractors": [
+        "лимон",
+        "сыр",
+        "рис"
+      ],
+      "examples": [
+        "Я хочу борщ со сметаной.",
+        "Борщ со сметаной вкуснее."
+      ]
+    },
+    {
+      "id": "pie-builder",
+      "type": "pie_builder",
+      "title": "Pie Builder",
+      "base": "пирог",
+      "prompt": "Выберите начинку.",
+      "options": [
+        {
+          "label": "с мясом",
+          "ingredient": "мясо",
+          "form": "мясом",
+          "answer": "пирог с мясом"
+        },
+        {
+          "label": "с курицей",
+          "ingredient": "курица",
+          "form": "курицей",
+          "answer": "пирог с курицей"
+        },
+        {
+          "label": "с рыбой",
+          "ingredient": "рыба",
+          "form": "рыбой",
+          "answer": "пирог с рыбой"
+        },
+        {
+          "label": "с грибами",
+          "ingredient": "грибы",
+          "form": "грибами",
+          "answer": "пирог с грибами"
+        },
+        {
+          "label": "с фруктами",
+          "ingredient": "фрукты",
+          "form": "фруктами",
+          "answer": "пирог с фруктами"
+        }
+      ],
+      "case": "instrumental",
+      "examples": [
+        "Я готовлю пирог с мясом.",
+        "Дети любят сладкие пироги с фруктами."
+      ]
+    }
+  ]
+}

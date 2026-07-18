@@ -1,0 +1,48 @@
+{
+  "restaurant_service_scenarios": [
+    {
+      "id": "pay-bill",
+      "type": "pay",
+      "title": "Pay the Bill",
+      "blocks": [
+        "Счёт, пожалуйста.",
+        "Можно оплатить картой?",
+        "Сколько с меня?",
+        "Спасибо."
+      ]
+    },
+    {
+      "id": "change-order",
+      "type": "change_order",
+      "title": "Change Order",
+      "blocks": [
+        "Извините, можно поменять заказ?",
+        "Я хочу борщ без мяса.",
+        "Можно без майонеза?",
+        "Спасибо."
+      ]
+    },
+    {
+      "id": "ask-recommendation",
+      "type": "ask_recommendation",
+      "title": "Ask Recommendation",
+      "blocks": [
+        "Что вы рекомендуете?",
+        "Какое блюдо самое популярное?",
+        "Что вкуснее?",
+        "Тогда я закажу борщ."
+      ]
+    },
+    {
+      "id": "ask-ingredients",
+      "type": "ask_ingredients",
+      "title": "Ask Ingredients",
+      "blocks": [
+        "Из чего это блюдо?",
+        "Это с мясом?",
+        "Это без майонеза?",
+        "Там есть рыба?"
+      ]
+    }
+  ]
+}

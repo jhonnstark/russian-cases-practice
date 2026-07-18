@@ -1,0 +1,89 @@
+{
+  "semantic_challenges": [
+    {
+      "id": "eat-borsch-with",
+      "prompt": "Я ем борщ с...",
+      "case": "instrumental",
+      "correct": [
+        {
+          "text": "сметаной",
+          "reason": "Natural serving combination."
+        }
+      ],
+      "incorrect": [
+        {
+          "text": "лимоном",
+          "reason": "Лимон is possible with tea, not normally with борщ."
+        },
+        {
+          "text": "шоколадом",
+          "reason": "Chocolate does not make semantic sense with borsch."
+        },
+        {
+          "text": "молоком",
+          "reason": "Milk is not a normal pairing for borsch."
+        }
+      ],
+      "explanation": "Semantic fit matters: борщ со сметаной is natural Russian food usage."
+    },
+    {
+      "id": "drink-tea-with",
+      "prompt": "Я пью чай с...",
+      "case": "instrumental",
+      "correct": [
+        {
+          "text": "лимоном"
+        },
+        {
+          "text": "мёдом"
+        },
+        {
+          "text": "молоком"
+        }
+      ],
+      "incorrect": [
+        {
+          "text": "мясом"
+        },
+        {
+          "text": "луком"
+        },
+        {
+          "text": "рыбой"
+        }
+      ],
+      "explanation": "Tea naturally pairs with lemon, honey, or milk."
+    },
+    {
+      "id": "cook-pie-with",
+      "prompt": "Я готовлю пирог с...",
+      "case": "instrumental",
+      "correct": [
+        {
+          "text": "мясом"
+        },
+        {
+          "text": "курицей"
+        },
+        {
+          "text": "грибами"
+        },
+        {
+          "text": "фруктами"
+        }
+      ],
+      "incorrect": [
+        {
+          "text": "чаем"
+        },
+        {
+          "text": "борщом"
+        },
+        {
+          "text": "молоком"
+        }
+      ],
+      "explanation": "Pies take fillings like meat, chicken, mushrooms or fruit."
+    }
+  ]
+}

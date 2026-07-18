@@ -1,0 +1,217 @@
+{
+  "sentence_block_builders": [
+    {
+      "id": "recommend-borsch-because-tasty",
+      "title": "Recommend Borsch",
+      "type": "sentence_block_builder",
+      "topic": "recommend-a-dish",
+      "caseFocus": [
+        "accusative",
+        "instrumental"
+      ],
+      "goal": "Build a recommendation from reusable blocks.",
+      "prompt": "Convince a tourist to try борщ.",
+      "targetSentence": "Я рекомендую борщ, потому что он очень вкусный, и его обычно едят со сметаной.",
+      "slots": [
+        {
+          "id": "opener",
+          "label": "recommender",
+          "correct": "Я рекомендую",
+          "options": [
+            "Я рекомендую",
+            "Я не ем",
+            "Я думаю о"
+          ]
+        },
+        {
+          "id": "dish",
+          "label": "dish",
+          "correct": "борщ",
+          "options": [
+            "борщ",
+            "хлеб",
+            "чай"
+          ]
+        },
+        {
+          "id": "reason_connector",
+          "label": "because",
+          "correct": "потому что",
+          "options": [
+            "потому что",
+            "но",
+            "без"
+          ]
+        },
+        {
+          "id": "description",
+          "label": "description",
+          "correct": "он очень вкусный",
+          "options": [
+            "он очень вкусный",
+            "он без мяса",
+            "он зимой"
+          ]
+        },
+        {
+          "id": "addition",
+          "label": "and normally",
+          "correct": "и его обычно едят",
+          "options": [
+            "и его обычно едят",
+            "и я читаю",
+            "и мы идём"
+          ]
+        },
+        {
+          "id": "served_with",
+          "label": "served with",
+          "correct": "со сметаной",
+          "options": [
+            "со сметаной",
+            "с мясо",
+            "без сметана"
+          ]
+        }
+      ],
+      "acceptedSentences": [
+        "Я рекомендую борщ, потому что он очень вкусный, и его обычно едят со сметаной.",
+        "Я рекомендую борщ потому что он очень вкусный и его обычно едят со сметаной."
+      ],
+      "grammarNotes": [
+        "борщ is accusative here, but inanimate masculine keeps the nominative form.",
+        "со сметаной uses instrumental after с/со."
+      ]
+    },
+    {
+      "id": "try-dish-template",
+      "title": "Try This Dish",
+      "type": "sentence_block_builder",
+      "topic": "russian-cuisine",
+      "caseFocus": [
+        "accusative",
+        "genitive"
+      ],
+      "goal": "Build a polite recommendation with ingredients.",
+      "prompt": "Tell a visitor what to try and what it is made from.",
+      "targetSentence": "Вам стоит попробовать пельмени. Их готовят из мяса и теста.",
+      "slots": [
+        {
+          "id": "opener",
+          "label": "polite advice",
+          "correct": "Вам стоит попробовать",
+          "options": [
+            "Вам стоит попробовать",
+            "Мне не нравится",
+            "Мы говорим о"
+          ]
+        },
+        {
+          "id": "dish",
+          "label": "dish",
+          "correct": "пельмени",
+          "options": [
+            "пельмени",
+            "сметана",
+            "морковь"
+          ]
+        },
+        {
+          "id": "ingredient_intro",
+          "label": "made from",
+          "correct": "Их готовят из",
+          "options": [
+            "Их готовят из",
+            "Их едят с",
+            "Их нет без"
+          ]
+        },
+        {
+          "id": "ingredients",
+          "label": "ingredients",
+          "correct": "мяса и теста",
+          "options": [
+            "мяса и теста",
+            "мясо и тесто",
+            "мясом и тестом"
+          ]
+        }
+      ],
+      "grammarNotes": [
+        "попробовать takes accusative.",
+        "из takes genitive: мяса, теста."
+      ]
+    },
+    {
+      "id": "tourist-friendly-recommendation",
+      "title": "Tourist-Friendly Recommendation",
+      "type": "sentence_block_builder",
+      "topic": "tourist-cards",
+      "caseFocus": [
+        "accusative",
+        "instrumental"
+      ],
+      "goal": "Recommend a dish that matches a tourist profile.",
+      "prompt": "The tourist likes vegetables and does not eat meat.",
+      "targetSentence": "Если вы любите овощи, попробуйте винегрет. Это блюдо без мяса.",
+      "touristCardId": "fish-and-vegetables",
+      "recommendedDishId": "vinegret",
+      "slots": [
+        {
+          "id": "condition",
+          "label": "condition",
+          "correct": "Если вы любите",
+          "options": [
+            "Если вы любите",
+            "Кроме того",
+            "Его готовят из"
+          ]
+        },
+        {
+          "id": "preference",
+          "label": "preference",
+          "correct": "овощи",
+          "options": [
+            "овощи",
+            "мясо",
+            "сладкое"
+          ]
+        },
+        {
+          "id": "recommend",
+          "label": "recommendation",
+          "correct": "попробуйте",
+          "options": [
+            "попробуйте",
+            "говорите",
+            "едят"
+          ]
+        },
+        {
+          "id": "dish",
+          "label": "dish",
+          "correct": "винегрет",
+          "options": [
+            "винегрет",
+            "холодец",
+            "пельмени"
+          ]
+        },
+        {
+          "id": "restriction",
+          "label": "restriction",
+          "correct": "Это блюдо без мяса",
+          "options": [
+            "Это блюдо без мяса",
+            "Это блюдо с мясом",
+            "Это сладкое блюдо"
+          ]
+        }
+      ],
+      "grammarNotes": [
+        "любить and попробовать use accusative.",
+        "без мяса uses genitive."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,802 @@
+{
+  "recommend_dish_campaign": {
+    "id": "recommend-a-dish",
+    "title": "Recommend a Dish",
+    "objective": "Convince a tourist to try a Russian dish.",
+    "targetSkill": "persuasion without AI",
+    "vocabulary": [
+      "борщ",
+      "пельмени",
+      "блины",
+      "селёдка под шубой",
+      "винегрет",
+      "холодец"
+    ],
+    "ingredients": [
+      "мясо",
+      "рыба",
+      "картошка",
+      "сметана",
+      "капуста",
+      "лук",
+      "морковь",
+      "свёкла"
+    ],
+    "tasteAdjectives": [
+      "вкусный",
+      "солёный",
+      "острый",
+      "сладкий",
+      "горький",
+      "кислый",
+      "сытный"
+    ],
+    "seasons": [
+      "зимой",
+      "летом",
+      "весной",
+      "осенью"
+    ],
+    "preparationVerbs": [
+      "готовят",
+      "едят",
+      "подают",
+      "варят",
+      "жарят",
+      "запекают"
+    ],
+    "dishes": [
+      {
+        "id": "borsch",
+        "name": "борщ",
+        "accusative": "борщ",
+        "pronoun": "его",
+        "ingredients": [
+          "свёкла",
+          "капуста",
+          "морковь",
+          "лук",
+          "мясо",
+          "сметана"
+        ],
+        "coreIngredients": [
+          "свёкла",
+          "капуста",
+          "морковь",
+          "лук"
+        ],
+        "withPhrases": [
+          "со сметаной"
+        ],
+        "adjectives": [
+          "вкусный",
+          "сытный",
+          "кислый"
+        ],
+        "seasons": [
+          "зимой",
+          "осенью"
+        ],
+        "preparation": [
+          "варят",
+          "готовят",
+          "подают",
+          "едят"
+        ],
+        "tags": [
+          "soup",
+          "meat",
+          "vegetables",
+          "winter",
+          "filling",
+          "not_sweet",
+          "russian_food",
+          "popular",
+          "savory"
+        ],
+        "avoidTags": [
+          "vegetarian_optional"
+        ],
+        "recommendation": [
+          "Я рекомендую попробовать борщ.",
+          "Его готовят из свёклы, капусты и моркови.",
+          "Его обычно едят со сметаной."
+        ],
+        "servedWith": [
+          "сметана"
+        ],
+        "season": [
+          "зима",
+          "осень"
+        ],
+        "taste": [
+          "вкусный",
+          "сытный"
+        ]
+      },
+      {
+        "id": "pelmeni",
+        "name": "пельмени",
+        "accusative": "пельмени",
+        "pronoun": "их",
+        "ingredients": [
+          "мясо",
+          "тесто",
+          "сметана",
+          "масло"
+        ],
+        "coreIngredients": [
+          "мясо",
+          "тесто"
+        ],
+        "withPhrases": [
+          "со сметаной",
+          "с маслом"
+        ],
+        "adjectives": [
+          "вкусный",
+          "сытный",
+          "солёный"
+        ],
+        "seasons": [
+          "зимой"
+        ],
+        "preparation": [
+          "варят",
+          "готовят",
+          "подают",
+          "едят"
+        ],
+        "tags": [
+          "meat",
+          "filling",
+          "winter",
+          "not_sweet",
+          "russian_food",
+          "popular",
+          "savory",
+          "expensive",
+          "fatty"
+        ],
+        "recommendation": [
+          "Я рекомендую попробовать пельмени.",
+          "Их готовят из мяса и теста.",
+          "Их обычно едят со сметаной."
+        ]
+      },
+      {
+        "id": "bliny",
+        "name": "блины",
+        "accusative": "блины",
+        "pronoun": "их",
+        "ingredients": [
+          "мука",
+          "молоко",
+          "яйцо",
+          "масло",
+          "сметана",
+          "варенье"
+        ],
+        "coreIngredients": [
+          "мука",
+          "молоко",
+          "яйцо"
+        ],
+        "withPhrases": [
+          "со сметаной",
+          "с вареньем",
+          "с мёдом"
+        ],
+        "adjectives": [
+          "вкусный",
+          "сладкий",
+          "сытный"
+        ],
+        "seasons": [
+          "весной"
+        ],
+        "preparation": [
+          "жарят",
+          "готовят",
+          "подают",
+          "едят"
+        ],
+        "tags": [
+          "sweet",
+          "dessert",
+          "filling",
+          "spring",
+          "no_meat",
+          "russian_food",
+          "popular",
+          "cheap"
+        ],
+        "recommendation": [
+          "Я рекомендую попробовать блины.",
+          "Их готовят из муки, молока и яиц.",
+          "Их обычно едят со сметаной или с вареньем."
+        ]
+      },
+      {
+        "id": "herring-under-fur-coat",
+        "name": "селёдка под шубой",
+        "accusative": "селёдку под шубой",
+        "pronoun": "её",
+        "ingredients": [
+          "рыба",
+          "картошка",
+          "свёкла",
+          "морковь",
+          "майонез"
+        ],
+        "coreIngredients": [
+          "рыба",
+          "картошка",
+          "свёкла"
+        ],
+        "withPhrases": [
+          "с майонезом"
+        ],
+        "adjectives": [
+          "солёный",
+          "сытный",
+          "вкусный"
+        ],
+        "seasons": [
+          "зимой"
+        ],
+        "preparation": [
+          "готовят",
+          "подают",
+          "едят"
+        ],
+        "tags": [
+          "fish",
+          "mayonnaise",
+          "filling",
+          "winter",
+          "not_sweet",
+          "russian_food",
+          "popular",
+          "savory",
+          "expensive",
+          "fatty"
+        ],
+        "recommendation": [
+          "Я рекомендую попробовать селёдку под шубой.",
+          "Её готовят из рыбы, картошки и свёклы.",
+          "Её часто едят зимой."
+        ]
+      },
+      {
+        "id": "vinegret",
+        "name": "винегрет",
+        "accusative": "винегрет",
+        "pronoun": "его",
+        "ingredients": [
+          "картошка",
+          "свёкла",
+          "морковь",
+          "огурец",
+          "масло"
+        ],
+        "coreIngredients": [
+          "картошка",
+          "свёкла",
+          "морковь"
+        ],
+        "withPhrases": [
+          "с маслом"
+        ],
+        "adjectives": [
+          "кислый",
+          "вкусный",
+          "лёгкий"
+        ],
+        "seasons": [
+          "осенью",
+          "зимой"
+        ],
+        "preparation": [
+          "готовят",
+          "подают",
+          "едят"
+        ],
+        "tags": [
+          "vegetables",
+          "no_meat",
+          "no_fish",
+          "cheap",
+          "not_fatty",
+          "not_sweet",
+          "russian_food",
+          "savory"
+        ],
+        "recommendation": [
+          "Я рекомендую попробовать винегрет.",
+          "Его готовят из картошки, свёклы и моркови.",
+          "Это хорошее блюдо без мяса."
+        ]
+      },
+      {
+        "id": "kholodets",
+        "name": "холодец",
+        "accusative": "холодец",
+        "pronoun": "его",
+        "ingredients": [
+          "мясо",
+          "чеснок"
+        ],
+        "coreIngredients": [
+          "мясо"
+        ],
+        "withPhrases": [
+          "с хреном"
+        ],
+        "adjectives": [
+          "сытный",
+          "солёный",
+          "холодный"
+        ],
+        "seasons": [
+          "зимой"
+        ],
+        "preparation": [
+          "варят",
+          "готовят",
+          "подают",
+          "едят"
+        ],
+        "tags": [
+          "meat",
+          "cold",
+          "filling",
+          "winter",
+          "not_sweet",
+          "russian_food",
+          "savory",
+          "fatty"
+        ],
+        "recommendation": [
+          "Я рекомендую попробовать холодец.",
+          "Его готовят из мяса.",
+          "Его часто едят зимой."
+        ]
+      }
+    ],
+    "touristCards": [
+      {
+        "id": "fish-and-vegetables",
+        "title": "Турист 1",
+        "likes": [
+          "рыба",
+          "овощи"
+        ],
+        "dislikes": [
+          "мясо"
+        ],
+        "likedTags": [
+          "fish",
+          "vegetables"
+        ],
+        "dislikedTags": [
+          "meat"
+        ],
+        "bestRecommendations": [
+          "винегрет",
+          "селёдка под шубой"
+        ],
+        "feedback": {
+          "success": "Muy buena recomendación.",
+          "fail": "Este turista no come carne."
+        }
+      },
+      {
+        "id": "spicy-soup-not-sweet",
+        "title": "Турист 2",
+        "likes": [
+          "суп",
+          "несладкое"
+        ],
+        "dislikes": [
+          "сладкое"
+        ],
+        "likedTags": [
+          "soup",
+          "savory"
+        ],
+        "dislikedTags": [
+          "sweet"
+        ],
+        "bestRecommendations": [
+          "борщ"
+        ],
+        "feedback": {
+          "success": "Хорошо: sopa y no dulce.",
+          "fail": "Este turista quiere sopa salada/no dulce."
+        }
+      },
+      {
+        "id": "budget-not-fatty",
+        "title": "Турист 3",
+        "likes": [
+          "дёшево",
+          "овощи"
+        ],
+        "dislikes": [
+          "жирное"
+        ],
+        "likedTags": [
+          "cheap",
+          "vegetables"
+        ],
+        "dislikedTags": [
+          "fatty",
+          "mayonnaise"
+        ],
+        "bestRecommendations": [
+          "винегрет"
+        ],
+        "feedback": {
+          "success": "Perfecto: barato, vegetal y no pesado.",
+          "fail": "Busca algo barato y no graso."
+        }
+      }
+    ],
+    "conversationTemplates": [
+      "Я рекомендую попробовать...",
+      "Вам стоит попробовать...",
+      "Тебе стоит попробовать...",
+      "Это одно из самых популярных блюд...",
+      "Его готовят из...",
+      "Его обычно едят с...",
+      "Оно сладкое.",
+      "Оно солёное.",
+      "Оно кислое.",
+      "Оно острое.",
+      "Оно очень вкусное.",
+      "Оно сытное.",
+      "Оно горькое.",
+      "Его часто едят зимой.",
+      "Его часто едят летом.",
+      "Его часто едят весной.",
+      "Его часто едят осенью.",
+      "Многие люди любят это блюдо, потому что...",
+      "Мне нравится это блюдо, потому что...",
+      "Если вы любите ..., попробуйте...",
+      "Кроме того...",
+      "Например..."
+    ],
+    "lessons": [
+      {
+        "id": "recommend-vocabulary",
+        "number": 1,
+        "type": "vocabulary",
+        "title": "Vocabulary",
+        "items": [
+          "борщ",
+          "пельмени",
+          "блины",
+          "селёдка под шубой",
+          "винегрет",
+          "холодец",
+          "мясо",
+          "рыба",
+          "картошка",
+          "сметана",
+          "капуста",
+          "лук",
+          "морковь"
+        ]
+      },
+      {
+        "id": "recommend-made-of",
+        "number": 2,
+        "type": "ingredient_match",
+        "title": "Из чего это?",
+        "matches": [
+          {
+            "dish": "борщ",
+            "ingredients": [
+              "свёкла",
+              "капуста",
+              "морковь"
+            ]
+          },
+          {
+            "dish": "пельмени",
+            "ingredients": [
+              "мясо",
+              "тесто"
+            ]
+          },
+          {
+            "dish": "блины",
+            "ingredients": [
+              "мука",
+              "молоко",
+              "яйцо"
+            ]
+          },
+          {
+            "dish": "селёдка под шубой",
+            "ingredients": [
+              "рыба",
+              "картошка",
+              "свёкла"
+            ]
+          },
+          {
+            "dish": "винегрет",
+            "ingredients": [
+              "картошка",
+              "свёкла",
+              "морковь"
+            ]
+          },
+          {
+            "dish": "холодец",
+            "ingredients": [
+              "мясо"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "recommend-instrumental",
+        "number": 3,
+        "type": "instrumental_builder",
+        "title": "Instrumental",
+        "examples": [
+          {
+            "base": "борщ",
+            "answer": "борщ со сметаной"
+          },
+          {
+            "base": "блины",
+            "answer": "блины со сметаной"
+          },
+          {
+            "base": "пельмени",
+            "answer": "пельмени с маслом"
+          }
+        ]
+      },
+      {
+        "id": "recommend-describe-food",
+        "number": 4,
+        "type": "adjective_choice",
+        "title": "Describe the Food",
+        "adjectives": [
+          "вкусный",
+          "солёный",
+          "острый",
+          "сладкий",
+          "горький",
+          "кислый",
+          "сытный"
+        ]
+      },
+      {
+        "id": "recommend-when",
+        "number": 5,
+        "type": "season_match",
+        "title": "Когда это едят?",
+        "matches": [
+          {
+            "dish": "борщ",
+            "seasons": [
+              "зимой"
+            ]
+          },
+          {
+            "dish": "пельмени",
+            "seasons": [
+              "зимой"
+            ]
+          },
+          {
+            "dish": "блины",
+            "seasons": [
+              "весной"
+            ]
+          },
+          {
+            "dish": "селёдка под шубой",
+            "seasons": [
+              "зимой"
+            ]
+          },
+          {
+            "dish": "винегрет",
+            "seasons": [
+              "осенью",
+              "зимой"
+            ]
+          },
+          {
+            "dish": "холодец",
+            "seasons": [
+              "зимой"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "recommend-prepare",
+        "number": 6,
+        "type": "verb_match",
+        "title": "Как это готовят?",
+        "verbs": [
+          "готовят",
+          "едят",
+          "подают",
+          "варят",
+          "жарят",
+          "запекают"
+        ],
+        "matches": [
+          {
+            "dish": "борщ",
+            "verbs": [
+              "варят",
+              "готовят",
+              "подают",
+              "едят"
+            ]
+          },
+          {
+            "dish": "пельмени",
+            "verbs": [
+              "варят",
+              "готовят",
+              "подают",
+              "едят"
+            ]
+          },
+          {
+            "dish": "блины",
+            "verbs": [
+              "жарят",
+              "готовят",
+              "подают",
+              "едят"
+            ]
+          },
+          {
+            "dish": "селёдка под шубой",
+            "verbs": [
+              "готовят",
+              "подают",
+              "едят"
+            ]
+          },
+          {
+            "dish": "винегрет",
+            "verbs": [
+              "готовят",
+              "подают",
+              "едят"
+            ]
+          },
+          {
+            "dish": "холодец",
+            "verbs": [
+              "варят",
+              "готовят",
+              "подают",
+              "едят"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "recommend-mini-boss",
+        "number": 7,
+        "type": "block_boss",
+        "title": "Mini Boss",
+        "card": "Блины",
+        "blocks": [
+          "Это одно из самых популярных блюд.",
+          "Их готовят из муки, молока и яиц.",
+          "Они очень вкусные.",
+          "Их обычно едят со сметаной.",
+          "Я рекомендую попробовать."
+        ],
+        "requirements": [
+          "popular phrase",
+          "ingredients",
+          "taste adjective",
+          "instrumental с/со",
+          "recommendation"
+        ]
+      },
+      {
+        "id": "recommend-tourist-cards",
+        "number": 8,
+        "type": "tourist_cards",
+        "title": "Непростой турист",
+        "goal": "Recommend a dish that matches the tourist preferences.",
+        "touristCards": [
+          {
+            "id": "fish-and-vegetables",
+            "title": "Турист 1",
+            "likes": [
+              "рыба",
+              "овощи"
+            ],
+            "dislikes": [
+              "мясо"
+            ],
+            "likedTags": [
+              "fish",
+              "vegetables"
+            ],
+            "dislikedTags": [
+              "meat"
+            ],
+            "bestRecommendations": [
+              "винегрет",
+              "селёдка под шубой"
+            ],
+            "feedback": {
+              "success": "Muy buena recomendación.",
+              "fail": "Este turista no come carne."
+            }
+          },
+          {
+            "id": "spicy-soup-not-sweet",
+            "title": "Турист 2",
+            "likes": [
+              "острое",
+              "суп"
+            ],
+            "dislikes": [
+              "сладкое"
+            ],
+            "likedTags": [
+              "soup",
+              "spicy"
+            ],
+            "dislikedTags": [
+              "sweet"
+            ],
+            "bestRecommendations": [
+              "борщ"
+            ],
+            "feedback": {
+              "success": "Хорошо: sopa y no dulce.",
+              "fail": "Este turista no quiere algo dulce."
+            }
+          },
+          {
+            "id": "budget-not-fatty",
+            "title": "Турист 3",
+            "likes": [
+              "дёшево",
+              "овощи"
+            ],
+            "dislikes": [
+              "жирное"
+            ],
+            "likedTags": [
+              "cheap",
+              "vegetables"
+            ],
+            "dislikedTags": [
+              "fatty",
+              "mayonnaise"
+            ],
+            "bestRecommendations": [
+              "винегрет"
+            ],
+            "feedback": {
+              "success": "Perfecto: barato, vegetal y no pesado.",
+              "fail": "Busca algo barato y no graso."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "dialogue_builders": [
+    {
+      "id": "recommend-borsch-dialogue",
+      "title": "Recommend Borsch Dialogue",
+      "type": "dialogue_builder",
+      "topic": "recommend-a-dish",
+      "requiredUnlocks": [
+        "recommend-try",
+        "because",
+        "usually-eaten-with"
+      ],
+      "npcRoleId": "culture-tourist",
+      "prompt": "Build a short recommendation dialogue without typing freely.",
+      "sequence": [
+        {
+          "speaker": "player",
+          "slot": "greeting",
+          "correct": "Здравствуйте.",
+          "options": [
+            "Здравствуйте.",
+            "До свидания.",
+            "Сколько стоит?"
+          ]
+        },
+        {
+          "speaker": "npc",
+          "fixed": "Я хочу попробовать что-то русское."
+        },
+        {
+          "speaker": "player",
+          "slot": "recommend",
+          "correct": "Я рекомендую попробовать",
+          "options": [
+            "Я рекомендую попробовать",
+            "Я не ем",
+            "Мне не нравится"
+          ]
+        },
+        {
+          "speaker": "player",
+          "slot": "dish",
+          "correct": "борщ",
+          "options": [
+            "борщ",
+            "банан",
+            "кофе"
+          ]
+        },
+        {
+          "speaker": "player",
+          "slot": "reason_connector",
+          "correct": "потому что",
+          "options": [
+            "потому что",
+            "без",
+            "чем"
+          ]
+        },
+        {
+          "speaker": "player",
+          "slot": "reason",
+          "correct": "он очень вкусный.",
+          "options": [
+            "он очень вкусный.",
+            "он дороже.",
+            "он без чай."
+          ]
+        },
+        {
+          "speaker": "player",
+          "slot": "served_with",
+          "correct": "Его обычно едят со сметаной.",
+          "options": [
+            "Его обычно едят со сметаной.",
+            "Его обычно едят с шоколадом.",
+            "Его готовят без сметана."
+          ]
+        }
+      ],
+      "finalDialogue": [
+        "Здравствуйте.",
+        "Я рекомендую попробовать борщ, потому что он очень вкусный.",
+        "Его обычно едят со сметаной."
+      ]
+    },
+    {
+      "id": "vegetarian-recommendation-dialogue",
+      "title": "Vegetarian Recommendation",
+      "type": "dialogue_builder",
+      "topic": "tourist-cards",
+      "requiredUnlocks": [
+        "worth-trying-polite",
+        "because"
+      ],
+      "npcRoleId": "vegetarian",
+      "prompt": "Recommend a dish to someone who does not eat meat.",
+      "sequence": [
+        {
+          "speaker": "npc",
+          "fixed": "Я не ем мясо."
+        },
+        {
+          "speaker": "player",
+          "slot": "advice",
+          "correct": "Вам стоит попробовать",
+          "options": [
+            "Вам стоит попробовать",
+            "Его готовят из",
+            "Я плачу картой"
+          ]
+        },
+        {
+          "speaker": "player",
+          "slot": "dish",
+          "correct": "винегрет",
+          "options": [
+            "винегрет",
+            "холодец",
+            "пельмени"
+          ]
+        },
+        {
+          "speaker": "player",
+          "slot": "reason",
+          "correct": "Это блюдо без мяса.",
+          "options": [
+            "Это блюдо без мяса.",
+            "Это блюдо с мясом.",
+            "Это блюдо с рыбой."
+          ]
+        }
+      ],
+      "finalDialogue": [
+        "Вам стоит попробовать винегрет.",
+        "Это блюдо без мяса."
+      ]
+    }
+  ]
+}

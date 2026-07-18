@@ -1,0 +1,181 @@
+{
+  "tag_taxonomy": [
+    {
+      "id": "russian_food",
+      "type": "culture",
+      "label": "Russian food",
+      "usedBy": [
+        "culture-tourist",
+        "culture matching",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "popular",
+      "type": "culture",
+      "label": "Popular dish",
+      "usedBy": [
+        "culture-tourist",
+        "recommendation templates"
+      ]
+    },
+    {
+      "id": "cheap",
+      "type": "price",
+      "label": "Budget friendly",
+      "usedBy": [
+        "budget-tourist",
+        "tourist cards"
+      ]
+    },
+    {
+      "id": "expensive",
+      "type": "price",
+      "label": "Expensive or premium",
+      "usedBy": [
+        "budget-tourist negative examples"
+      ]
+    },
+    {
+      "id": "meat",
+      "type": "ingredient",
+      "label": "Contains meat",
+      "usedBy": [
+        "vegetarian negative",
+        "tourist dislikes"
+      ]
+    },
+    {
+      "id": "fish",
+      "type": "ingredient",
+      "label": "Contains fish",
+      "usedBy": [
+        "fish-and-vegetables tourist"
+      ]
+    },
+    {
+      "id": "vegetables",
+      "type": "ingredient",
+      "label": "Vegetable based",
+      "usedBy": [
+        "vegetarian",
+        "budget-not-fatty"
+      ]
+    },
+    {
+      "id": "no_meat",
+      "type": "restriction",
+      "label": "No meat",
+      "usedBy": [
+        "vegetarian positive"
+      ]
+    },
+    {
+      "id": "no_fish",
+      "type": "restriction",
+      "label": "No fish",
+      "usedBy": [
+        "fish restrictions"
+      ]
+    },
+    {
+      "id": "sweet",
+      "type": "taste",
+      "label": "Sweet",
+      "usedBy": [
+        "sweet-lover",
+        "not-sweet tourist negative"
+      ]
+    },
+    {
+      "id": "dessert",
+      "type": "course",
+      "label": "Dessert",
+      "usedBy": [
+        "sweet-lover"
+      ]
+    },
+    {
+      "id": "savory",
+      "type": "taste",
+      "label": "Savory / not sweet",
+      "usedBy": [
+        "soup tourist",
+        "sweet-lover negative examples"
+      ]
+    },
+    {
+      "id": "soup",
+      "type": "dish_type",
+      "label": "Soup",
+      "usedBy": [
+        "soup tourist"
+      ]
+    },
+    {
+      "id": "filling",
+      "type": "satiety",
+      "label": "Filling",
+      "usedBy": [
+        "recommendation descriptions"
+      ]
+    },
+    {
+      "id": "not_fatty",
+      "type": "health",
+      "label": "Not fatty",
+      "usedBy": [
+        "budget-not-fatty"
+      ]
+    },
+    {
+      "id": "mayonnaise",
+      "type": "ingredient",
+      "label": "Contains mayonnaise",
+      "usedBy": [
+        "budget-not-fatty negative"
+      ]
+    },
+    {
+      "id": "winter",
+      "type": "season",
+      "label": "Winter food",
+      "usedBy": [
+        "season match"
+      ]
+    },
+    {
+      "id": "spring",
+      "type": "season",
+      "label": "Spring food",
+      "usedBy": [
+        "season match"
+      ]
+    },
+    {
+      "id": "cold",
+      "type": "serving_temperature",
+      "label": "Cold dish",
+      "usedBy": [
+        "dish description"
+      ]
+    },
+    {
+      "id": "not_sweet",
+      "type": "taste",
+      "label": "Not sweet",
+      "usedBy": [
+        "legacy tourist filters"
+      ]
+    },
+    {
+      "id": "fatty",
+      "type": "health",
+      "label": "Fatty/heavy",
+      "usedBy": [
+        "budget-not-fatty negative",
+        "healthy food choices"
+      ]
+    }
+  ]
+}

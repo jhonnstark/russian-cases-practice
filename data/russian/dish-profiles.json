@@ -1,0 +1,33 @@
+{
+  "dish_profiles": [
+    {
+      "id": "borsch",
+      "name": "борщ",
+      "ingredients": [
+        "свёкла",
+        "капуста",
+        "морковь",
+        "лук",
+        "мясо"
+      ],
+      "servedWith": [
+        "сметана"
+      ],
+      "season": [
+        "зима",
+        "осень"
+      ],
+      "taste": [
+        "вкусный",
+        "сытный"
+      ],
+      "tags": [
+        "soup",
+        "meat",
+        "popular",
+        "russian_food",
+        "savory"
+      ]
+    }
+  ]
+}

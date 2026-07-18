@@ -1,0 +1,54 @@
+{
+  "reading_campaigns": [
+    {
+      "id": "russian-cuisine-reading",
+      "campaignId": "russian-cuisine",
+      "title": "Русская кухня: чтение",
+      "paragraphs": [
+        {
+          "id": "fat-food-stereotype",
+          "text": "Русские любят есть жирную еду. Иногда это правда, но иногда это стереотип.",
+          "vocabulary": [
+            "русские",
+            "любить",
+            "есть",
+            "жирная еда",
+            "стереотип"
+          ],
+          "questions": [
+            {
+              "type": "answer",
+              "prompt": "Что любят есть русские?",
+              "answer": "Русские любят есть жирную еду."
+            },
+            {
+              "type": "true_false",
+              "prompt": "Это всегда правда?",
+              "answer": false
+            },
+            {
+              "type": "opinion",
+              "prompt": "А как в вашей стране?"
+            }
+          ],
+          "caseTasks": [
+            {
+              "prompt": "есть ___",
+              "nominative": "жирная еда",
+              "case": "accusative",
+              "answer": "жирную еду"
+            },
+            {
+              "prompt": "без ___",
+              "nominative": "мясо",
+              "case": "genitive",
+              "answer": "мяса"
+            }
+          ],
+          "continueStoryPrompt": "Вы в ресторане. Скажите, что вы едите и что не едите.",
+          "summaryPrompt": "Скажите одну фразу о русской кухне."
+        }
+      ]
+    }
+  ]
+}
