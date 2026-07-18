@@ -114,13 +114,15 @@
       "irregular": false,
       "level": "A1",
       "tags": [
-        "quality"
+        "quality",
+        "food"
       ],
       "meaning_es": "m?s вкусный",
       "examples": [
         "??? вкуснее, ??? ??????."
       ],
-      "learningScore": 6
+      "learningScore": 6,
+      "adverb": "вкусно"
     },
     {
       "id": "cmp-важныи",
@@ -279,13 +281,15 @@
       "irregular": false,
       "level": "A1",
       "tags": [
-        "quality"
+        "quality",
+        "culture"
       ],
       "meaning_es": "m?s красивый",
       "examples": [
         "??? красивее, ??? ??????."
       ],
-      "learningScore": 6
+      "learningScore": 6,
+      "adverb": "красиво"
     },
     {
       "id": "cmp-свежии",
@@ -950,6 +954,74 @@
         "??? позднее, ??? ??????."
       ],
       "learningScore": 6
+    },
+    {
+      "id": "cmp-жирный",
+      "adjective": "жирный",
+      "adverb": "жирно",
+      "comparative": "жирнее",
+      "irregular": false,
+      "level": "A2",
+      "tags": [
+        "food",
+        "quality"
+      ],
+      "meaning_es": "más fatty / greasy",
+      "examples": [
+        "Жирный → жирнее."
+      ],
+      "learningScore": 5
+    },
+    {
+      "id": "cmp-горячий",
+      "adjective": "горячий",
+      "adverb": "горячо",
+      "comparative": "горячее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "food",
+        "temperature"
+      ],
+      "meaning_es": "más hot",
+      "examples": [
+        "Горячий → горячее."
+      ],
+      "learningScore": 5
+    },
+    {
+      "id": "cmp-голодный",
+      "adjective": "голодный",
+      "adverb": "голодно",
+      "comparative": "голоднее",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "feeling",
+        "food"
+      ],
+      "meaning_es": "más hungry",
+      "examples": [
+        "Голодный → голоднее."
+      ],
+      "learningScore": 5
+    },
+    {
+      "id": "cmp-сладкий",
+      "adjective": "сладкий",
+      "adverb": "сладко",
+      "comparative": "слаще",
+      "irregular": false,
+      "level": "A1",
+      "tags": [
+        "food",
+        "quality"
+      ],
+      "meaning_es": "más dulce",
+      "examples": [
+        "Этот пирог слаще."
+      ],
+      "learningScore": 5
     }
   ]
 }

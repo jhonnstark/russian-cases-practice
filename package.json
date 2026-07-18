@@ -10,7 +10,8 @@
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "validate:data": "node scripts/validate-russian-data.mjs",
-    "audit:tags": "node scripts/audit-russian-tags.mjs"
+    "audit:tags": "node scripts/audit-russian-tags.mjs",
+    "audit:encoding": "node scripts/audit-json-encoding.mjs"
   },
   "dependencies": {
     "@primeuix/themes": "^2.0.3",
